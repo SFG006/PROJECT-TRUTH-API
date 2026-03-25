@@ -2,8 +2,9 @@
 title: Truth Tide API
 emoji: 🌊
 colorFrom: blue
-colorTo: blue
+colorTo: green
 sdk: docker
+app_port: 7860
 pinned: false
 ---
 
