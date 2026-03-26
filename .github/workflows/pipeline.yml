@@ -16,6 +16,8 @@ jobs:
     steps:
     - name: Checkout Repository
       uses: actions/checkout@v3
+      with:
+        fetch-depth: 0 # THE FIX: Tells GitHub to download the full history so Hugging Face accepts the push
 
     - name: Set up Python
       uses: actions/setup-python@v4
