@@ -5,6 +5,7 @@ from sentence_transformers import SentenceTransformer
 from umap import UMAP
 import os
 import glob
+from tqdm import tqdm
 from datetime import datetime
 
 # ─────────────────────────────────────────────
@@ -23,7 +24,20 @@ df = df.drop_duplicates(subset=['title', 'source'])
 # ── Drop any git conflict rows that snuck into the CSV ──
 df = df[~df['title'].astype(str).str.contains('<<<<<<|>>>>>>|=======', regex=True)]
 df = df.reset_index(drop=True)
-print(f"Total unique headlines to analyze: {len(df)}")
+
+# ── If full_text column is missing (e.g. old Reddit CSV), fall back to title ──
+# This keeps old reddit_siphon.py data compatible
+if 'full_text' not in df.columns:
+    df['full_text'] = df['title']
+else:
+    # Fill any actual NaNs first
+    df['full_text'] = df['full_text'].fillna(df['title'])
+    # Pinpoint empty strings and safely inject the title
+    df.loc[df['full_text'] == '', 'full_text'] = df['title']
+
+print(f"Total unique articles to analyze: {len(df)}")
+full_text_count = df[df['full_text'] != df['title']].shape[0]
+print(f"Articles with full body text: {full_text_count} / {len(df)}")
 
 # ─────────────────────────────────────────────
 # STEP 2 — Zero-Shot Tactic Classification
@@ -31,37 +45,67 @@ print(f"Total unique headlines to analyze: {len(df)}")
 print("\nWaking up the Zero-Shot Tactics Engine...")
 classifier = pipeline("zero-shot-classification", model="facebook/bart-large-mnli")
 
+# ── Rewritten descriptions — specific language patterns, not abstract concepts ──
+# These match actual sentence patterns found in news bodies, not just headlines
 TACTIC_DESCRIPTIONS = {
     # --- Emotional Manipulation ---
-    "exaggerates threats to create panic and fear":           "Fear-Mongering",
-    "uses emotional stories to bypass rational thinking":     "Emotional Manipulation",
-    "creates a sense of urgency or impending doom":           "Alarmism",
+    "uses words like catastrophe, crisis, or disaster to provoke fear":
+        "Fear-Mongering",
+
+    "tells a personal tragedy story to make the reader feel guilt or pity":
+        "Emotional Manipulation",
+
+    "warns of imminent collapse, invasion, or irreversible damage":
+        "Alarmism",
 
     # --- Identity & Group Dynamics ---
-    "appeals to a sense of national superiority and loyalty": "Nationalism / Pride",
-    "portrays one group as an enemy of society":              "Othering / Scapegoating",
-    "promotes distrust of institutions or authorities":       "Anti-Establishment",
-    "uses religious or moral framing to justify a position":  "Moral / Religious Framing",
+    "celebrates a nation, army, or people as heroic, superior, or victorious":
+        "Nationalism / Pride",
+
+    "portrays a religion, ethnicity, or political group as dangerous or criminal":
+        "Othering / Scapegoating",
+
+    "attacks governments, media, or institutions as corrupt or untrustworthy":
+        "Anti-Establishment",
+
+    "uses God, religion, scripture, or moral duty to justify a political action":
+        "Moral / Religious Framing",
 
     # --- Narrative Distortion ---
-    "blames the victims of harm instead of the perpetrators":        "Victim-Blaming",
-    "frames aggressive or violent acts as necessary and righteous":  "Justification of Violence",
-    "presents a false or misleading version of events":              "Disinformation / Fabrication",
-    "uses selective facts to push a one-sided narrative":            "Selective Framing / Bias",
-    "uses mockery and ridicule to dismiss opposing views":           "Ridicule / Delegitimization",
+    "describes civilians or protesters killed as responsible for their own deaths":
+        "Victim-Blaming",
+
+    "describes a military strike, killing, or war as justified, necessary, or heroic":
+        "Justification of Violence",
+
+    "contradicts known facts or presents events that did not happen as real":
+        "Disinformation / Fabrication",
+
+    "highlights only facts that support one side while ignoring contradictory evidence":
+        "Selective Framing / Bias",
+
+    "mocks, ridicules, or dismisses a leader, country, or group as stupid or weak":
+        "Ridicule / Delegitimization",
 
     # --- Authority & Credibility ---
-    "cites authority figures or experts to lend false credibility":  "False Authority",
-    "uses vague or unverifiable claims to support a position":       "Unverified Claims",
+    "quotes an unnamed official, anonymous source, or unnamed expert as proof":
+        "False Authority",
+
+    "reports unconfirmed battlefield claims, casualty numbers, or territorial gains":
+        "Unverified Claims",
 
     # --- Neutral ---
-    "is objective, fact-based reporting without emotional manipulation": "Neutral Reporting",
+    "reports a confirmed fact, official statement, or verified event without bias":
+        "Neutral Reporting",
 }
 
 candidate_labels = list(TACTIC_DESCRIPTIONS.keys())
 
+
 def get_tactic(text):
     try:
+        # Use full_text — cap at 512 tokens (model limit)
+        # Take first 512 chars — intro sentences carry the most framing signal
         result = classifier(
             str(text)[:512],
             candidate_labels=candidate_labels,
@@ -69,12 +113,18 @@ def get_tactic(text):
             multi_label=True
         )
         top_description = result['labels'][0]
-        confidence = round(result['scores'][0], 4)
+        confidence      = round(result['scores'][0], 4)
 
-        if confidence >= 0.70:
+        # Tier 1: High confidence — trust the label
+        if confidence >= 0.75:
             return TACTIC_DESCRIPTIONS[top_description], confidence
-        elif confidence >= 0.50:
-            return f"Uncertain / {TACTIC_DESCRIPTIONS[top_description]}", confidence
+
+        # Tier 2: Medium confidence — flag as uncertain
+        elif confidence >= 0.55:
+            tactic = TACTIC_DESCRIPTIONS[top_description]
+            return f"Uncertain / {tactic}", confidence
+
+        # Tier 3: Low confidence — genuinely ambiguous
         else:
             return "Neutral Reporting", confidence
 
@@ -82,8 +132,13 @@ def get_tactic(text):
         print(f"Error on text: {e}")
         return "ERROR", 0.0
 
-print("\nAnalyzing headlines for psychological tactics...")
-df[['tactic_label', 'tactic_confidence']] = df['title'].apply(
+
+print("\nAnalyzing articles for psychological tactics (using full text)...")
+# Initialize the progress bar for Pandas
+tqdm.pandas(desc="AI Tactic Analysis")
+
+# Use progress_apply instead of apply
+df[['tactic_label', 'tactic_confidence']] = df['full_text'].progress_apply(
     lambda x: pd.Series(get_tactic(x))
 )
 
@@ -92,13 +147,17 @@ df[['tactic_label', 'tactic_confidence']] = df['title'].apply(
 # ─────────────────────────────────────────────
 print("\nCalculating semantic topography (UMAP)...")
 embedding_model = SentenceTransformer('all-MiniLM-L6-v2')
-embeddings = embedding_model.encode(df['title'].tolist(), show_progress_bar=True)
 
-# UMAP spreads clusters into actual 2D space — no more diagonal line
+# Embed full_text for richer semantic positioning on the map
+embeddings = embedding_model.encode(
+    df['full_text'].tolist(),
+    show_progress_bar=True
+)
+
 reducer = UMAP(
     n_components=2,
     n_neighbors=10,    # lower = tighter local clusters
-    min_dist=0.3,      # higher = more visual spread between points
+    min_dist=0.3,      # higher = more visual spread
     random_state=42    # fixed seed = same layout every run
 )
 reduced_embeddings = reducer.fit_transform(embeddings)
@@ -115,8 +174,12 @@ os.makedirs("data/processed", exist_ok=True)
 output_filename = "data/processed/master_tactics_latest.csv"
 df.to_csv(output_filename, index=False)
 print(f"\nSuccess! Master data saved to: {output_filename}")
-print("\n--- Tactics Preview ---")
-print(df[['source', 'title', 'tactic_label']].head(10))
+
+print("\n--- Tactic Distribution ---")
+print(df['tactic_label'].value_counts().to_string())
+
+print("\n--- Sample Preview ---")
+print(df[['source', 'title', 'tactic_label', 'tactic_confidence']].head(10).to_string())
 
 # ─────────────────────────────────────────────
 # STEP 5 — Auto-trigger Semantic Engine

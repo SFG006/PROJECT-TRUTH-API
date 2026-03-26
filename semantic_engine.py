@@ -38,7 +38,7 @@ EMBEDDING_MODEL   = "all-MiniLM-L6-v2"
 # DBSCAN: how tight a cluster must be to be called one "event"
 # eps=0.25 means headlines must be within 0.25 cosine distance
 # min_samples=2 means at least 2 headlines to form an event cluster
-DBSCAN_EPS        = 0.25
+DBSCAN_EPS        = 0.40
 DBSCAN_MIN_SAMPLES = 2
 
 # Tactic severity weights — used to score how "loaded" a cluster is
@@ -84,8 +84,8 @@ def embed_and_cluster(df: pd.DataFrame) -> tuple[np.ndarray, np.ndarray]:
     """
     print(f"\n[2/5] Embedding {len(df)} headlines with '{EMBEDDING_MODEL}'...")
     model = SentenceTransformer(EMBEDDING_MODEL)
-    embeddings = model.encode(df["title"].tolist(), show_progress_bar=True)
-
+    text_to_embed = df["full_text"].fillna(df["title"]).tolist()
+    embeddings = model.encode(text_to_embed, show_progress_bar=True)
     print(f"      Running DBSCAN clustering (eps={DBSCAN_EPS}, min_samples={DBSCAN_MIN_SAMPLES})...")
     # Convert cosine similarity → distance matrix for DBSCAN
     cosine_dist_matrix = 1 - cosine_similarity(embeddings)
@@ -246,12 +246,13 @@ def persist_to_chromadb(df: pd.DataFrame, embeddings: np.ndarray):
 
     metadatas = [
         {
-            "source":           str(row.get("source", "")),
-            "perspective":      str(row.get("perspective", "")),
-            "tactic_label":     str(row.get("tactic_label", "")),
-            "tactic_confidence":float(row.get("tactic_confidence", 0.0)),
-            "published_date":   str(row.get("published_date", "")),
-            "link":             str(row.get("link", "")),
+            "source": str(row.get("source", "")),
+            "perspective": str(row.get("perspective", "")),
+            "tactic_label": str(row.get("tactic_label", "")),
+            "tactic_confidence": float(row.get("tactic_confidence", 0.0)),
+            "published_date": str(row.get("published_date", "")),
+            "link": str(row.get("link", "")),
+            "full_text": str(row.get("full_text", ""))[:500],  # ← ADD THIS
         }
         for _, row in df.iterrows()
     ]
