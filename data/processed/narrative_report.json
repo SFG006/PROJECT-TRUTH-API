@@ -1,0 +1,3977 @@
+{
+  "meta": {
+    "total_headlines": 93,
+    "total_sources": 8,
+    "total_tactics": 6,
+    "total_event_clusters": 2,
+    "contested_events": 0,
+    "avg_severity": 0.467,
+    "tactic_distribution": {
+      "Unverified Claims": 57,
+      "Alarmism": 25,
+      "Moral / Religious Framing": 5,
+      "Disinformation / Fabrication": 3,
+      "Nationalism / Pride": 2,
+      "Justification of Violence": 1
+    },
+    "source_distribution": {
+      "BBC News": 15,
+      "Al Jazeera (EN)": 15,
+      "Al Jazeera (AR)": 15,
+      "Lenta (RU)": 15,
+      "Reddit: r/geopolitics": 9,
+      "Reddit: r/worldnews": 8,
+      "Reddit: r/ukraine": 8,
+      "Reddit: r/AskMiddleEast": 8
+    },
+    "run_timestamp": "2026-03-26T14:44:42.267540"
+  },
+  "events": [
+    {
+      "event_id": "standalone_0",
+      "is_event_cluster": false,
+      "headline_count": 1,
+      "representative_title": "Meta and YouTube found liable in landmark social media addiction trial",
+      "sources": [
+        "BBC News"
+      ],
+      "perspectives": [
+        "Western Europe"
+      ],
+      "headlines": [
+        {
+          "source": "BBC News",
+          "perspective": "Western Europe",
+          "original_language": "en",
+          "raw_title": "Meta and YouTube found liable in landmark social media addiction trial",
+          "title": "Meta and YouTube found liable in landmark social media addiction trial",
+          "published_date": "Thu, 26 Mar 2026 09:03:45 GMT",
+          "link": "https://www.bbc.com/news/articles/c747x7gz249o?at_medium=RSS&at_campaign=rss",
+          "fetch_timestamp": "2026-03-26 14:35:14",
+          "tactic_label": "Unverified Claims",
+          "tactic_confidence": 0.9551,
+          "x": 11.501819,
+          "y": -1.1871761
+        }
+      ],
+      "narrative_delta": {
+        "dominant_tactic": "Unverified Claims",
+        "agreement_score": 1.0,
+        "delta_score": 0.0,
+        "severity_score": 0.3,
+        "unique_tactics": [
+          "Unverified Claims"
+        ],
+        "framing_map": {
+          "Western Europe": [
+            "Unverified Claims"
+          ]
+        }
+      },
+      "timestamp": "2026-03-26T14:44:41.781254"
+    },
+    {
+      "event_id": "standalone_1",
+      "is_event_cluster": false,
+      "headline_count": 1,
+      "representative_title": "Who wants what and why from US-Iran peace talks?",
+      "sources": [
+        "BBC News"
+      ],
+      "perspectives": [
+        "Western Europe"
+      ],
+      "headlines": [
+        {
+          "source": "BBC News",
+          "perspective": "Western Europe",
+          "original_language": "en",
+          "raw_title": "Who wants what and why from US-Iran peace talks?",
+          "title": "Who wants what and why from US-Iran peace talks?",
+          "published_date": "Wed, 25 Mar 2026 21:37:34 GMT",
+          "link": "https://www.bbc.com/news/articles/cm29l9r68j8o?at_medium=RSS&at_campaign=rss",
+          "fetch_timestamp": "2026-03-26 14:35:14",
+          "tactic_label": "Unverified Claims",
+          "tactic_confidence": 0.9384,
+          "x": 6.980756,
+          "y": -2.573856
+        }
+      ],
+      "narrative_delta": {
+        "dominant_tactic": "Unverified Claims",
+        "agreement_score": 1.0,
+        "delta_score": 0.0,
+        "severity_score": 0.3,
+        "unique_tactics": [
+          "Unverified Claims"
+        ],
+        "framing_map": {
+          "Western Europe": [
+            "Unverified Claims"
+          ]
+        }
+      },
+      "timestamp": "2026-03-26T14:44:41.781502"
+    },
+    {
+      "event_id": "standalone_2",
+      "is_event_cluster": false,
+      "headline_count": 1,
+      "representative_title": "Prepare for turbulence - how a prolonged Middle East conflict could reshape how we fly",
+      "sources": [
+        "BBC News"
+      ],
+      "perspectives": [
+        "Western Europe"
+      ],
+      "headlines": [
+        {
+          "source": "BBC News",
+          "perspective": "Western Europe",
+          "original_language": "en",
+          "raw_title": "Prepare for turbulence - how a prolonged Middle East conflict could reshape how we fly",
+          "title": "Prepare for turbulence - how a prolonged Middle East conflict could reshape how we fly",
+          "published_date": "Thu, 26 Mar 2026 00:41:16 GMT",
+          "link": "https://www.bbc.com/news/articles/cn08x9lw0pzo?at_medium=RSS&at_campaign=rss",
+          "fetch_timestamp": "2026-03-26 14:35:14",
+          "tactic_label": "Alarmism",
+          "tactic_confidence": 0.9944,
+          "x": 9.268627,
+          "y": -3.4414656
+        }
+      ],
+      "narrative_delta": {
+        "dominant_tactic": "Alarmism",
+        "agreement_score": 1.0,
+        "delta_score": 0.0,
+        "severity_score": 0.75,
+        "unique_tactics": [
+          "Alarmism"
+        ],
+        "framing_map": {
+          "Western Europe": [
+            "Alarmism"
+          ]
+        }
+      },
+      "timestamp": "2026-03-26T14:44:41.781682"
+    },
+    {
+      "event_id": "standalone_3",
+      "is_event_cluster": false,
+      "headline_count": 1,
+      "representative_title": "UN votes to recognise enslavement of Africans as 'gravest crime against humanity'",
+      "sources": [
+        "BBC News"
+      ],
+      "perspectives": [
+        "Western Europe"
+      ],
+      "headlines": [
+        {
+          "source": "BBC News",
+          "perspective": "Western Europe",
+          "original_language": "en",
+          "raw_title": "UN votes to recognise enslavement of Africans as 'gravest crime against humanity'",
+          "title": "UN votes to recognise enslavement of Africans as 'gravest crime against humanity'",
+          "published_date": "Wed, 25 Mar 2026 20:12:31 GMT",
+          "link": "https://www.bbc.com/news/articles/cvg06q36052o?at_medium=RSS&at_campaign=rss",
+          "fetch_timestamp": "2026-03-26 14:35:14",
+          "tactic_label": "Moral / Religious Framing",
+          "tactic_confidence": 0.9484,
+          "x": 9.586791,
+          "y": -0.4925314
+        }
+      ],
+      "narrative_delta": {
+        "dominant_tactic": "Moral / Religious Framing",
+        "agreement_score": 1.0,
+        "delta_score": 0.0,
+        "severity_score": 0.5,
+        "unique_tactics": [
+          "Moral / Religious Framing"
+        ],
+        "framing_map": {
+          "Western Europe": [
+            "Moral / Religious Framing"
+          ]
+        }
+      },
+      "timestamp": "2026-03-26T14:44:41.781848"
+    },
+    {
+      "event_id": "standalone_4",
+      "is_event_cluster": false,
+      "headline_count": 1,
+      "representative_title": "'We are in agony' - Savannah Guthrie does first interview since mum's disappearance",
+      "sources": [
+        "BBC News"
+      ],
+      "perspectives": [
+        "Western Europe"
+      ],
+      "headlines": [
+        {
+          "source": "BBC News",
+          "perspective": "Western Europe",
+          "original_language": "en",
+          "raw_title": "'We are in agony' - Savannah Guthrie does first interview since mum's disappearance",
+          "title": "'We are in agony' - Savannah Guthrie does first interview since mum's disappearance",
+          "published_date": "Wed, 25 Mar 2026 16:38:03 GMT",
+          "link": "https://www.bbc.com/news/articles/ckgxzlny4w3o?at_medium=RSS&at_campaign=rss",
+          "fetch_timestamp": "2026-03-26 14:35:14",
+          "tactic_label": "Alarmism",
+          "tactic_confidence": 0.9954,
+          "x": 10.980669,
+          "y": -1.197814
+        }
+      ],
+      "narrative_delta": {
+        "dominant_tactic": "Alarmism",
+        "agreement_score": 1.0,
+        "delta_score": 0.0,
+        "severity_score": 0.75,
+        "unique_tactics": [
+          "Alarmism"
+        ],
+        "framing_map": {
+          "Western Europe": [
+            "Alarmism"
+          ]
+        }
+      },
+      "timestamp": "2026-03-26T14:44:41.782115"
+    },
+    {
+      "event_id": "standalone_5",
+      "is_event_cluster": false,
+      "headline_count": 1,
+      "representative_title": "Musketeer d'Artagnan's remains believed found under Dutch church",
+      "sources": [
+        "BBC News"
+      ],
+      "perspectives": [
+        "Western Europe"
+      ],
+      "headlines": [
+        {
+          "source": "BBC News",
+          "perspective": "Western Europe",
+          "original_language": "en",
+          "raw_title": "Musketeer d'Artagnan's remains believed found under Dutch church",
+          "title": "Musketeer d'Artagnan's remains believed found under Dutch church",
+          "published_date": "Wed, 25 Mar 2026 14:30:39 GMT",
+          "link": "https://www.bbc.com/news/articles/cm2rew2dgzzo?at_medium=RSS&at_campaign=rss",
+          "fetch_timestamp": "2026-03-26 14:35:14",
+          "tactic_label": "Moral / Religious Framing",
+          "tactic_confidence": 0.9848,
+          "x": 11.184357,
+          "y": -1.7766678
+        }
+      ],
+      "narrative_delta": {
+        "dominant_tactic": "Moral / Religious Framing",
+        "agreement_score": 1.0,
+        "delta_score": 0.0,
+        "severity_score": 0.5,
+        "unique_tactics": [
+          "Moral / Religious Framing"
+        ],
+        "framing_map": {
+          "Western Europe": [
+            "Moral / Religious Framing"
+          ]
+        }
+      },
+      "timestamp": "2026-03-26T14:44:41.782338"
+    },
+    {
+      "event_id": "standalone_6",
+      "is_event_cluster": false,
+      "headline_count": 1,
+      "representative_title": "Marcos promises 'flow of oil' as Philippines declares energy emergency",
+      "sources": [
+        "BBC News"
+      ],
+      "perspectives": [
+        "Western Europe"
+      ],
+      "headlines": [
+        {
+          "source": "BBC News",
+          "perspective": "Western Europe",
+          "original_language": "en",
+          "raw_title": "Marcos promises 'flow of oil' as Philippines declares energy emergency",
+          "title": "Marcos promises 'flow of oil' as Philippines declares energy emergency",
+          "published_date": "Wed, 25 Mar 2026 08:59:46 GMT",
+          "link": "https://www.bbc.com/news/articles/c3ex8ez3717o?at_medium=RSS&at_campaign=rss",
+          "fetch_timestamp": "2026-03-26 14:35:14",
+          "tactic_label": "Unverified Claims",
+          "tactic_confidence": 0.9993,
+          "x": 9.283746,
+          "y": -4.144082
+        }
+      ],
+      "narrative_delta": {
+        "dominant_tactic": "Unverified Claims",
+        "agreement_score": 1.0,
+        "delta_score": 0.0,
+        "severity_score": 0.3,
+        "unique_tactics": [
+          "Unverified Claims"
+        ],
+        "framing_map": {
+          "Western Europe": [
+            "Unverified Claims"
+          ]
+        }
+      },
+      "timestamp": "2026-03-26T14:44:41.782671"
+    },
+    {
+      "event_id": "standalone_7",
+      "is_event_cluster": false,
+      "headline_count": 1,
+      "representative_title": "'Men need to be perp-walked' after Epstein files release, US Congressman Massie tells BBC",
+      "sources": [
+        "BBC News"
+      ],
+      "perspectives": [
+        "Western Europe"
+      ],
+      "headlines": [
+        {
+          "source": "BBC News",
+          "perspective": "Western Europe",
+          "original_language": "en",
+          "raw_title": "'Men need to be perp-walked' after Epstein files release, US Congressman Massie tells BBC",
+          "title": "'Men need to be perp-walked' after Epstein files release, US Congressman Massie tells BBC",
+          "published_date": "Wed, 25 Mar 2026 15:47:48 GMT",
+          "link": "https://www.bbc.com/news/articles/cd0rek7v7npo?at_medium=RSS&at_campaign=rss",
+          "fetch_timestamp": "2026-03-26 14:35:14",
+          "tactic_label": "Alarmism",
+          "tactic_confidence": 0.9976,
+          "x": 10.231122,
+          "y": -0.15547948
+        }
+      ],
+      "narrative_delta": {
+        "dominant_tactic": "Alarmism",
+        "agreement_score": 1.0,
+        "delta_score": 0.0,
+        "severity_score": 0.75,
+        "unique_tactics": [
+          "Alarmism"
+        ],
+        "framing_map": {
+          "Western Europe": [
+            "Alarmism"
+          ]
+        }
+      },
+      "timestamp": "2026-03-26T14:44:41.782944"
+    },
+    {
+      "event_id": "standalone_8",
+      "is_event_cluster": false,
+      "headline_count": 1,
+      "representative_title": "Danish PM fails to secure majority in party's weakest election showing since 1903",
+      "sources": [
+        "BBC News"
+      ],
+      "perspectives": [
+        "Western Europe"
+      ],
+      "headlines": [
+        {
+          "source": "BBC News",
+          "perspective": "Western Europe",
+          "original_language": "en",
+          "raw_title": "Danish PM fails to secure majority in party's weakest election showing since 1903",
+          "title": "Danish PM fails to secure majority in party's weakest election showing since 1903",
+          "published_date": "Wed, 25 Mar 2026 07:59:41 GMT",
+          "link": "https://www.bbc.com/news/articles/c74v5qynl9vo?at_medium=RSS&at_campaign=rss",
+          "fetch_timestamp": "2026-03-26 14:35:14",
+          "tactic_label": "Unverified Claims",
+          "tactic_confidence": 0.935,
+          "x": 8.185457,
+          "y": -0.9229356
+        }
+      ],
+      "narrative_delta": {
+        "dominant_tactic": "Unverified Claims",
+        "agreement_score": 1.0,
+        "delta_score": 0.0,
+        "severity_score": 0.3,
+        "unique_tactics": [
+          "Unverified Claims"
+        ],
+        "framing_map": {
+          "Western Europe": [
+            "Unverified Claims"
+          ]
+        }
+      },
+      "timestamp": "2026-03-26T14:44:41.783197"
+    },
+    {
+      "event_id": "standalone_9",
+      "is_event_cluster": false,
+      "headline_count": 1,
+      "representative_title": "Woman charged with shooting at Rihanna's home pleads not guilty to attempted murder",
+      "sources": [
+        "BBC News"
+      ],
+      "perspectives": [
+        "Western Europe"
+      ],
+      "headlines": [
+        {
+          "source": "BBC News",
+          "perspective": "Western Europe",
+          "original_language": "en",
+          "raw_title": "Woman charged with shooting at Rihanna's home pleads not guilty to attempted murder",
+          "title": "Woman charged with shooting at Rihanna's home pleads not guilty to attempted murder",
+          "published_date": "Wed, 25 Mar 2026 20:31:25 GMT",
+          "link": "https://www.bbc.com/news/articles/c8ejw8llwggo?at_medium=RSS&at_campaign=rss",
+          "fetch_timestamp": "2026-03-26 14:35:14",
+          "tactic_label": "Unverified Claims",
+          "tactic_confidence": 0.984,
+          "x": 12.157823,
+          "y": -2.6935565
+        }
+      ],
+      "narrative_delta": {
+        "dominant_tactic": "Unverified Claims",
+        "agreement_score": 1.0,
+        "delta_score": 0.0,
+        "severity_score": 0.3,
+        "unique_tactics": [
+          "Unverified Claims"
+        ],
+        "framing_map": {
+          "Western Europe": [
+            "Unverified Claims"
+          ]
+        }
+      },
+      "timestamp": "2026-03-26T14:44:41.783510"
+    },
+    {
+      "event_id": "standalone_10",
+      "is_event_cluster": false,
+      "headline_count": 1,
+      "representative_title": "Dozens of bodies, mostly infants, discovered in Kenya mass grave",
+      "sources": [
+        "BBC News"
+      ],
+      "perspectives": [
+        "Western Europe"
+      ],
+      "headlines": [
+        {
+          "source": "BBC News",
+          "perspective": "Western Europe",
+          "original_language": "en",
+          "raw_title": "Dozens of bodies, mostly infants, discovered in Kenya mass grave",
+          "title": "Dozens of bodies, mostly infants, discovered in Kenya mass grave",
+          "published_date": "Wed, 25 Mar 2026 11:11:50 GMT",
+          "link": "https://www.bbc.com/news/articles/clydj9gj24jo?at_medium=RSS&at_campaign=rss",
+          "fetch_timestamp": "2026-03-26 14:35:14",
+          "tactic_label": "Alarmism",
+          "tactic_confidence": 0.9732,
+          "x": 10.893562,
+          "y": -1.48454
+        }
+      ],
+      "narrative_delta": {
+        "dominant_tactic": "Alarmism",
+        "agreement_score": 1.0,
+        "delta_score": 0.0,
+        "severity_score": 0.75,
+        "unique_tactics": [
+          "Alarmism"
+        ],
+        "framing_map": {
+          "Western Europe": [
+            "Alarmism"
+          ]
+        }
+      },
+      "timestamp": "2026-03-26T14:44:41.783782"
+    },
+    {
+      "event_id": "standalone_11",
+      "is_event_cluster": false,
+      "headline_count": 1,
+      "representative_title": "Democrats flip Florida state seat that includes Trump's Mar-a-Lago home",
+      "sources": [
+        "BBC News"
+      ],
+      "perspectives": [
+        "Western Europe"
+      ],
+      "headlines": [
+        {
+          "source": "BBC News",
+          "perspective": "Western Europe",
+          "original_language": "en",
+          "raw_title": "Democrats flip Florida state seat that includes Trump's Mar-a-Lago home",
+          "title": "Democrats flip Florida state seat that includes Trump's Mar-a-Lago home",
+          "published_date": "Wed, 25 Mar 2026 15:07:13 GMT",
+          "link": "https://www.bbc.com/news/articles/c9qd7wyln2jo?at_medium=RSS&at_campaign=rss",
+          "fetch_timestamp": "2026-03-26 14:35:14",
+          "tactic_label": "Unverified Claims",
+          "tactic_confidence": 0.9386,
+          "x": 7.270924,
+          "y": -1.1539998
+        }
+      ],
+      "narrative_delta": {
+        "dominant_tactic": "Unverified Claims",
+        "agreement_score": 1.0,
+        "delta_score": 0.0,
+        "severity_score": 0.3,
+        "unique_tactics": [
+          "Unverified Claims"
+        ],
+        "framing_map": {
+          "Western Europe": [
+            "Unverified Claims"
+          ]
+        }
+      },
+      "timestamp": "2026-03-26T14:44:41.784067"
+    },
+    {
+      "event_id": "standalone_12",
+      "is_event_cluster": false,
+      "headline_count": 1,
+      "representative_title": "Talk show host Stephen Colbert to write new Lord of the Rings film",
+      "sources": [
+        "BBC News"
+      ],
+      "perspectives": [
+        "Western Europe"
+      ],
+      "headlines": [
+        {
+          "source": "BBC News",
+          "perspective": "Western Europe",
+          "original_language": "en",
+          "raw_title": "Talk show host Stephen Colbert to write new Lord of the Rings film",
+          "title": "Talk show host Stephen Colbert to write new Lord of the Rings film",
+          "published_date": "Wed, 25 Mar 2026 12:21:23 GMT",
+          "link": "https://www.bbc.com/news/articles/c33ldp22833o?at_medium=RSS&at_campaign=rss",
+          "fetch_timestamp": "2026-03-26 14:35:14",
+          "tactic_label": "Unverified Claims",
+          "tactic_confidence": 0.9714,
+          "x": 7.2227855,
+          "y": -0.54158294
+        }
+      ],
+      "narrative_delta": {
+        "dominant_tactic": "Unverified Claims",
+        "agreement_score": 1.0,
+        "delta_score": 0.0,
+        "severity_score": 0.3,
+        "unique_tactics": [
+          "Unverified Claims"
+        ],
+        "framing_map": {
+          "Western Europe": [
+            "Unverified Claims"
+          ]
+        }
+      },
+      "timestamp": "2026-03-26T14:44:41.784338"
+    },
+    {
+      "event_id": "standalone_13",
+      "is_event_cluster": false,
+      "headline_count": 1,
+      "representative_title": "Estonia and Latvia say territories hit by stray Ukrainian drones",
+      "sources": [
+        "BBC News"
+      ],
+      "perspectives": [
+        "Western Europe"
+      ],
+      "headlines": [
+        {
+          "source": "BBC News",
+          "perspective": "Western Europe",
+          "original_language": "en",
+          "raw_title": "Estonia and Latvia say territories hit by stray Ukrainian drones",
+          "title": "Estonia and Latvia say territories hit by stray Ukrainian drones",
+          "published_date": "Wed, 25 Mar 2026 12:42:14 GMT",
+          "link": "https://www.bbc.com/news/articles/c1eql309n12o?at_medium=RSS&at_campaign=rss",
+          "fetch_timestamp": "2026-03-26 14:35:14",
+          "tactic_label": "Unverified Claims",
+          "tactic_confidence": 0.9945,
+          "x": 10.911397,
+          "y": -3.8272514
+        }
+      ],
+      "narrative_delta": {
+        "dominant_tactic": "Unverified Claims",
+        "agreement_score": 1.0,
+        "delta_score": 0.0,
+        "severity_score": 0.3,
+        "unique_tactics": [
+          "Unverified Claims"
+        ],
+        "framing_map": {
+          "Western Europe": [
+            "Unverified Claims"
+          ]
+        }
+      },
+      "timestamp": "2026-03-26T14:44:41.784658"
+    },
+    {
+      "event_id": "standalone_14",
+      "is_event_cluster": false,
+      "headline_count": 1,
+      "representative_title": "South Africa's police chief to appear in court over controversial health contract",
+      "sources": [
+        "BBC News"
+      ],
+      "perspectives": [
+        "Western Europe"
+      ],
+      "headlines": [
+        {
+          "source": "BBC News",
+          "perspective": "Western Europe",
+          "original_language": "en",
+          "raw_title": "South Africa's police chief to appear in court over controversial health contract",
+          "title": "South Africa's police chief to appear in court over controversial health contract",
+          "published_date": "Wed, 25 Mar 2026 16:33:10 GMT",
+          "link": "https://www.bbc.com/news/articles/cwyjpxnzdvyo?at_medium=RSS&at_campaign=rss",
+          "fetch_timestamp": "2026-03-26 14:35:14",
+          "tactic_label": "Unverified Claims",
+          "tactic_confidence": 0.9734,
+          "x": 9.732528,
+          "y": 0.32790267
+        }
+      ],
+      "narrative_delta": {
+        "dominant_tactic": "Unverified Claims",
+        "agreement_score": 1.0,
+        "delta_score": 0.0,
+        "severity_score": 0.3,
+        "unique_tactics": [
+          "Unverified Claims"
+        ],
+        "framing_map": {
+          "Western Europe": [
+            "Unverified Claims"
+          ]
+        }
+      },
+      "timestamp": "2026-03-26T14:44:41.784926"
+    },
+    {
+      "event_id": "standalone_15",
+      "is_event_cluster": false,
+      "headline_count": 1,
+      "representative_title": "US seeks Hamas ‘political surrender’ in new Gaza plan",
+      "sources": [
+        "Al Jazeera (EN)"
+      ],
+      "perspectives": [
+        "Middle East (English)"
+      ],
+      "headlines": [
+        {
+          "source": "Al Jazeera (EN)",
+          "perspective": "Middle East (English)",
+          "original_language": "en",
+          "raw_title": "US seeks Hamas ‘political surrender’ in new Gaza plan",
+          "title": "US seeks Hamas ‘political surrender’ in new Gaza plan",
+          "published_date": "Thu, 26 Mar 2026 08:42:56 +0000",
+          "link": "https://www.aljazeera.com/news/2026/3/26/us-seeks-hamas-political-surrender-in-new-gaza-plan?traffic_source=rss",
+          "fetch_timestamp": "2026-03-26 14:35:14",
+          "tactic_label": "Unverified Claims",
+          "tactic_confidence": 0.9893,
+          "x": 8.674161,
+          "y": -0.29786995
+        }
+      ],
+      "narrative_delta": {
+        "dominant_tactic": "Unverified Claims",
+        "agreement_score": 1.0,
+        "delta_score": 0.0,
+        "severity_score": 0.3,
+        "unique_tactics": [
+          "Unverified Claims"
+        ],
+        "framing_map": {
+          "Middle East (English)": [
+            "Unverified Claims"
+          ]
+        }
+      },
+      "timestamp": "2026-03-26T14:44:41.785195"
+    },
+    {
+      "event_id": "standalone_16",
+      "is_event_cluster": false,
+      "headline_count": 1,
+      "representative_title": "German minister calls Iran war an ‘economic catastrophe’",
+      "sources": [
+        "Al Jazeera (EN)"
+      ],
+      "perspectives": [
+        "Middle East (English)"
+      ],
+      "headlines": [
+        {
+          "source": "Al Jazeera (EN)",
+          "perspective": "Middle East (English)",
+          "original_language": "en",
+          "raw_title": "German minister calls Iran war an ‘economic catastrophe’",
+          "title": "German minister calls Iran war an ‘economic catastrophe’",
+          "published_date": "Thu, 26 Mar 2026 08:21:43 +0000",
+          "link": "https://www.aljazeera.com/video/newsfeed/2026/3/26/german-minister-calls-iran-war-an-economic?traffic_source=rss",
+          "fetch_timestamp": "2026-03-26 14:35:14",
+          "tactic_label": "Alarmism",
+          "tactic_confidence": 0.9992,
+          "x": 7.8305464,
+          "y": -2.7738428
+        }
+      ],
+      "narrative_delta": {
+        "dominant_tactic": "Alarmism",
+        "agreement_score": 1.0,
+        "delta_score": 0.0,
+        "severity_score": 0.75,
+        "unique_tactics": [
+          "Alarmism"
+        ],
+        "framing_map": {
+          "Middle East (English)": [
+            "Alarmism"
+          ]
+        }
+      },
+      "timestamp": "2026-03-26T14:44:41.785523"
+    },
+    {
+      "event_id": "standalone_17",
+      "is_event_cluster": false,
+      "headline_count": 1,
+      "representative_title": "Israeli push for more force ‘not working out very well’",
+      "sources": [
+        "Al Jazeera (EN)"
+      ],
+      "perspectives": [
+        "Middle East (English)"
+      ],
+      "headlines": [
+        {
+          "source": "Al Jazeera (EN)",
+          "perspective": "Middle East (English)",
+          "original_language": "en",
+          "raw_title": "Israeli push for more force ‘not working out very well’",
+          "title": "Israeli push for more force ‘not working out very well’",
+          "published_date": "Thu, 26 Mar 2026 07:59:58 +0000",
+          "link": "https://www.aljazeera.com/video/newsfeed/2026/3/26/israeli-push-for-more-force-not-working-out-very?traffic_source=rss",
+          "fetch_timestamp": "2026-03-26 14:35:14",
+          "tactic_label": "Unverified Claims",
+          "tactic_confidence": 0.9751,
+          "x": 8.4788685,
+          "y": -0.7484053
+        }
+      ],
+      "narrative_delta": {
+        "dominant_tactic": "Unverified Claims",
+        "agreement_score": 1.0,
+        "delta_score": 0.0,
+        "severity_score": 0.3,
+        "unique_tactics": [
+          "Unverified Claims"
+        ],
+        "framing_map": {
+          "Middle East (English)": [
+            "Unverified Claims"
+          ]
+        }
+      },
+      "timestamp": "2026-03-26T14:44:41.785854"
+    },
+    {
+      "event_id": "standalone_18",
+      "is_event_cluster": false,
+      "headline_count": 1,
+      "representative_title": "Two teenagers killed in Shiraz, two dead in Abu Dhabi as Iran war expands",
+      "sources": [
+        "Al Jazeera (EN)"
+      ],
+      "perspectives": [
+        "Middle East (English)"
+      ],
+      "headlines": [
+        {
+          "source": "Al Jazeera (EN)",
+          "perspective": "Middle East (English)",
+          "original_language": "en",
+          "raw_title": "Two teenagers killed in Shiraz, two dead in Abu Dhabi as Iran war expands",
+          "title": "Two teenagers killed in Shiraz, two dead in Abu Dhabi as Iran war expands",
+          "published_date": "Thu, 26 Mar 2026 07:47:23 +0000",
+          "link": "https://www.aljazeera.com/news/2026/3/26/us-israel-launch-extensive-strikes-on-central-iran-two-teenagers-killed?traffic_source=rss",
+          "fetch_timestamp": "2026-03-26 14:35:14",
+          "tactic_label": "Alarmism",
+          "tactic_confidence": 0.981,
+          "x": 9.902429,
+          "y": -2.6208694
+        }
+      ],
+      "narrative_delta": {
+        "dominant_tactic": "Alarmism",
+        "agreement_score": 1.0,
+        "delta_score": 0.0,
+        "severity_score": 0.75,
+        "unique_tactics": [
+          "Alarmism"
+        ],
+        "framing_map": {
+          "Middle East (English)": [
+            "Alarmism"
+          ]
+        }
+      },
+      "timestamp": "2026-03-26T14:44:41.786109"
+    },
+    {
+      "event_id": "standalone_19",
+      "is_event_cluster": false,
+      "headline_count": 1,
+      "representative_title": "US-Israel war on Iran: What’s happening on day 27 of attacks?",
+      "sources": [
+        "Al Jazeera (EN)"
+      ],
+      "perspectives": [
+        "Middle East (English)"
+      ],
+      "headlines": [
+        {
+          "source": "Al Jazeera (EN)",
+          "perspective": "Middle East (English)",
+          "original_language": "en",
+          "raw_title": "US-Israel war on Iran: What’s happening on day 27 of attacks?",
+          "title": "US-Israel war on Iran: What’s happening on day 27 of attacks?",
+          "published_date": "Thu, 26 Mar 2026 06:53:23 +0000",
+          "link": "https://www.aljazeera.com/news/2026/3/26/us-israel-war-on-iran-whats-happening-on-day-27-of-attacks?traffic_source=rss",
+          "fetch_timestamp": "2026-03-26 14:35:14",
+          "tactic_label": "Alarmism",
+          "tactic_confidence": 0.9786,
+          "x": 8.833536,
+          "y": -2.257416
+        }
+      ],
+      "narrative_delta": {
+        "dominant_tactic": "Alarmism",
+        "agreement_score": 1.0,
+        "delta_score": 0.0,
+        "severity_score": 0.75,
+        "unique_tactics": [
+          "Alarmism"
+        ],
+        "framing_map": {
+          "Middle East (English)": [
+            "Alarmism"
+          ]
+        }
+      },
+      "timestamp": "2026-03-26T14:44:41.786401"
+    },
+    {
+      "event_id": "standalone_21",
+      "is_event_cluster": false,
+      "headline_count": 1,
+      "representative_title": "Deaths and debts: Missiles in Gulf shake millions of South Asian families",
+      "sources": [
+        "Al Jazeera (EN)"
+      ],
+      "perspectives": [
+        "Middle East (English)"
+      ],
+      "headlines": [
+        {
+          "source": "Al Jazeera (EN)",
+          "perspective": "Middle East (English)",
+          "original_language": "en",
+          "raw_title": "Deaths and debts: Missiles in Gulf shake millions of South Asian families",
+          "title": "Deaths and debts: Missiles in Gulf shake millions of South Asian families",
+          "published_date": "Thu, 26 Mar 2026 06:26:10 +0000",
+          "link": "https://www.aljazeera.com/features/2026/3/26/deaths-and-debts-missiles-in-gulf-shake-millions-of-south-asian-families?traffic_source=rss",
+          "fetch_timestamp": "2026-03-26 14:35:14",
+          "tactic_label": "Alarmism",
+          "tactic_confidence": 0.9976,
+          "x": 9.494719,
+          "y": -3.224916
+        }
+      ],
+      "narrative_delta": {
+        "dominant_tactic": "Alarmism",
+        "agreement_score": 1.0,
+        "delta_score": 0.0,
+        "severity_score": 0.75,
+        "unique_tactics": [
+          "Alarmism"
+        ],
+        "framing_map": {
+          "Middle East (English)": [
+            "Alarmism"
+          ]
+        }
+      },
+      "timestamp": "2026-03-26T14:44:41.786663"
+    },
+    {
+      "event_id": "standalone_22",
+      "is_event_cluster": false,
+      "headline_count": 1,
+      "representative_title": "Senegal appeal to CAS against handing over of AFCON title to Morocco",
+      "sources": [
+        "Al Jazeera (EN)"
+      ],
+      "perspectives": [
+        "Middle East (English)"
+      ],
+      "headlines": [
+        {
+          "source": "Al Jazeera (EN)",
+          "perspective": "Middle East (English)",
+          "original_language": "en",
+          "raw_title": "Senegal appeal to CAS against handing over of AFCON title to Morocco",
+          "title": "Senegal appeal to CAS against handing over of AFCON title to Morocco",
+          "published_date": "Thu, 26 Mar 2026 06:16:38 +0000",
+          "link": "https://www.aljazeera.com/sports/2026/3/26/senegal-appeal-to-cas-against-handing-over-of-afcon-title-to-morocco?traffic_source=rss",
+          "fetch_timestamp": "2026-03-26 14:35:14",
+          "tactic_label": "Unverified Claims",
+          "tactic_confidence": 0.9674,
+          "x": 9.128179,
+          "y": 0.36367905
+        }
+      ],
+      "narrative_delta": {
+        "dominant_tactic": "Unverified Claims",
+        "agreement_score": 1.0,
+        "delta_score": 0.0,
+        "severity_score": 0.3,
+        "unique_tactics": [
+          "Unverified Claims"
+        ],
+        "framing_map": {
+          "Middle East (English)": [
+            "Unverified Claims"
+          ]
+        }
+      },
+      "timestamp": "2026-03-26T14:44:41.786918"
+    },
+    {
+      "event_id": "standalone_23",
+      "is_event_cluster": false,
+      "headline_count": 1,
+      "representative_title": "NBA owners vote to explore Seattle, Las Vegas expansion bids",
+      "sources": [
+        "Al Jazeera (EN)"
+      ],
+      "perspectives": [
+        "Middle East (English)"
+      ],
+      "headlines": [
+        {
+          "source": "Al Jazeera (EN)",
+          "perspective": "Middle East (English)",
+          "original_language": "en",
+          "raw_title": "NBA owners vote to explore Seattle, Las Vegas expansion bids",
+          "title": "NBA owners vote to explore Seattle, Las Vegas expansion bids",
+          "published_date": "Thu, 26 Mar 2026 06:13:47 +0000",
+          "link": "https://www.aljazeera.com/sports/2026/3/26/nba-owners-vote-to-explore-seattle-las-vegas-expansion-bids?traffic_source=rss",
+          "fetch_timestamp": "2026-03-26 14:35:14",
+          "tactic_label": "Unverified Claims",
+          "tactic_confidence": 0.9063,
+          "x": 8.216652,
+          "y": 0.024725057
+        }
+      ],
+      "narrative_delta": {
+        "dominant_tactic": "Unverified Claims",
+        "agreement_score": 1.0,
+        "delta_score": 0.0,
+        "severity_score": 0.3,
+        "unique_tactics": [
+          "Unverified Claims"
+        ],
+        "framing_map": {
+          "Middle East (English)": [
+            "Unverified Claims"
+          ]
+        }
+      },
+      "timestamp": "2026-03-26T14:44:41.787238"
+    },
+    {
+      "event_id": "standalone_24",
+      "is_event_cluster": false,
+      "headline_count": 1,
+      "representative_title": "Netanyahu boasts about ‘breaking boundaries in every sense of the word’",
+      "sources": [
+        "Al Jazeera (EN)"
+      ],
+      "perspectives": [
+        "Middle East (English)"
+      ],
+      "headlines": [
+        {
+          "source": "Al Jazeera (EN)",
+          "perspective": "Middle East (English)",
+          "original_language": "en",
+          "raw_title": "Netanyahu boasts about ‘breaking boundaries in every sense of the word’",
+          "title": "Netanyahu boasts about ‘breaking boundaries in every sense of the word’",
+          "published_date": "Thu, 26 Mar 2026 05:41:02 +0000",
+          "link": "https://www.aljazeera.com/video/newsfeed/2026/3/26/netanyahu-boasts-about-breaking-boundaries-in-every-sense-of-the-word?traffic_source=rss",
+          "fetch_timestamp": "2026-03-26 14:35:14",
+          "tactic_label": "Unverified Claims",
+          "tactic_confidence": 0.9971,
+          "x": 9.578379,
+          "y": -1.3141838
+        }
+      ],
+      "narrative_delta": {
+        "dominant_tactic": "Unverified Claims",
+        "agreement_score": 1.0,
+        "delta_score": 0.0,
+        "severity_score": 0.3,
+        "unique_tactics": [
+          "Unverified Claims"
+        ],
+        "framing_map": {
+          "Middle East (English)": [
+            "Unverified Claims"
+          ]
+        }
+      },
+      "timestamp": "2026-03-26T14:44:41.787544"
+    },
+    {
+      "event_id": "standalone_25",
+      "is_event_cluster": false,
+      "headline_count": 1,
+      "representative_title": "Oil prices rise higher as Iran denies US talks, dimming deescalation hopes",
+      "sources": [
+        "Al Jazeera (EN)"
+      ],
+      "perspectives": [
+        "Middle East (English)"
+      ],
+      "headlines": [
+        {
+          "source": "Al Jazeera (EN)",
+          "perspective": "Middle East (English)",
+          "original_language": "en",
+          "raw_title": "Oil prices rise higher as Iran denies US talks, dimming deescalation hopes",
+          "title": "Oil prices rise higher as Iran denies US talks, dimming deescalation hopes",
+          "published_date": "Thu, 26 Mar 2026 05:06:02 +0000",
+          "link": "https://www.aljazeera.com/economy/2026/3/26/oil-prices-rise-higher-as-iran-denies-us-talks-dimming-deescalation-hopes?traffic_source=rss",
+          "fetch_timestamp": "2026-03-26 14:35:14",
+          "tactic_label": "Unverified Claims",
+          "tactic_confidence": 0.9784,
+          "x": 7.4325147,
+          "y": -3.2149475
+        }
+      ],
+      "narrative_delta": {
+        "dominant_tactic": "Unverified Claims",
+        "agreement_score": 1.0,
+        "delta_score": 0.0,
+        "severity_score": 0.3,
+        "unique_tactics": [
+          "Unverified Claims"
+        ],
+        "framing_map": {
+          "Middle East (English)": [
+            "Unverified Claims"
+          ]
+        }
+      },
+      "timestamp": "2026-03-26T14:44:41.787857"
+    },
+    {
+      "event_id": "standalone_26",
+      "is_event_cluster": false,
+      "headline_count": 1,
+      "representative_title": "Malaysia’s prime minister says Iran talks should end war",
+      "sources": [
+        "Al Jazeera (EN)"
+      ],
+      "perspectives": [
+        "Middle East (English)"
+      ],
+      "headlines": [
+        {
+          "source": "Al Jazeera (EN)",
+          "perspective": "Middle East (English)",
+          "original_language": "en",
+          "raw_title": "Malaysia’s prime minister says Iran talks should end war",
+          "title": "Malaysia’s prime minister says Iran talks should end war",
+          "published_date": "Thu, 26 Mar 2026 04:36:31 +0000",
+          "link": "https://www.aljazeera.com/video/newsfeed/2026/3/26/malaysias-prime-minister-says-iran-talks-should-end-war?traffic_source=rss",
+          "fetch_timestamp": "2026-03-26 14:35:14",
+          "tactic_label": "Unverified Claims",
+          "tactic_confidence": 0.9863,
+          "x": 6.6177263,
+          "y": -2.2979424
+        }
+      ],
+      "narrative_delta": {
+        "dominant_tactic": "Unverified Claims",
+        "agreement_score": 1.0,
+        "delta_score": 0.0,
+        "severity_score": 0.3,
+        "unique_tactics": [
+          "Unverified Claims"
+        ],
+        "framing_map": {
+          "Middle East (English)": [
+            "Unverified Claims"
+          ]
+        }
+      },
+      "timestamp": "2026-03-26T14:44:41.788156"
+    },
+    {
+      "event_id": "standalone_27",
+      "is_event_cluster": false,
+      "headline_count": 1,
+      "representative_title": "Videos show wave of missiles fired from Lebanon to Israel",
+      "sources": [
+        "Al Jazeera (EN)"
+      ],
+      "perspectives": [
+        "Middle East (English)"
+      ],
+      "headlines": [
+        {
+          "source": "Al Jazeera (EN)",
+          "perspective": "Middle East (English)",
+          "original_language": "en",
+          "raw_title": "Videos show wave of missiles fired from Lebanon to Israel",
+          "title": "Videos show wave of missiles fired from Lebanon to Israel",
+          "published_date": "Thu, 26 Mar 2026 03:54:44 +0000",
+          "link": "https://www.aljazeera.com/video/newsfeed/2026/3/26/videos-show-wave-of-missiles-fired-from-lebanon-to-israel?traffic_source=rss",
+          "fetch_timestamp": "2026-03-26 14:35:14",
+          "tactic_label": "Unverified Claims",
+          "tactic_confidence": 0.9503,
+          "x": 9.415185,
+          "y": -2.6534605
+        }
+      ],
+      "narrative_delta": {
+        "dominant_tactic": "Unverified Claims",
+        "agreement_score": 1.0,
+        "delta_score": 0.0,
+        "severity_score": 0.3,
+        "unique_tactics": [
+          "Unverified Claims"
+        ],
+        "framing_map": {
+          "Middle East (English)": [
+            "Unverified Claims"
+          ]
+        }
+      },
+      "timestamp": "2026-03-26T14:44:41.788463"
+    },
+    {
+      "event_id": "standalone_28",
+      "is_event_cluster": false,
+      "headline_count": 1,
+      "representative_title": "US lawmakers push for pause in data centres until AI safeguards in place",
+      "sources": [
+        "Al Jazeera (EN)"
+      ],
+      "perspectives": [
+        "Middle East (English)"
+      ],
+      "headlines": [
+        {
+          "source": "Al Jazeera (EN)",
+          "perspective": "Middle East (English)",
+          "original_language": "en",
+          "raw_title": "US lawmakers push for pause in data centres until AI safeguards in place",
+          "title": "US lawmakers push for pause in data centres until AI safeguards in place",
+          "published_date": "Thu, 26 Mar 2026 03:39:28 +0000",
+          "link": "https://www.aljazeera.com/economy/2026/3/26/us-lawmakers-push-for-pause-in-data-centres-until-ai-safeguards-in-place?traffic_source=rss",
+          "fetch_timestamp": "2026-03-26 14:35:14",
+          "tactic_label": "Unverified Claims",
+          "tactic_confidence": 0.911,
+          "x": 10.912904,
+          "y": -0.38820505
+        }
+      ],
+      "narrative_delta": {
+        "dominant_tactic": "Unverified Claims",
+        "agreement_score": 1.0,
+        "delta_score": 0.0,
+        "severity_score": 0.3,
+        "unique_tactics": [
+          "Unverified Claims"
+        ],
+        "framing_map": {
+          "Middle East (English)": [
+            "Unverified Claims"
+          ]
+        }
+      },
+      "timestamp": "2026-03-26T14:44:41.788858"
+    },
+    {
+      "event_id": "standalone_29",
+      "is_event_cluster": false,
+      "headline_count": 1,
+      "representative_title": "Russia slams second US-Israeli strike at Iran’s Bushehr nuclear reactor",
+      "sources": [
+        "Al Jazeera (EN)"
+      ],
+      "perspectives": [
+        "Middle East (English)"
+      ],
+      "headlines": [
+        {
+          "source": "Al Jazeera (EN)",
+          "perspective": "Middle East (English)",
+          "original_language": "en",
+          "raw_title": "Russia slams second US-Israeli strike at Iran’s Bushehr nuclear reactor",
+          "title": "Russia slams second US-Israeli strike at Iran’s Bushehr nuclear reactor",
+          "published_date": "Thu, 26 Mar 2026 03:31:36 +0000",
+          "link": "https://www.aljazeera.com/video/newsfeed/2026/3/26/russia-slams-second-us-israeli-strike-at-irans-bushehr-nuclear-reactor?traffic_source=rss",
+          "fetch_timestamp": "2026-03-26 14:35:14",
+          "tactic_label": "Alarmism",
+          "tactic_confidence": 0.9411,
+          "x": 9.357036,
+          "y": -2.1339595
+        }
+      ],
+      "narrative_delta": {
+        "dominant_tactic": "Alarmism",
+        "agreement_score": 1.0,
+        "delta_score": 0.0,
+        "severity_score": 0.75,
+        "unique_tactics": [
+          "Alarmism"
+        ],
+        "framing_map": {
+          "Middle East (English)": [
+            "Alarmism"
+          ]
+        }
+      },
+      "timestamp": "2026-03-26T14:44:41.789139"
+    },
+    {
+      "event_id": "standalone_30",
+      "is_event_cluster": false,
+      "headline_count": 1,
+      "representative_title": "It's not just age...people around you accelerate your aging without you realizing it",
+      "sources": [
+        "Al Jazeera (AR)"
+      ],
+      "perspectives": [
+        "Middle East (Arabic)"
+      ],
+      "headlines": [
+        {
+          "source": "Al Jazeera (AR)",
+          "perspective": "Middle East (Arabic)",
+          "original_language": "ar",
+          "raw_title": "ليس العمر وحده.. أشخاص حولك يسرعون شيخوختك دون أن تشعر",
+          "title": "It's not just age...people around you accelerate your aging without you realizing it",
+          "published_date": "Thu, 26 Mar 2026 08:35:55 +0300",
+          "link": "https://www.aljazeera.net/lifestyle/2026/3/26/%d9%84%d9%8a%d8%b3-%d8%a7%d9%84%d8%b9%d9%85%d8%b1-%d9%88%d8%ad%d8%af%d9%87-%d8%a3%d8%b4%d8%ae%d8%a7%d8%b5-%d8%ad%d9%88%d9%84%d9%83-%d9%8a%d8%b3%d8%b1%d8%b9%d9%88%d9%86?traffic_source=rss",
+          "fetch_timestamp": "2026-03-26 14:35:17",
+          "tactic_label": "Unverified Claims",
+          "tactic_confidence": 0.9491,
+          "x": 12.112181,
+          "y": -0.39797378
+        }
+      ],
+      "narrative_delta": {
+        "dominant_tactic": "Unverified Claims",
+        "agreement_score": 1.0,
+        "delta_score": 0.0,
+        "severity_score": 0.3,
+        "unique_tactics": [
+          "Unverified Claims"
+        ],
+        "framing_map": {
+          "Middle East (Arabic)": [
+            "Unverified Claims"
+          ]
+        }
+      },
+      "timestamp": "2026-03-26T14:44:41.789383"
+    },
+    {
+      "event_id": "standalone_31",
+      "is_event_cluster": false,
+      "headline_count": 1,
+      "representative_title": "Gold declines, oil and the dollar rise amid anticipation of the course of the war",
+      "sources": [
+        "Al Jazeera (AR)"
+      ],
+      "perspectives": [
+        "Middle East (Arabic)"
+      ],
+      "headlines": [
+        {
+          "source": "Al Jazeera (AR)",
+          "perspective": "Middle East (Arabic)",
+          "original_language": "ar",
+          "raw_title": "الذهب يتراجع والنفط والدولار يرتفعان وسط ترقب لمسار الحرب",
+          "title": "Gold declines, oil and the dollar rise amid anticipation of the course of the war",
+          "published_date": "Thu, 26 Mar 2026 08:31:58 +0300",
+          "link": "https://www.aljazeera.net/ebusiness/2026/3/26/gold-dollar-progress-war?traffic_source=rss",
+          "fetch_timestamp": "2026-03-26 14:35:18",
+          "tactic_label": "Alarmism",
+          "tactic_confidence": 0.9981,
+          "x": 7.9230075,
+          "y": -3.4540408
+        }
+      ],
+      "narrative_delta": {
+        "dominant_tactic": "Alarmism",
+        "agreement_score": 1.0,
+        "delta_score": 0.0,
+        "severity_score": 0.75,
+        "unique_tactics": [
+          "Alarmism"
+        ],
+        "framing_map": {
+          "Middle East (Arabic)": [
+            "Alarmism"
+          ]
+        }
+      },
+      "timestamp": "2026-03-26T14:44:41.789676"
+    },
+    {
+      "event_id": "standalone_32",
+      "is_event_cluster": false,
+      "headline_count": 1,
+      "representative_title": "Satellites document the ignition of the largest Russian oil export ports",
+      "sources": [
+        "Al Jazeera (AR)"
+      ],
+      "perspectives": [
+        "Middle East (Arabic)"
+      ],
+      "headlines": [
+        {
+          "source": "Al Jazeera (AR)",
+          "perspective": "Middle East (Arabic)",
+          "original_language": "ar",
+          "raw_title": "الأقمار الصناعية توثق اشتعال أكبر موانئ تصدير النفط الروسي",
+          "title": "Satellites document the ignition of the largest Russian oil export ports",
+          "published_date": "Thu, 26 Mar 2026 08:31:41 +0300",
+          "link": "https://www.aljazeera.net/news/2026/3/26/%d8%a7%d9%84%d8%a3%d9%82%d9%85%d8%a7%d8%b1-%d8%a7%d9%84%d8%b5%d9%86%d8%a7%d8%b9%d9%8a%d8%a9-%d8%aa%d9%88%d8%ab%d9%82-%d8%a7%d8%b4%d8%aa%d8%b9%d8%a7%d9%84-%d8%a3%d9%83%d8%a8%d8%b1?traffic_source=rss",
+          "fetch_timestamp": "2026-03-26 14:35:19",
+          "tactic_label": "Alarmism",
+          "tactic_confidence": 0.9494,
+          "x": 11.754918,
+          "y": -4.5450387
+        }
+      ],
+      "narrative_delta": {
+        "dominant_tactic": "Alarmism",
+        "agreement_score": 1.0,
+        "delta_score": 0.0,
+        "severity_score": 0.75,
+        "unique_tactics": [
+          "Alarmism"
+        ],
+        "framing_map": {
+          "Middle East (Arabic)": [
+            "Alarmism"
+          ]
+        }
+      },
+      "timestamp": "2026-03-26T14:44:41.789931"
+    },
+    {
+      "event_id": "standalone_33",
+      "is_event_cluster": false,
+      "headline_count": 1,
+      "representative_title": "Urgent| Israeli Channel 14: The Revolutionary Guards naval commander was eliminated",
+      "sources": [
+        "Al Jazeera (AR)"
+      ],
+      "perspectives": [
+        "Middle East (Arabic)"
+      ],
+      "headlines": [
+        {
+          "source": "Al Jazeera (AR)",
+          "perspective": "Middle East (Arabic)",
+          "original_language": "ar",
+          "raw_title": "عاجل| القناة 14 الإسرائيلية: القضاء على قائد البحرية التابعة للحرس الثوري",
+          "title": "Urgent| Israeli Channel 14: The Revolutionary Guards naval commander was eliminated",
+          "published_date": "Thu, 26 Mar 2026 08:20:04 +0300",
+          "link": "https://www.aljazeera.net/news/2026/3/26/%d8%b9%d8%a7%d8%ac%d9%84-%d8%a7%d9%84%d9%82%d9%86%d8%a7%d8%a9-14-%d8%a7%d9%84%d8%a5%d8%b3%d8%b1%d8%a7%d8%a6%d9%8a%d9%84%d9%8a%d8%a9-%d8%a7%d9%84%d9%82%d8%b6%d8%a7%d8%a1-%d8%b9%d9%84%d9%89?traffic_source=rss",
+          "fetch_timestamp": "2026-03-26 14:35:20",
+          "tactic_label": "Alarmism",
+          "tactic_confidence": 0.9985,
+          "x": 8.811957,
+          "y": -1.3156446
+        }
+      ],
+      "narrative_delta": {
+        "dominant_tactic": "Alarmism",
+        "agreement_score": 1.0,
+        "delta_score": 0.0,
+        "severity_score": 0.75,
+        "unique_tactics": [
+          "Alarmism"
+        ],
+        "framing_map": {
+          "Middle East (Arabic)": [
+            "Alarmism"
+          ]
+        }
+      },
+      "timestamp": "2026-03-26T14:44:41.790160"
+    },
+    {
+      "event_id": "standalone_34",
+      "is_event_cluster": false,
+      "headline_count": 1,
+      "representative_title": "How did the Iran war affect global air freight prices?",
+      "sources": [
+        "Al Jazeera (AR)"
+      ],
+      "perspectives": [
+        "Middle East (Arabic)"
+      ],
+      "headlines": [
+        {
+          "source": "Al Jazeera (AR)",
+          "perspective": "Middle East (Arabic)",
+          "original_language": "ar",
+          "raw_title": "كيف أثرت حرب إيران على أسعار الشحن الجوي العالمي؟",
+          "title": "How did the Iran war affect global air freight prices?",
+          "published_date": "Thu, 26 Mar 2026 08:01:13 +0300",
+          "link": "https://www.aljazeera.net/ebusiness/2026/3/26/%d9%83%d9%8a%d9%81-%d8%a3%d8%ab%d8%b1%d8%aa-%d8%ad%d8%b1%d8%a8-%d8%a5%d9%8a%d8%b1%d8%a7%d9%86-%d8%b9%d9%84%d9%89-%d8%a3%d8%b3%d8%b9%d8%a7%d8%b1-%d8%a7%d9%84%d8%b4%d8%ad%d9%86?traffic_source=rss",
+          "fetch_timestamp": "2026-03-26 14:35:21",
+          "tactic_label": "Unverified Claims",
+          "tactic_confidence": 0.9253,
+          "x": 8.153112,
+          "y": -3.2348237
+        }
+      ],
+      "narrative_delta": {
+        "dominant_tactic": "Unverified Claims",
+        "agreement_score": 1.0,
+        "delta_score": 0.0,
+        "severity_score": 0.3,
+        "unique_tactics": [
+          "Unverified Claims"
+        ],
+        "framing_map": {
+          "Middle East (Arabic)": [
+            "Unverified Claims"
+          ]
+        }
+      },
+      "timestamp": "2026-03-26T14:44:41.790397"
+    },
+    {
+      "event_id": "standalone_35",
+      "is_event_cluster": false,
+      "headline_count": 1,
+      "representative_title": "Cluster missiles strike Israel, causing casualties and attacks deep inside Iran",
+      "sources": [
+        "Al Jazeera (AR)"
+      ],
+      "perspectives": [
+        "Middle East (Arabic)"
+      ],
+      "headlines": [
+        {
+          "source": "Al Jazeera (AR)",
+          "perspective": "Middle East (Arabic)",
+          "original_language": "ar",
+          "raw_title": "صواريخ عنقودية تضرب إسرائيل وتخلف إصابات وهجمات في العمق الإيراني",
+          "title": "Cluster missiles strike Israel, causing casualties and attacks deep inside Iran",
+          "published_date": "Thu, 26 Mar 2026 07:41:39 +0300",
+          "link": "https://www.aljazeera.net/news/2026/3/26/%d8%b5%d9%88%d8%a7%d8%b1%d9%8a%d8%ae-%d8%b9%d9%86%d9%82%d9%88%d8%af%d9%8a%d8%a9-%d8%aa%d8%b6%d8%b1%d8%a8-%d8%a5%d8%b3%d8%b1%d8%a7%d8%a6%d9%8a%d9%84-%d9%88%d8%aa%d8%ae%d9%84%d9%81?traffic_source=rss",
+          "fetch_timestamp": "2026-03-26 14:35:22",
+          "tactic_label": "Disinformation / Fabrication",
+          "tactic_confidence": 0.98,
+          "x": 8.851367,
+          "y": -2.746791
+        }
+      ],
+      "narrative_delta": {
+        "dominant_tactic": "Disinformation / Fabrication",
+        "agreement_score": 1.0,
+        "delta_score": 0.0,
+        "severity_score": 1.0,
+        "unique_tactics": [
+          "Disinformation / Fabrication"
+        ],
+        "framing_map": {
+          "Middle East (Arabic)": [
+            "Disinformation / Fabrication"
+          ]
+        }
+      },
+      "timestamp": "2026-03-26T14:44:41.790672"
+    },
+    {
+      "event_id": "standalone_36",
+      "is_event_cluster": false,
+      "headline_count": 1,
+      "representative_title": "Design your home yourself.. Artificial intelligence is storming the world of decoration",
+      "sources": [
+        "Al Jazeera (AR)"
+      ],
+      "perspectives": [
+        "Middle East (Arabic)"
+      ],
+      "headlines": [
+        {
+          "source": "Al Jazeera (AR)",
+          "perspective": "Middle East (Arabic)",
+          "original_language": "ar",
+          "raw_title": "صمم منزلك بنفسك.. الذكاء الاصطناعي يقتحم عالم الديكور",
+          "title": "Design your home yourself.. Artificial intelligence is storming the world of decoration",
+          "published_date": "Thu, 26 Mar 2026 07:28:59 +0300",
+          "link": "https://www.aljazeera.net/lifestyle/2026/3/26/%d8%b5%d9%85%d9%85-%d9%85%d9%86%d8%b2%d9%84%d9%83-%d8%a8%d9%86%d9%81%d8%b3%d9%83-%d8%a7%d9%84%d8%b0%d9%83%d8%a7%d8%a1-%d8%a7%d9%84%d8%a7%d8%b5%d8%b7%d9%86%d8%a7%d8%b9%d9%8a?traffic_source=rss",
+          "fetch_timestamp": "2026-03-26 14:35:24",
+          "tactic_label": "Unverified Claims",
+          "tactic_confidence": 0.8999,
+          "x": 11.356964,
+          "y": -0.309356
+        }
+      ],
+      "narrative_delta": {
+        "dominant_tactic": "Unverified Claims",
+        "agreement_score": 1.0,
+        "delta_score": 0.0,
+        "severity_score": 0.3,
+        "unique_tactics": [
+          "Unverified Claims"
+        ],
+        "framing_map": {
+          "Middle East (Arabic)": [
+            "Unverified Claims"
+          ]
+        }
+      },
+      "timestamp": "2026-03-26T14:44:41.790918"
+    },
+    {
+      "event_id": "standalone_38",
+      "is_event_cluster": false,
+      "headline_count": 1,
+      "representative_title": "24 people, most of them women and children, were killed after a bus fell into a river in Bangladesh",
+      "sources": [
+        "Al Jazeera (AR)"
+      ],
+      "perspectives": [
+        "Middle East (Arabic)"
+      ],
+      "headlines": [
+        {
+          "source": "Al Jazeera (AR)",
+          "perspective": "Middle East (Arabic)",
+          "original_language": "ar",
+          "raw_title": "مصرع 24 معظمهم نساء وأطفال إثر سقوط حافلة بنهر في بنغلاديش",
+          "title": "24 people, most of them women and children, were killed after a bus fell into a river in Bangladesh",
+          "published_date": "Thu, 26 Mar 2026 07:27:19 +0300",
+          "link": "https://www.aljazeera.net/news/2026/3/26/%d9%85%d8%b5%d8%b1%d8%b9-24-%d9%85%d8%b9%d8%b8%d9%85%d9%87%d9%85-%d9%86%d8%b3%d8%a7%d8%a1-%d9%88%d8%a3%d8%b7%d9%81%d8%a7%d9%84-%d8%a5%d8%ab%d8%b1-%d8%b3%d9%82%d9%88%d8%b7?traffic_source=rss",
+          "fetch_timestamp": "2026-03-26 14:35:27",
+          "tactic_label": "Unverified Claims",
+          "tactic_confidence": 0.9422,
+          "x": 10.839147,
+          "y": -2.6726925
+        }
+      ],
+      "narrative_delta": {
+        "dominant_tactic": "Unverified Claims",
+        "agreement_score": 1.0,
+        "delta_score": 0.0,
+        "severity_score": 0.3,
+        "unique_tactics": [
+          "Unverified Claims"
+        ],
+        "framing_map": {
+          "Middle East (Arabic)": [
+            "Unverified Claims"
+          ]
+        }
+      },
+      "timestamp": "2026-03-26T14:44:41.791146"
+    },
+    {
+      "event_id": "standalone_39",
+      "is_event_cluster": false,
+      "headline_count": 1,
+      "representative_title": "After declaring a state of emergency... Will Russian oil save the Philippines?",
+      "sources": [
+        "Al Jazeera (AR)"
+      ],
+      "perspectives": [
+        "Middle East (Arabic)"
+      ],
+      "headlines": [
+        {
+          "source": "Al Jazeera (AR)",
+          "perspective": "Middle East (Arabic)",
+          "original_language": "ar",
+          "raw_title": "بعد إعلان حالة الطوارئ.. هل ينقذ النفط الروسي الفلبين؟",
+          "title": "After declaring a state of emergency... Will Russian oil save the Philippines?",
+          "published_date": "Thu, 26 Mar 2026 07:26:57 +0300",
+          "link": "https://www.aljazeera.net/news/2026/3/26/%d8%a8%d8%b9%d8%af-%d8%a5%d8%b9%d9%84%d8%a7%d9%86-%d8%ad%d8%a7%d9%84%d8%a9-%d8%a7%d9%84%d8%b7%d9%88%d8%a7%d8%b1%d8%a6-%d9%87%d9%84-%d9%8a%d9%86%d9%82%d8%b0-%d8%a7%d9%84%d9%86%d9%81%d8%b7?traffic_source=rss",
+          "fetch_timestamp": "2026-03-26 14:35:29",
+          "tactic_label": "Alarmism",
+          "tactic_confidence": 0.9991,
+          "x": 9.789113,
+          "y": -4.346528
+        }
+      ],
+      "narrative_delta": {
+        "dominant_tactic": "Alarmism",
+        "agreement_score": 1.0,
+        "delta_score": 0.0,
+        "severity_score": 0.75,
+        "unique_tactics": [
+          "Alarmism"
+        ],
+        "framing_map": {
+          "Middle East (Arabic)": [
+            "Alarmism"
+          ]
+        }
+      },
+      "timestamp": "2026-03-26T14:44:41.791379"
+    },
+    {
+      "event_id": "standalone_40",
+      "is_event_cluster": false,
+      "headline_count": 1,
+      "representative_title": "Color blindness increases the mortality rate from bladder cancer.. What is the relationship?",
+      "sources": [
+        "Al Jazeera (AR)"
+      ],
+      "perspectives": [
+        "Middle East (Arabic)"
+      ],
+      "headlines": [
+        {
+          "source": "Al Jazeera (AR)",
+          "perspective": "Middle East (Arabic)",
+          "original_language": "ar",
+          "raw_title": "عمى الألوان يرفع معدل الوفيات بسرطان المثانة.. ما العلاقة؟",
+          "title": "Color blindness increases the mortality rate from bladder cancer.. What is the relationship?",
+          "published_date": "Thu, 26 Mar 2026 07:20:00 +0300",
+          "link": "https://www.aljazeera.net/health/2026/3/26/%d8%b9%d9%85%d9%89-%d8%a7%d9%84%d8%a3%d9%84%d9%88%d8%a7%d9%86-%d9%8a%d8%b1%d9%81%d8%b9-%d9%85%d8%b9%d8%af%d9%84-%d8%a7%d9%84%d9%88%d9%81%d9%8a%d8%a7%d8%aa-%d8%a8%d8%b3%d8%b1%d8%b7%d8%a7%d9%86?traffic_source=rss",
+          "fetch_timestamp": "2026-03-26 14:35:30",
+          "tactic_label": "Unverified Claims",
+          "tactic_confidence": 0.9697,
+          "x": 12.406527,
+          "y": -0.6485592
+        }
+      ],
+      "narrative_delta": {
+        "dominant_tactic": "Unverified Claims",
+        "agreement_score": 1.0,
+        "delta_score": 0.0,
+        "severity_score": 0.3,
+        "unique_tactics": [
+          "Unverified Claims"
+        ],
+        "framing_map": {
+          "Middle East (Arabic)": [
+            "Unverified Claims"
+          ]
+        }
+      },
+      "timestamp": "2026-03-26T14:44:41.791655"
+    },
+    {
+      "event_id": "standalone_41",
+      "is_event_cluster": false,
+      "headline_count": 1,
+      "representative_title": "A climate surprise in the Arabian Peninsula.. Will a thunderstorm cause floods?",
+      "sources": [
+        "Al Jazeera (AR)"
+      ],
+      "perspectives": [
+        "Middle East (Arabic)"
+      ],
+      "headlines": [
+        {
+          "source": "Al Jazeera (AR)",
+          "perspective": "Middle East (Arabic)",
+          "original_language": "ar",
+          "raw_title": "مفاجأة مناخية في الجزيرة العربية.. هل تتسبب العاصفة الرعدية في فيضانات؟",
+          "title": "A climate surprise in the Arabian Peninsula.. Will a thunderstorm cause floods?",
+          "published_date": "Thu, 26 Mar 2026 07:17:17 +0300",
+          "link": "https://www.aljazeera.net/science/2026/3/26/%d9%85%d9%81%d8%a7%d8%ac%d8%a3%d8%a9-%d9%85%d9%86%d8%a7%d8%ae%d9%8a%d8%a9-%d9%81%d9%8a-%d8%a7%d9%84%d8%ac%d8%b2%d9%8a%d8%b1%d8%a9-%d8%a7%d9%84%d8%b9%d8%b1%d8%a8%d9%8a%d8%a9-%d9%87%d9%84?traffic_source=rss",
+          "fetch_timestamp": "2026-03-26 14:35:32",
+          "tactic_label": "Unverified Claims",
+          "tactic_confidence": 0.9906,
+          "x": 9.53006,
+          "y": -3.8572915
+        }
+      ],
+      "narrative_delta": {
+        "dominant_tactic": "Unverified Claims",
+        "agreement_score": 1.0,
+        "delta_score": 0.0,
+        "severity_score": 0.3,
+        "unique_tactics": [
+          "Unverified Claims"
+        ],
+        "framing_map": {
+          "Middle East (Arabic)": [
+            "Unverified Claims"
+          ]
+        }
+      },
+      "timestamp": "2026-03-26T14:44:41.791884"
+    },
+    {
+      "event_id": "standalone_42",
+      "is_event_cluster": false,
+      "headline_count": 1,
+      "representative_title": "An Israeli newspaper reveals the secret of not assassinating Pezeshkian and Araghchi",
+      "sources": [
+        "Al Jazeera (AR)"
+      ],
+      "perspectives": [
+        "Middle East (Arabic)"
+      ],
+      "headlines": [
+        {
+          "source": "Al Jazeera (AR)",
+          "perspective": "Middle East (Arabic)",
+          "original_language": "ar",
+          "raw_title": "صحيفة إسرائيلية تكشف سر عدم اغتيال بزشكيان وعراقجي",
+          "title": "An Israeli newspaper reveals the secret of not assassinating Pezeshkian and Araghchi",
+          "published_date": "Thu, 26 Mar 2026 07:13:52 +0300",
+          "link": "https://www.aljazeera.net/politics/2026/3/26/%d8%a8%d8%b2%d8%b4%d9%83%d9%8a%d8%a7%d9%86-%d8%b9%d8%b1%d8%a7%d9%82%d8%ac%d9%8a-%d8%a7%d8%ba%d8%aa%d9%8a%d8%a7%d9%84-%d8%b3%d8%a8%d8%a8-%d8%b9%d8%af%d9%85?traffic_source=rss",
+          "fetch_timestamp": "2026-03-26 14:35:34",
+          "tactic_label": "Unverified Claims",
+          "tactic_confidence": 0.9749,
+          "x": 8.866483,
+          "y": -1.5919995
+        }
+      ],
+      "narrative_delta": {
+        "dominant_tactic": "Unverified Claims",
+        "agreement_score": 1.0,
+        "delta_score": 0.0,
+        "severity_score": 0.3,
+        "unique_tactics": [
+          "Unverified Claims"
+        ],
+        "framing_map": {
+          "Middle East (Arabic)": [
+            "Unverified Claims"
+          ]
+        }
+      },
+      "timestamp": "2026-03-26T14:44:41.792110"
+    },
+    {
+      "event_id": "standalone_43",
+      "is_event_cluster": false,
+      "headline_count": 1,
+      "representative_title": "Deaths and injuries in mutual attacks between Moscow and Kiev, and NATO is moving to accelerate weapons production",
+      "sources": [
+        "Al Jazeera (AR)"
+      ],
+      "perspectives": [
+        "Middle East (Arabic)"
+      ],
+      "headlines": [
+        {
+          "source": "Al Jazeera (AR)",
+          "perspective": "Middle East (Arabic)",
+          "original_language": "ar",
+          "raw_title": "قتلى وجرحى بهجمات متبادلة بين موسكو وكييف والناتو يتجه لتسريع إنتاج الأسلحة",
+          "title": "Deaths and injuries in mutual attacks between Moscow and Kiev, and NATO is moving to accelerate weapons production",
+          "published_date": "Thu, 26 Mar 2026 07:05:20 +0300",
+          "link": "https://www.aljazeera.net/news/2026/3/26/13-%d9%82%d8%aa%d9%8a%d9%84%d8%a7-%d9%88%d8%ac%d8%b1%d9%8a%d8%ad%d8%a7-%d9%81%d9%8a-%d9%87%d8%ac%d9%85%d8%a7%d8%aa-%d8%a8%d9%8a%d9%86-%d8%b1%d9%88%d8%b3%d9%8a%d8%a7?traffic_source=rss",
+          "fetch_timestamp": "2026-03-26 14:35:36",
+          "tactic_label": "Alarmism",
+          "tactic_confidence": 0.9911,
+          "x": 11.883303,
+          "y": -3.1477613
+        }
+      ],
+      "narrative_delta": {
+        "dominant_tactic": "Alarmism",
+        "agreement_score": 1.0,
+        "delta_score": 0.0,
+        "severity_score": 0.75,
+        "unique_tactics": [
+          "Alarmism"
+        ],
+        "framing_map": {
+          "Middle East (Arabic)": [
+            "Alarmism"
+          ]
+        }
+      },
+      "timestamp": "2026-03-26T14:44:41.792342"
+    },
+    {
+      "event_id": "standalone_44",
+      "is_event_cluster": false,
+      "headline_count": 1,
+      "representative_title": "Deaths and injuries in renewed clashes between Pakistan and Afghanistan",
+      "sources": [
+        "Al Jazeera (AR)"
+      ],
+      "perspectives": [
+        "Middle East (Arabic)"
+      ],
+      "headlines": [
+        {
+          "source": "Al Jazeera (AR)",
+          "perspective": "Middle East (Arabic)",
+          "original_language": "ar",
+          "raw_title": "قتلى وجرحى في تجدد الاشتباكات بين باكستان وأفغانستان",
+          "title": "Deaths and injuries in renewed clashes between Pakistan and Afghanistan",
+          "published_date": "Thu, 26 Mar 2026 07:05:16 +0300",
+          "link": "https://www.aljazeera.net/news/2026/3/26/%d8%aa%d8%ac%d8%af%d8%af-%d8%a7%d9%84%d9%85%d9%88%d8%a7%d8%ac%d9%87%d8%a7%d8%aa-%d8%a8%d9%8a%d9%86-%d8%a8%d8%a7%d9%83%d8%b3%d8%aa%d8%a7%d9%86?traffic_source=rss",
+          "fetch_timestamp": "2026-03-26 14:35:37",
+          "tactic_label": "Alarmism",
+          "tactic_confidence": 0.9674,
+          "x": 11.449658,
+          "y": -2.8688114
+        }
+      ],
+      "narrative_delta": {
+        "dominant_tactic": "Alarmism",
+        "agreement_score": 1.0,
+        "delta_score": 0.0,
+        "severity_score": 0.75,
+        "unique_tactics": [
+          "Alarmism"
+        ],
+        "framing_map": {
+          "Middle East (Arabic)": [
+            "Alarmism"
+          ]
+        }
+      },
+      "timestamp": "2026-03-26T14:44:41.792610"
+    },
+    {
+      "event_id": "standalone_46",
+      "is_event_cluster": false,
+      "headline_count": 1,
+      "representative_title": "The cat almost gouged out the eye of a 19-year-old owner",
+      "sources": [
+        "Lenta (RU)"
+      ],
+      "perspectives": [
+        "Russia"
+      ],
+      "headlines": [
+        {
+          "source": "Lenta (RU)",
+          "perspective": "Russia",
+          "original_language": "ru",
+          "raw_title": "Кот чуть не выколол глаз 19-летней хозяйке",
+          "title": "The cat almost gouged out the eye of a 19-year-old owner",
+          "published_date": "Thu, 26 Mar 2026 11:53:00 +0300",
+          "link": "https://lenta.ru/news/2026/03/26/kot-chut-ne-vykolol-glaz-19-letney-hozyayke/",
+          "fetch_timestamp": "2026-03-26 14:35:43",
+          "tactic_label": "Unverified Claims",
+          "tactic_confidence": 0.9547,
+          "x": 12.284641,
+          "y": -1.3579463
+        }
+      ],
+      "narrative_delta": {
+        "dominant_tactic": "Unverified Claims",
+        "agreement_score": 1.0,
+        "delta_score": 0.0,
+        "severity_score": 0.3,
+        "unique_tactics": [
+          "Unverified Claims"
+        ],
+        "framing_map": {
+          "Russia": [
+            "Unverified Claims"
+          ]
+        }
+      },
+      "timestamp": "2026-03-26T14:44:41.792843"
+    },
+    {
+      "event_id": "standalone_47",
+      "is_event_cluster": false,
+      "headline_count": 1,
+      "representative_title": "Plushenko named the main weakness of Russian figure skaters",
+      "sources": [
+        "Lenta (RU)"
+      ],
+      "perspectives": [
+        "Russia"
+      ],
+      "headlines": [
+        {
+          "source": "Lenta (RU)",
+          "perspective": "Russia",
+          "original_language": "ru",
+          "raw_title": "Плющенко назвал главную слабость российских фигуристов",
+          "title": "Plushenko named the main weakness of Russian figure skaters",
+          "published_date": "Thu, 26 Mar 2026 11:53:00 +0300",
+          "link": "https://lenta.ru/news/2026/03/26/plyuschenko-nazval-glavnuyu-slabost-rossiyskih-figuristov/",
+          "fetch_timestamp": "2026-03-26 14:35:47",
+          "tactic_label": "Unverified Claims",
+          "tactic_confidence": 0.984,
+          "x": 12.568696,
+          "y": -3.2524502
+        }
+      ],
+      "narrative_delta": {
+        "dominant_tactic": "Unverified Claims",
+        "agreement_score": 1.0,
+        "delta_score": 0.0,
+        "severity_score": 0.3,
+        "unique_tactics": [
+          "Unverified Claims"
+        ],
+        "framing_map": {
+          "Russia": [
+            "Unverified Claims"
+          ]
+        }
+      },
+      "timestamp": "2026-03-26T14:44:41.793084"
+    },
+    {
+      "event_id": "standalone_48",
+      "is_event_cluster": false,
+      "headline_count": 1,
+      "representative_title": "Zelensky announced a decision on the withdrawal of troops from Donbass",
+      "sources": [
+        "Lenta (RU)"
+      ],
+      "perspectives": [
+        "Russia"
+      ],
+      "headlines": [
+        {
+          "source": "Lenta (RU)",
+          "perspective": "Russia",
+          "original_language": "ru",
+          "raw_title": "Зеленский объявил о решении по вопросу вывода войск из Донбасса",
+          "title": "Zelensky announced a decision on the withdrawal of troops from Donbass",
+          "published_date": "Thu, 26 Mar 2026 11:51:00 +0300",
+          "link": "https://lenta.ru/news/2026/03/26/zelenskiy-ob-yavil-o-reshenii-po-voprosu-vyvoda-voysk-iz-donbassa/",
+          "fetch_timestamp": "2026-03-26 14:35:48",
+          "tactic_label": "Unverified Claims",
+          "tactic_confidence": 0.9502,
+          "x": 10.2545805,
+          "y": -1.7043926
+        }
+      ],
+      "narrative_delta": {
+        "dominant_tactic": "Unverified Claims",
+        "agreement_score": 1.0,
+        "delta_score": 0.0,
+        "severity_score": 0.3,
+        "unique_tactics": [
+          "Unverified Claims"
+        ],
+        "framing_map": {
+          "Russia": [
+            "Unverified Claims"
+          ]
+        }
+      },
+      "timestamp": "2026-03-26T14:44:41.793323"
+    },
+    {
+      "event_id": "standalone_49",
+      "is_event_cluster": false,
+      "headline_count": 1,
+      "representative_title": "The pilot of a helicopter that crashed on a house in the Russian region did not know how to control it",
+      "sources": [
+        "Lenta (RU)"
+      ],
+      "perspectives": [
+        "Russia"
+      ],
+      "headlines": [
+        {
+          "source": "Lenta (RU)",
+          "perspective": "Russia",
+          "original_language": "ru",
+          "raw_title": "Пилот упавшего на дом в российском регионе вертолета не умел им управлять",
+          "title": "The pilot of a helicopter that crashed on a house in the Russian region did not know how to control it",
+          "published_date": "Thu, 26 Mar 2026 11:51:00 +0300",
+          "link": "https://lenta.ru/news/2026/03/26/pilot-upavshego-na-dom-v-rossiyskom-regione-vertoleta-ne-umel-im-upravlyat/",
+          "fetch_timestamp": "2026-03-26 14:35:50",
+          "tactic_label": "Unverified Claims",
+          "tactic_confidence": 0.9318,
+          "x": 10.808084,
+          "y": -3.4209623
+        }
+      ],
+      "narrative_delta": {
+        "dominant_tactic": "Unverified Claims",
+        "agreement_score": 1.0,
+        "delta_score": 0.0,
+        "severity_score": 0.3,
+        "unique_tactics": [
+          "Unverified Claims"
+        ],
+        "framing_map": {
+          "Russia": [
+            "Unverified Claims"
+          ]
+        }
+      },
+      "timestamp": "2026-03-26T14:44:41.793549"
+    },
+    {
+      "event_id": "standalone_50",
+      "is_event_cluster": false,
+      "headline_count": 1,
+      "representative_title": "Zelensky spoke about his relationship with Trump",
+      "sources": [
+        "Lenta (RU)"
+      ],
+      "perspectives": [
+        "Russia"
+      ],
+      "headlines": [
+        {
+          "source": "Lenta (RU)",
+          "perspective": "Russia",
+          "original_language": "ru",
+          "raw_title": "Зеленский рассказал о своих отношениях с Трампом",
+          "title": "Zelensky spoke about his relationship with Trump",
+          "published_date": "Thu, 26 Mar 2026 11:50:00 +0300",
+          "link": "https://lenta.ru/news/2026/03/26/zelenskiy-rasskazal-o-svoih-otnosheniyah-s-trampom/",
+          "fetch_timestamp": "2026-03-26 14:35:51",
+          "tactic_label": "Unverified Claims",
+          "tactic_confidence": 0.9668,
+          "x": 10.210358,
+          "y": -1.4680059
+        }
+      ],
+      "narrative_delta": {
+        "dominant_tactic": "Unverified Claims",
+        "agreement_score": 1.0,
+        "delta_score": 0.0,
+        "severity_score": 0.3,
+        "unique_tactics": [
+          "Unverified Claims"
+        ],
+        "framing_map": {
+          "Russia": [
+            "Unverified Claims"
+          ]
+        }
+      },
+      "timestamp": "2026-03-26T14:44:41.793826"
+    },
+    {
+      "event_id": "standalone_52",
+      "is_event_cluster": false,
+      "headline_count": 1,
+      "representative_title": "In Ukraine, they announced the approaching financial catastrophe",
+      "sources": [
+        "Lenta (RU)"
+      ],
+      "perspectives": [
+        "Russia"
+      ],
+      "headlines": [
+        {
+          "source": "Lenta (RU)",
+          "perspective": "Russia",
+          "original_language": "ru",
+          "raw_title": "На Украине заявили о приближении финансовой катастрофы",
+          "title": "In Ukraine, they announced the approaching financial catastrophe",
+          "published_date": "Thu, 26 Mar 2026 11:49:00 +0300",
+          "link": "https://lenta.ru/news/2026/03/26/na-ukraine-zayavili-o-priblizhenii-finansovoy-katastrofy/",
+          "fetch_timestamp": "2026-03-26 14:35:54",
+          "tactic_label": "Alarmism",
+          "tactic_confidence": 0.9994,
+          "x": 11.935965,
+          "y": -3.7192664
+        }
+      ],
+      "narrative_delta": {
+        "dominant_tactic": "Alarmism",
+        "agreement_score": 1.0,
+        "delta_score": 0.0,
+        "severity_score": 0.75,
+        "unique_tactics": [
+          "Alarmism"
+        ],
+        "framing_map": {
+          "Russia": [
+            "Alarmism"
+          ]
+        }
+      },
+      "timestamp": "2026-03-26T14:44:41.794047"
+    },
+    {
+      "event_id": "standalone_53",
+      "is_event_cluster": false,
+      "headline_count": 1,
+      "representative_title": "A SVO fighter spoke about the fight against Ukrainian drones using ropes and nuts",
+      "sources": [
+        "Lenta (RU)"
+      ],
+      "perspectives": [
+        "Russia"
+      ],
+      "headlines": [
+        {
+          "source": "Lenta (RU)",
+          "perspective": "Russia",
+          "original_language": "ru",
+          "raw_title": "Боец СВО рассказал о борьбе с украинскими дронами с помощью веревок с гайками",
+          "title": "A SVO fighter spoke about the fight against Ukrainian drones using ropes and nuts",
+          "published_date": "Thu, 26 Mar 2026 11:45:00 +0300",
+          "link": "https://lenta.ru/news/2026/03/26/boets-svo-rasskazal-o-borbe-s-ukrainskimi-dronami-s-pomoschyu-verevok-s-gaykami/",
+          "fetch_timestamp": "2026-03-26 14:35:55",
+          "tactic_label": "Unverified Claims",
+          "tactic_confidence": 0.9876,
+          "x": 10.667499,
+          "y": -3.9357398
+        }
+      ],
+      "narrative_delta": {
+        "dominant_tactic": "Unverified Claims",
+        "agreement_score": 1.0,
+        "delta_score": 0.0,
+        "severity_score": 0.3,
+        "unique_tactics": [
+          "Unverified Claims"
+        ],
+        "framing_map": {
+          "Russia": [
+            "Unverified Claims"
+          ]
+        }
+      },
+      "timestamp": "2026-03-26T14:44:41.794270"
+    },
+    {
+      "event_id": "standalone_54",
+      "is_event_cluster": false,
+      "headline_count": 1,
+      "representative_title": "Russia's losses in oil exports from Ukraine's actions are named",
+      "sources": [
+        "Lenta (RU)"
+      ],
+      "perspectives": [
+        "Russia"
+      ],
+      "headlines": [
+        {
+          "source": "Lenta (RU)",
+          "perspective": "Russia",
+          "original_language": "ru",
+          "raw_title": "Названы потери России в экспорте нефти от действий Украины",
+          "title": "Russia's losses in oil exports from Ukraine's actions are named",
+          "published_date": "Thu, 26 Mar 2026 11:45:00 +0300",
+          "link": "https://lenta.ru/news/2026/03/26/mnogovato/",
+          "fetch_timestamp": "2026-03-26 14:35:56",
+          "tactic_label": "Alarmism",
+          "tactic_confidence": 0.9367,
+          "x": 12.176232,
+          "y": -4.073394
+        }
+      ],
+      "narrative_delta": {
+        "dominant_tactic": "Alarmism",
+        "agreement_score": 1.0,
+        "delta_score": 0.0,
+        "severity_score": 0.75,
+        "unique_tactics": [
+          "Alarmism"
+        ],
+        "framing_map": {
+          "Russia": [
+            "Alarmism"
+          ]
+        }
+      },
+      "timestamp": "2026-03-26T14:44:41.794499"
+    },
+    {
+      "event_id": "standalone_55",
+      "is_event_cluster": false,
+      "headline_count": 1,
+      "representative_title": "Kirkorov spoke about the addiction of his 13-year-old son",
+      "sources": [
+        "Lenta (RU)"
+      ],
+      "perspectives": [
+        "Russia"
+      ],
+      "headlines": [
+        {
+          "source": "Lenta (RU)",
+          "perspective": "Russia",
+          "original_language": "ru",
+          "raw_title": "Киркоров рассказал о зависимости 13-летнего сына",
+          "title": "Kirkorov spoke about the addiction of his 13-year-old son",
+          "published_date": "Thu, 26 Mar 2026 11:45:00 +0300",
+          "link": "https://lenta.ru/news/2026/03/26/kirkorov-rasskazal-o-zavisimosti-13-letnego-syna/",
+          "fetch_timestamp": "2026-03-26 14:35:58",
+          "tactic_label": "Unverified Claims",
+          "tactic_confidence": 0.979,
+          "x": 11.898375,
+          "y": -1.4802566
+        }
+      ],
+      "narrative_delta": {
+        "dominant_tactic": "Unverified Claims",
+        "agreement_score": 1.0,
+        "delta_score": 0.0,
+        "severity_score": 0.3,
+        "unique_tactics": [
+          "Unverified Claims"
+        ],
+        "framing_map": {
+          "Russia": [
+            "Unverified Claims"
+          ]
+        }
+      },
+      "timestamp": "2026-03-26T14:44:41.794771"
+    },
+    {
+      "event_id": "standalone_56",
+      "is_event_cluster": false,
+      "headline_count": 1,
+      "representative_title": "The 27-year-old blogger identified herself as a housing office worker in an archival photo and surprised her subscribers",
+      "sources": [
+        "Lenta (RU)"
+      ],
+      "perspectives": [
+        "Russia"
+      ],
+      "headlines": [
+        {
+          "source": "Lenta (RU)",
+          "perspective": "Russia",
+          "original_language": "ru",
+          "raw_title": "27-летняя блогерша назвала себя работницей ЖЭКа на архивном фото и удивила подписчиков",
+          "title": "The 27-year-old blogger identified herself as a housing office worker in an archival photo and surprised her subscribers",
+          "published_date": "Thu, 26 Mar 2026 11:44:00 +0300",
+          "link": "https://lenta.ru/news/2026/03/26/27-letnyaya-blogersha-nazvala-sebya-rabotnitsey-zheka-na-arhivnom-foto-i-udivila-podpischikov/",
+          "fetch_timestamp": "2026-03-26 14:35:59",
+          "tactic_label": "Unverified Claims",
+          "tactic_confidence": 0.9659,
+          "x": 11.6834135,
+          "y": -0.9196407
+        }
+      ],
+      "narrative_delta": {
+        "dominant_tactic": "Unverified Claims",
+        "agreement_score": 1.0,
+        "delta_score": 0.0,
+        "severity_score": 0.3,
+        "unique_tactics": [
+          "Unverified Claims"
+        ],
+        "framing_map": {
+          "Russia": [
+            "Unverified Claims"
+          ]
+        }
+      },
+      "timestamp": "2026-03-26T14:44:41.795031"
+    },
+    {
+      "event_id": "standalone_57",
+      "is_event_cluster": false,
+      "headline_count": 1,
+      "representative_title": "The need of the Russian Armed Forces for assault kill-killers was assessed",
+      "sources": [
+        "Lenta (RU)"
+      ],
+      "perspectives": [
+        "Russia"
+      ],
+      "headlines": [
+        {
+          "source": "Lenta (RU)",
+          "perspective": "Russia",
+          "original_language": "ru",
+          "raw_title": "Необходимость ВС России в штурмовых УБИМ оценили",
+          "title": "The need of the Russian Armed Forces for assault kill-killers was assessed",
+          "published_date": "Thu, 26 Mar 2026 11:42:00 +0300",
+          "link": "https://lenta.ru/news/2026/03/26/neobhodimost-vs-rossii-v-shturmovyh-ubim-otsenili/",
+          "fetch_timestamp": "2026-03-26 14:36:00",
+          "tactic_label": "Justification of Violence",
+          "tactic_confidence": 0.9591,
+          "x": 12.295108,
+          "y": -2.628617
+        }
+      ],
+      "narrative_delta": {
+        "dominant_tactic": "Justification of Violence",
+        "agreement_score": 1.0,
+        "delta_score": 0.0,
+        "severity_score": 0.95,
+        "unique_tactics": [
+          "Justification of Violence"
+        ],
+        "framing_map": {
+          "Russia": [
+            "Justification of Violence"
+          ]
+        }
+      },
+      "timestamp": "2026-03-26T14:44:41.795268"
+    },
+    {
+      "event_id": "standalone_58",
+      "is_event_cluster": false,
+      "headline_count": 1,
+      "representative_title": "The Kremlin commented on the limitations of mobile Internet in Moscow",
+      "sources": [
+        "Lenta (RU)"
+      ],
+      "perspectives": [
+        "Russia"
+      ],
+      "headlines": [
+        {
+          "source": "Lenta (RU)",
+          "perspective": "Russia",
+          "original_language": "ru",
+          "raw_title": "В Кремле прокомментировали ограничения мобильного интернета в Москве",
+          "title": "The Kremlin commented on the limitations of mobile Internet in Moscow",
+          "published_date": "Thu, 26 Mar 2026 11:36:00 +0300",
+          "link": "https://lenta.ru/news/2026/03/26/v-kremle-prokommentirovali-ogranicheniya-mobilnogo-interneta-v-moskve/",
+          "fetch_timestamp": "2026-03-26 14:36:02",
+          "tactic_label": "Unverified Claims",
+          "tactic_confidence": 0.9849,
+          "x": 11.183279,
+          "y": -2.2866077
+        }
+      ],
+      "narrative_delta": {
+        "dominant_tactic": "Unverified Claims",
+        "agreement_score": 1.0,
+        "delta_score": 0.0,
+        "severity_score": 0.3,
+        "unique_tactics": [
+          "Unverified Claims"
+        ],
+        "framing_map": {
+          "Russia": [
+            "Unverified Claims"
+          ]
+        }
+      },
+      "timestamp": "2026-03-26T14:44:41.795505"
+    },
+    {
+      "event_id": "standalone_59",
+      "is_event_cluster": false,
+      "headline_count": 1,
+      "representative_title": "The armored vehicles in the photo cost the Russian woman 18 years in prison",
+      "sources": [
+        "Lenta (RU)"
+      ],
+      "perspectives": [
+        "Russia"
+      ],
+      "headlines": [
+        {
+          "source": "Lenta (RU)",
+          "perspective": "Russia",
+          "original_language": "ru",
+          "raw_title": "Бронетехника на фото стоила россиянке 18 лет колонии",
+          "title": "The armored vehicles in the photo cost the Russian woman 18 years in prison",
+          "published_date": "Thu, 26 Mar 2026 11:35:22 +0300",
+          "link": "https://lenta.ru/news/2026/03/26/bronetehnika-na-foto-stoila-rossiyanke-18-let-kolonii/",
+          "fetch_timestamp": "2026-03-26 14:36:03",
+          "tactic_label": "Unverified Claims",
+          "tactic_confidence": 0.9702,
+          "x": 12.43261,
+          "y": -2.3454072
+        }
+      ],
+      "narrative_delta": {
+        "dominant_tactic": "Unverified Claims",
+        "agreement_score": 1.0,
+        "delta_score": 0.0,
+        "severity_score": 0.3,
+        "unique_tactics": [
+          "Unverified Claims"
+        ],
+        "framing_map": {
+          "Russia": [
+            "Unverified Claims"
+          ]
+        }
+      },
+      "timestamp": "2026-03-26T14:44:41.795787"
+    },
+    {
+      "event_id": "standalone_60",
+      "is_event_cluster": false,
+      "headline_count": 1,
+      "representative_title": "Trump claims Iran proposed making him Supreme Leader: I said, 'No, thank you' (Video in link)",
+      "sources": [
+        "Reddit: r/worldnews"
+      ],
+      "perspectives": [
+        "Global (Mainstream)"
+      ],
+      "headlines": [
+        {
+          "source": "Reddit: r/worldnews",
+          "perspective": "Global (Mainstream)",
+          "original_language": "en",
+          "raw_title": "Trump claims Iran proposed making him Supreme Leader: I said, 'No, thank you' (Video in link)",
+          "title": "Trump claims Iran proposed making him Supreme Leader: I said, 'No, thank you' (Video in link)",
+          "published_date": "2026-03-26 12:26:26",
+          "link": "https://www.reddit.com/r/worldnews/comments/1s40arb/trump_claims_iran_proposed_making_him_supreme/",
+          "fetch_timestamp": "2026-03-26 14:36:16",
+          "tactic_label": "Unverified Claims",
+          "tactic_confidence": 0.9992,
+          "x": 6.7754626,
+          "y": -0.7886327
+        }
+      ],
+      "narrative_delta": {
+        "dominant_tactic": "Unverified Claims",
+        "agreement_score": 1.0,
+        "delta_score": 0.0,
+        "severity_score": 0.3,
+        "unique_tactics": [
+          "Unverified Claims"
+        ],
+        "framing_map": {
+          "Global (Mainstream)": [
+            "Unverified Claims"
+          ]
+        }
+      },
+      "timestamp": "2026-03-26T14:44:41.796025"
+    },
+    {
+      "event_id": "standalone_61",
+      "is_event_cluster": false,
+      "headline_count": 1,
+      "representative_title": "Israel fears Donald Trump could announce Iran ceasefire despite low deal odds",
+      "sources": [
+        "Reddit: r/worldnews"
+      ],
+      "perspectives": [
+        "Global (Mainstream)"
+      ],
+      "headlines": [
+        {
+          "source": "Reddit: r/worldnews",
+          "perspective": "Global (Mainstream)",
+          "original_language": "en",
+          "raw_title": "Israel fears Donald Trump could announce Iran ceasefire despite low deal odds",
+          "title": "Israel fears Donald Trump could announce Iran ceasefire despite low deal odds",
+          "published_date": "2026-03-26 03:23:03",
+          "link": "https://www.reddit.com/r/worldnews/comments/1s3ols0/israel_fears_donald_trump_could_announce_iran/",
+          "fetch_timestamp": "2026-03-26 14:36:16",
+          "tactic_label": "Unverified Claims",
+          "tactic_confidence": 0.985,
+          "x": 7.5143642,
+          "y": -1.3205558
+        }
+      ],
+      "narrative_delta": {
+        "dominant_tactic": "Unverified Claims",
+        "agreement_score": 1.0,
+        "delta_score": 0.0,
+        "severity_score": 0.3,
+        "unique_tactics": [
+          "Unverified Claims"
+        ],
+        "framing_map": {
+          "Global (Mainstream)": [
+            "Unverified Claims"
+          ]
+        }
+      },
+      "timestamp": "2026-03-26T14:44:41.796248"
+    },
+    {
+      "event_id": "standalone_62",
+      "is_event_cluster": false,
+      "headline_count": 1,
+      "representative_title": "Russia Hits All of Ukraine with Nearly 1,000 Weapons in 24 Hours, Setting a New Record",
+      "sources": [
+        "Reddit: r/worldnews"
+      ],
+      "perspectives": [
+        "Global (Mainstream)"
+      ],
+      "headlines": [
+        {
+          "source": "Reddit: r/worldnews",
+          "perspective": "Global (Mainstream)",
+          "original_language": "en",
+          "raw_title": "Russia Hits All of Ukraine with Nearly 1,000 Weapons in 24 Hours, Setting a New Record",
+          "title": "Russia Hits All of Ukraine with Nearly 1,000 Weapons in 24 Hours, Setting a New Record",
+          "published_date": "2026-03-26 11:05:57",
+          "link": "https://www.reddit.com/r/worldnews/comments/1s3yxxd/russia_hits_all_of_ukraine_with_nearly_1000/",
+          "fetch_timestamp": "2026-03-26 14:36:16",
+          "tactic_label": "Alarmism",
+          "tactic_confidence": 0.9882,
+          "x": 12.335602,
+          "y": -3.4544225
+        }
+      ],
+      "narrative_delta": {
+        "dominant_tactic": "Alarmism",
+        "agreement_score": 1.0,
+        "delta_score": 0.0,
+        "severity_score": 0.75,
+        "unique_tactics": [
+          "Alarmism"
+        ],
+        "framing_map": {
+          "Global (Mainstream)": [
+            "Alarmism"
+          ]
+        }
+      },
+      "timestamp": "2026-03-26T14:44:41.796484"
+    },
+    {
+      "event_id": "standalone_63",
+      "is_event_cluster": false,
+      "headline_count": 1,
+      "representative_title": "Trump to hit Iran harder if Tehran does not accept defeat, White House says",
+      "sources": [
+        "Reddit: r/worldnews"
+      ],
+      "perspectives": [
+        "Global (Mainstream)"
+      ],
+      "headlines": [
+        {
+          "source": "Reddit: r/worldnews",
+          "perspective": "Global (Mainstream)",
+          "original_language": "en",
+          "raw_title": "Trump to hit Iran harder if Tehran does not accept defeat, White House says",
+          "title": "Trump to hit Iran harder if Tehran does not accept defeat, White House says",
+          "published_date": "2026-03-26 01:11:10",
+          "link": "https://www.reddit.com/r/worldnews/comments/1s3kzye/trump_to_hit_iran_harder_if_tehran_does_not/",
+          "fetch_timestamp": "2026-03-26 14:36:16",
+          "tactic_label": "Unverified Claims",
+          "tactic_confidence": 0.9929,
+          "x": 7.1279945,
+          "y": -1.1658664
+        }
+      ],
+      "narrative_delta": {
+        "dominant_tactic": "Unverified Claims",
+        "agreement_score": 1.0,
+        "delta_score": 0.0,
+        "severity_score": 0.3,
+        "unique_tactics": [
+          "Unverified Claims"
+        ],
+        "framing_map": {
+          "Global (Mainstream)": [
+            "Unverified Claims"
+          ]
+        }
+      },
+      "timestamp": "2026-03-26T14:44:41.796755"
+    },
+    {
+      "event_id": "standalone_64",
+      "is_event_cluster": false,
+      "headline_count": 1,
+      "representative_title": "Trump Accused of ‘Giving His Mates Inside Information’ to Make Big Bets on Market in Fiery Speech from British Lawmaker",
+      "sources": [
+        "Reddit: r/worldnews"
+      ],
+      "perspectives": [
+        "Global (Mainstream)"
+      ],
+      "headlines": [
+        {
+          "source": "Reddit: r/worldnews",
+          "perspective": "Global (Mainstream)",
+          "original_language": "en",
+          "raw_title": "Trump Accused of ‘Giving His Mates Inside Information’ to Make Big Bets on Market in Fiery Speech from British Lawmaker",
+          "title": "Trump Accused of ‘Giving His Mates Inside Information’ to Make Big Bets on Market in Fiery Speech from British Lawmaker",
+          "published_date": "2026-03-25 21:39:55",
+          "link": "https://www.reddit.com/r/worldnews/comments/1s3f3gj/trump_accused_of_giving_his_mates_inside/",
+          "fetch_timestamp": "2026-03-26 14:36:16",
+          "tactic_label": "Unverified Claims",
+          "tactic_confidence": 0.9968,
+          "x": 10.311683,
+          "y": -0.68036836
+        }
+      ],
+      "narrative_delta": {
+        "dominant_tactic": "Unverified Claims",
+        "agreement_score": 1.0,
+        "delta_score": 0.0,
+        "severity_score": 0.3,
+        "unique_tactics": [
+          "Unverified Claims"
+        ],
+        "framing_map": {
+          "Global (Mainstream)": [
+            "Unverified Claims"
+          ]
+        }
+      },
+      "timestamp": "2026-03-26T14:44:41.796999"
+    },
+    {
+      "event_id": "standalone_65",
+      "is_event_cluster": false,
+      "headline_count": 1,
+      "representative_title": "Trump confirms Saudi crown prince is pushing him to continue Iran war",
+      "sources": [
+        "Reddit: r/worldnews"
+      ],
+      "perspectives": [
+        "Global (Mainstream)"
+      ],
+      "headlines": [
+        {
+          "source": "Reddit: r/worldnews",
+          "perspective": "Global (Mainstream)",
+          "original_language": "en",
+          "raw_title": "Trump confirms Saudi crown prince is pushing him to continue Iran war",
+          "title": "Trump confirms Saudi crown prince is pushing him to continue Iran war",
+          "published_date": "2026-03-25 20:24:45",
+          "link": "https://www.reddit.com/r/worldnews/comments/1s3d18k/trump_confirms_saudi_crown_prince_is_pushing_him/",
+          "fetch_timestamp": "2026-03-26 14:36:16",
+          "tactic_label": "Unverified Claims",
+          "tactic_confidence": 0.9945,
+          "x": 6.588204,
+          "y": -1.336386
+        }
+      ],
+      "narrative_delta": {
+        "dominant_tactic": "Unverified Claims",
+        "agreement_score": 1.0,
+        "delta_score": 0.0,
+        "severity_score": 0.3,
+        "unique_tactics": [
+          "Unverified Claims"
+        ],
+        "framing_map": {
+          "Global (Mainstream)": [
+            "Unverified Claims"
+          ]
+        }
+      },
+      "timestamp": "2026-03-26T14:44:41.797224"
+    },
+    {
+      "event_id": "standalone_66",
+      "is_event_cluster": false,
+      "headline_count": 1,
+      "representative_title": "Germany's defence minister claims Trump has 'no exit strategy' in Iran",
+      "sources": [
+        "Reddit: r/worldnews"
+      ],
+      "perspectives": [
+        "Global (Mainstream)"
+      ],
+      "headlines": [
+        {
+          "source": "Reddit: r/worldnews",
+          "perspective": "Global (Mainstream)",
+          "original_language": "en",
+          "raw_title": "Germany's defence minister claims Trump has 'no exit strategy' in Iran",
+          "title": "Germany's defence minister claims Trump has 'no exit strategy' in Iran",
+          "published_date": "2026-03-26 11:31:17",
+          "link": "https://www.reddit.com/r/worldnews/comments/1s3zdps/germanys_defence_minister_claims_trump_has_no/",
+          "fetch_timestamp": "2026-03-26 14:36:16",
+          "tactic_label": "Unverified Claims",
+          "tactic_confidence": 0.9986,
+          "x": 7.4764943,
+          "y": -1.6534009
+        }
+      ],
+      "narrative_delta": {
+        "dominant_tactic": "Unverified Claims",
+        "agreement_score": 1.0,
+        "delta_score": 0.0,
+        "severity_score": 0.3,
+        "unique_tactics": [
+          "Unverified Claims"
+        ],
+        "framing_map": {
+          "Global (Mainstream)": [
+            "Unverified Claims"
+          ]
+        }
+      },
+      "timestamp": "2026-03-26T14:44:41.797455"
+    },
+    {
+      "event_id": "standalone_67",
+      "is_event_cluster": false,
+      "headline_count": 1,
+      "representative_title": "UN calls for reparations to remedy the 'historical wrongs' of trafficking enslaved Africans",
+      "sources": [
+        "Reddit: r/worldnews"
+      ],
+      "perspectives": [
+        "Global (Mainstream)"
+      ],
+      "headlines": [
+        {
+          "source": "Reddit: r/worldnews",
+          "perspective": "Global (Mainstream)",
+          "original_language": "en",
+          "raw_title": "UN calls for reparations to remedy the 'historical wrongs' of trafficking enslaved Africans",
+          "title": "UN calls for reparations to remedy the 'historical wrongs' of trafficking enslaved Africans",
+          "published_date": "2026-03-26 00:16:53",
+          "link": "https://www.reddit.com/r/worldnews/comments/1s3jhy1/un_calls_for_reparations_to_remedy_the_historical/",
+          "fetch_timestamp": "2026-03-26 14:36:16",
+          "tactic_label": "Moral / Religious Framing",
+          "tactic_confidence": 0.8963,
+          "x": 9.7718935,
+          "y": -0.62226593
+        }
+      ],
+      "narrative_delta": {
+        "dominant_tactic": "Moral / Religious Framing",
+        "agreement_score": 1.0,
+        "delta_score": 0.0,
+        "severity_score": 0.5,
+        "unique_tactics": [
+          "Moral / Religious Framing"
+        ],
+        "framing_map": {
+          "Global (Mainstream)": [
+            "Moral / Religious Framing"
+          ]
+        }
+      },
+      "timestamp": "2026-03-26T14:44:41.797730"
+    },
+    {
+      "event_id": "standalone_68",
+      "is_event_cluster": false,
+      "headline_count": 1,
+      "representative_title": "UK authorises military to board Russian shadow fleet tankers",
+      "sources": [
+        "Reddit: r/geopolitics"
+      ],
+      "perspectives": [
+        "Global (Analytical)"
+      ],
+      "headlines": [
+        {
+          "source": "Reddit: r/geopolitics",
+          "perspective": "Global (Analytical)",
+          "original_language": "en",
+          "raw_title": "UK authorises military to board Russian shadow fleet tankers",
+          "title": "UK authorises military to board Russian shadow fleet tankers",
+          "published_date": "2026-03-26 09:48:57",
+          "link": "https://www.reddit.com/r/geopolitics/comments/1s3xin0/uk_authorises_military_to_board_russian_shadow/",
+          "fetch_timestamp": "2026-03-26 14:36:17",
+          "tactic_label": "Unverified Claims",
+          "tactic_confidence": 0.9758,
+          "x": 12.093543,
+          "y": -4.541959
+        }
+      ],
+      "narrative_delta": {
+        "dominant_tactic": "Unverified Claims",
+        "agreement_score": 1.0,
+        "delta_score": 0.0,
+        "severity_score": 0.3,
+        "unique_tactics": [
+          "Unverified Claims"
+        ],
+        "framing_map": {
+          "Global (Analytical)": [
+            "Unverified Claims"
+          ]
+        }
+      },
+      "timestamp": "2026-03-26T14:44:41.797958"
+    },
+    {
+      "event_id": "standalone_69",
+      "is_event_cluster": false,
+      "headline_count": 1,
+      "representative_title": "Iran rejects US peace plan and sets 5 conditions to end the war — including international recognition of control over the Strait of Hormuz",
+      "sources": [
+        "Reddit: r/geopolitics"
+      ],
+      "perspectives": [
+        "Global (Analytical)"
+      ],
+      "headlines": [
+        {
+          "source": "Reddit: r/geopolitics",
+          "perspective": "Global (Analytical)",
+          "original_language": "en",
+          "raw_title": "Iran rejects US peace plan and sets 5 conditions to end the war — including international recognition of control over the Strait of Hormuz",
+          "title": "Iran rejects US peace plan and sets 5 conditions to end the war — including international recognition of control over the Strait of Hormuz",
+          "published_date": "2026-03-25 20:47:38",
+          "link": "https://www.reddit.com/r/geopolitics/comments/1s3do4j/iran_rejects_us_peace_plan_and_sets_5_conditions/",
+          "fetch_timestamp": "2026-03-26 14:36:17",
+          "tactic_label": "Unverified Claims",
+          "tactic_confidence": 0.9725,
+          "x": 7.103822,
+          "y": -1.9664541
+        }
+      ],
+      "narrative_delta": {
+        "dominant_tactic": "Unverified Claims",
+        "agreement_score": 1.0,
+        "delta_score": 0.0,
+        "severity_score": 0.3,
+        "unique_tactics": [
+          "Unverified Claims"
+        ],
+        "framing_map": {
+          "Global (Analytical)": [
+            "Unverified Claims"
+          ]
+        }
+      },
+      "timestamp": "2026-03-26T14:44:41.798180"
+    },
+    {
+      "event_id": "standalone_70",
+      "is_event_cluster": false,
+      "headline_count": 1,
+      "representative_title": "German president calls Iran war a disastrous mistake, in rare rebuke of Trump",
+      "sources": [
+        "Reddit: r/geopolitics"
+      ],
+      "perspectives": [
+        "Global (Analytical)"
+      ],
+      "headlines": [
+        {
+          "source": "Reddit: r/geopolitics",
+          "perspective": "Global (Analytical)",
+          "original_language": "en",
+          "raw_title": "German president calls Iran war a disastrous mistake, in rare rebuke of Trump",
+          "title": "German president calls Iran war a disastrous mistake, in rare rebuke of Trump",
+          "published_date": "2026-03-25 23:48:22",
+          "link": "https://www.reddit.com/r/geopolitics/comments/1s3ip8m/german_president_calls_iran_war_a_disastrous/",
+          "fetch_timestamp": "2026-03-26 14:36:17",
+          "tactic_label": "Unverified Claims",
+          "tactic_confidence": 0.9592,
+          "x": 7.951366,
+          "y": -2.0707462
+        }
+      ],
+      "narrative_delta": {
+        "dominant_tactic": "Unverified Claims",
+        "agreement_score": 1.0,
+        "delta_score": 0.0,
+        "severity_score": 0.3,
+        "unique_tactics": [
+          "Unverified Claims"
+        ],
+        "framing_map": {
+          "Global (Analytical)": [
+            "Unverified Claims"
+          ]
+        }
+      },
+      "timestamp": "2026-03-26T14:44:41.798409"
+    },
+    {
+      "event_id": "standalone_71",
+      "is_event_cluster": false,
+      "headline_count": 1,
+      "representative_title": "Israel Declares Control to the Litani — Three Ministers, Three Endgames",
+      "sources": [
+        "Reddit: r/geopolitics"
+      ],
+      "perspectives": [
+        "Global (Analytical)"
+      ],
+      "headlines": [
+        {
+          "source": "Reddit: r/geopolitics",
+          "perspective": "Global (Analytical)",
+          "original_language": "en",
+          "raw_title": "Israel Declares Control to the Litani — Three Ministers, Three Endgames",
+          "title": "Israel Declares Control to the Litani — Three Ministers, Three Endgames",
+          "published_date": "2026-03-26 08:31:43",
+          "link": "https://www.reddit.com/r/geopolitics/comments/1s3vyep/israel_declares_control_to_the_litani_three/",
+          "fetch_timestamp": "2026-03-26 14:36:17",
+          "tactic_label": "Alarmism",
+          "tactic_confidence": 0.9996,
+          "x": 8.049557,
+          "y": -1.1938386
+        }
+      ],
+      "narrative_delta": {
+        "dominant_tactic": "Alarmism",
+        "agreement_score": 1.0,
+        "delta_score": 0.0,
+        "severity_score": 0.75,
+        "unique_tactics": [
+          "Alarmism"
+        ],
+        "framing_map": {
+          "Global (Analytical)": [
+            "Alarmism"
+          ]
+        }
+      },
+      "timestamp": "2026-03-26T14:44:41.798690"
+    },
+    {
+      "event_id": "standalone_72",
+      "is_event_cluster": false,
+      "headline_count": 1,
+      "representative_title": "Drug camp bombing that Hegseth boasted about was actually a dairy farm: report",
+      "sources": [
+        "Reddit: r/geopolitics"
+      ],
+      "perspectives": [
+        "Global (Analytical)"
+      ],
+      "headlines": [
+        {
+          "source": "Reddit: r/geopolitics",
+          "perspective": "Global (Analytical)",
+          "original_language": "en",
+          "raw_title": "Drug camp bombing that Hegseth boasted about was actually a dairy farm: report",
+          "title": "Drug camp bombing that Hegseth boasted about was actually a dairy farm: report",
+          "published_date": "2026-03-25 23:44:43",
+          "link": "https://www.reddit.com/r/geopolitics/comments/1s3ili0/drug_camp_bombing_that_hegseth_boasted_about_was/",
+          "fetch_timestamp": "2026-03-26 14:36:17",
+          "tactic_label": "Disinformation / Fabrication",
+          "tactic_confidence": 0.9984,
+          "x": 10.220599,
+          "y": -3.094145
+        }
+      ],
+      "narrative_delta": {
+        "dominant_tactic": "Disinformation / Fabrication",
+        "agreement_score": 1.0,
+        "delta_score": 0.0,
+        "severity_score": 1.0,
+        "unique_tactics": [
+          "Disinformation / Fabrication"
+        ],
+        "framing_map": {
+          "Global (Analytical)": [
+            "Disinformation / Fabrication"
+          ]
+        }
+      },
+      "timestamp": "2026-03-26T14:44:41.798931"
+    },
+    {
+      "event_id": "standalone_73",
+      "is_event_cluster": false,
+      "headline_count": 1,
+      "representative_title": "UAE ambassador to US warns against ending Iran war too soon",
+      "sources": [
+        "Reddit: r/geopolitics"
+      ],
+      "perspectives": [
+        "Global (Analytical)"
+      ],
+      "headlines": [
+        {
+          "source": "Reddit: r/geopolitics",
+          "perspective": "Global (Analytical)",
+          "original_language": "en",
+          "raw_title": "UAE ambassador to US warns against ending Iran war too soon",
+          "title": "UAE ambassador to US warns against ending Iran war too soon",
+          "published_date": "2026-03-26 02:04:46",
+          "link": "https://www.reddit.com/r/geopolitics/comments/1s3mhp8/uae_ambassador_to_us_warns_against_ending_iran/",
+          "fetch_timestamp": "2026-03-26 14:36:17",
+          "tactic_label": "Unverified Claims",
+          "tactic_confidence": 0.9891,
+          "x": 6.4243107,
+          "y": -2.3166158
+        }
+      ],
+      "narrative_delta": {
+        "dominant_tactic": "Unverified Claims",
+        "agreement_score": 1.0,
+        "delta_score": 0.0,
+        "severity_score": 0.3,
+        "unique_tactics": [
+          "Unverified Claims"
+        ],
+        "framing_map": {
+          "Global (Analytical)": [
+            "Unverified Claims"
+          ]
+        }
+      },
+      "timestamp": "2026-03-26T14:44:41.799156"
+    },
+    {
+      "event_id": "standalone_74",
+      "is_event_cluster": false,
+      "headline_count": 1,
+      "representative_title": "Live updates: Iran''s toreign minister says his government does not plan any negotiations to end the war",
+      "sources": [
+        "Reddit: r/geopolitics"
+      ],
+      "perspectives": [
+        "Global (Analytical)"
+      ],
+      "headlines": [
+        {
+          "source": "Reddit: r/geopolitics",
+          "perspective": "Global (Analytical)",
+          "original_language": "en",
+          "raw_title": "Live updates: Iran''s toreign minister says his government does not plan any negotiations to end the war",
+          "title": "Live updates: Iran''s toreign minister says his government does not plan any negotiations to end the war",
+          "published_date": "2026-03-26 01:38:26",
+          "link": "https://www.reddit.com/r/geopolitics/comments/1s3lrn4/live_updates_irans_toreign_minister_says_his/",
+          "fetch_timestamp": "2026-03-26 14:36:17",
+          "tactic_label": "Unverified Claims",
+          "tactic_confidence": 0.973,
+          "x": 6.8242846,
+          "y": -1.7871433
+        }
+      ],
+      "narrative_delta": {
+        "dominant_tactic": "Unverified Claims",
+        "agreement_score": 1.0,
+        "delta_score": 0.0,
+        "severity_score": 0.3,
+        "unique_tactics": [
+          "Unverified Claims"
+        ],
+        "framing_map": {
+          "Global (Analytical)": [
+            "Unverified Claims"
+          ]
+        }
+      },
+      "timestamp": "2026-03-26T14:44:41.799383"
+    },
+    {
+      "event_id": "standalone_75",
+      "is_event_cluster": false,
+      "headline_count": 1,
+      "representative_title": "'They Will Fall Victims To Netanyahu's delusions': Iran Reacts To US's Deployment Of Elite 82nd Airborne Soldiers To West Asia",
+      "sources": [
+        "Reddit: r/geopolitics"
+      ],
+      "perspectives": [
+        "Global (Analytical)"
+      ],
+      "headlines": [
+        {
+          "source": "Reddit: r/geopolitics",
+          "perspective": "Global (Analytical)",
+          "original_language": "en",
+          "raw_title": "'They Will Fall Victims To Netanyahu's delusions': Iran Reacts To US's Deployment Of Elite 82nd Airborne Soldiers To West Asia",
+          "title": "'They Will Fall Victims To Netanyahu's delusions': Iran Reacts To US's Deployment Of Elite 82nd Airborne Soldiers To West Asia",
+          "published_date": "2026-03-25 17:05:01",
+          "link": "https://www.reddit.com/r/geopolitics/comments/1s386qf/they_will_fall_victims_to_netanyahus_delusions/",
+          "fetch_timestamp": "2026-03-26 14:36:17",
+          "tactic_label": "Unverified Claims",
+          "tactic_confidence": 0.9989,
+          "x": 8.652117,
+          "y": -2.4325733
+        }
+      ],
+      "narrative_delta": {
+        "dominant_tactic": "Unverified Claims",
+        "agreement_score": 1.0,
+        "delta_score": 0.0,
+        "severity_score": 0.3,
+        "unique_tactics": [
+          "Unverified Claims"
+        ],
+        "framing_map": {
+          "Global (Analytical)": [
+            "Unverified Claims"
+          ]
+        }
+      },
+      "timestamp": "2026-03-26T14:44:41.799652"
+    },
+    {
+      "event_id": "standalone_76",
+      "is_event_cluster": false,
+      "headline_count": 1,
+      "representative_title": "Is the U.S. Repeating the Mistakes That Led to Forever Wars?",
+      "sources": [
+        "Reddit: r/geopolitics"
+      ],
+      "perspectives": [
+        "Global (Analytical)"
+      ],
+      "headlines": [
+        {
+          "source": "Reddit: r/geopolitics",
+          "perspective": "Global (Analytical)",
+          "original_language": "en",
+          "raw_title": "Is the U.S. Repeating the Mistakes That Led to Forever Wars?",
+          "title": "Is the U.S. Repeating the Mistakes That Led to Forever Wars?",
+          "published_date": "2026-03-26 03:05:07",
+          "link": "https://www.reddit.com/r/geopolitics/comments/1s3o51l/is_the_us_repeating_the_mistakes_that_led_to/",
+          "fetch_timestamp": "2026-03-26 14:36:17",
+          "tactic_label": "Disinformation / Fabrication",
+          "tactic_confidence": 0.9778,
+          "x": 8.029577,
+          "y": -2.2672873
+        }
+      ],
+      "narrative_delta": {
+        "dominant_tactic": "Disinformation / Fabrication",
+        "agreement_score": 1.0,
+        "delta_score": 0.0,
+        "severity_score": 1.0,
+        "unique_tactics": [
+          "Disinformation / Fabrication"
+        ],
+        "framing_map": {
+          "Global (Analytical)": [
+            "Disinformation / Fabrication"
+          ]
+        }
+      },
+      "timestamp": "2026-03-26T14:44:41.799883"
+    },
+    {
+      "event_id": "standalone_77",
+      "is_event_cluster": false,
+      "headline_count": 1,
+      "representative_title": "🔥March 25, 2026, marks the end of a multi-day Ukrainian operation to turn off the whole of russia's Baltic oil and gas hub: Ust-Luga, Primorsk and Vyborg.",
+      "sources": [
+        "Reddit: r/ukraine"
+      ],
+      "perspectives": [
+        "Ukraine (Regional)"
+      ],
+      "headlines": [
+        {
+          "source": "Reddit: r/ukraine",
+          "perspective": "Ukraine (Regional)",
+          "original_language": "en",
+          "raw_title": "🔥March 25, 2026, marks the end of a multi-day Ukrainian operation to turn off the whole of russia's Baltic oil and gas hub: Ust-Luga, Primorsk and Vyborg.",
+          "title": "🔥March 25, 2026, marks the end of a multi-day Ukrainian operation to turn off the whole of russia's Baltic oil and gas hub: Ust-Luga, Primorsk and Vyborg.",
+          "published_date": "2026-03-26 04:46:29",
+          "link": "https://www.reddit.com/r/ukraine/comments/1s3qrt0/march_25_2026_marks_the_end_of_a_multiday/",
+          "fetch_timestamp": "2026-03-26 14:36:18",
+          "tactic_label": "Alarmism",
+          "tactic_confidence": 0.9859,
+          "x": 11.650316,
+          "y": -4.2622895
+        }
+      ],
+      "narrative_delta": {
+        "dominant_tactic": "Alarmism",
+        "agreement_score": 1.0,
+        "delta_score": 0.0,
+        "severity_score": 0.75,
+        "unique_tactics": [
+          "Alarmism"
+        ],
+        "framing_map": {
+          "Ukraine (Regional)": [
+            "Alarmism"
+          ]
+        }
+      },
+      "timestamp": "2026-03-26T14:44:41.800103"
+    },
+    {
+      "event_id": "standalone_78",
+      "is_event_cluster": false,
+      "headline_count": 1,
+      "representative_title": "Ukraine's kinetic sanctions in action: Russian Ust-Luga gas terminal, located 1,000km from Ukrainian border",
+      "sources": [
+        "Reddit: r/ukraine"
+      ],
+      "perspectives": [
+        "Ukraine (Regional)"
+      ],
+      "headlines": [
+        {
+          "source": "Reddit: r/ukraine",
+          "perspective": "Ukraine (Regional)",
+          "original_language": "en",
+          "raw_title": "Ukraine's kinetic sanctions in action: Russian Ust-Luga gas terminal, located 1,000km from Ukrainian border",
+          "title": "Ukraine's kinetic sanctions in action: Russian Ust-Luga gas terminal, located 1,000km from Ukrainian border",
+          "published_date": "2026-03-25 23:26:46",
+          "link": "https://www.reddit.com/r/ukraine/comments/1s3i3ay/ukraines_kinetic_sanctions_in_action_russian/",
+          "fetch_timestamp": "2026-03-26 14:36:18",
+          "tactic_label": "Alarmism",
+          "tactic_confidence": 0.9654,
+          "x": 11.535843,
+          "y": -3.9603174
+        }
+      ],
+      "narrative_delta": {
+        "dominant_tactic": "Alarmism",
+        "agreement_score": 1.0,
+        "delta_score": 0.0,
+        "severity_score": 0.75,
+        "unique_tactics": [
+          "Alarmism"
+        ],
+        "framing_map": {
+          "Ukraine (Regional)": [
+            "Alarmism"
+          ]
+        }
+      },
+      "timestamp": "2026-03-26T14:44:41.800332"
+    },
+    {
+      "event_id": "standalone_79",
+      "is_event_cluster": false,
+      "headline_count": 1,
+      "representative_title": "Zelenskyy: We are engaging with countries in the Middle East and the Gulf. Offers a mutually beneficial partnership: \"we can strengthen those who can strengthen us.\" The situation in the world now is such that only coordinated and joint actions can guarantee real results and genuine security.",
+      "sources": [
+        "Reddit: r/ukraine"
+      ],
+      "perspectives": [
+        "Ukraine (Regional)"
+      ],
+      "headlines": [
+        {
+          "source": "Reddit: r/ukraine",
+          "perspective": "Ukraine (Regional)",
+          "original_language": "en",
+          "raw_title": "Zelenskyy: We are engaging with countries in the Middle East and the Gulf. Offers a mutually beneficial partnership: \"we can strengthen those who can strengthen us.\" The situation in the world now is such that only coordinated and joint actions can guarantee real results and genuine security.",
+          "title": "Zelenskyy: We are engaging with countries in the Middle East and the Gulf. Offers a mutually beneficial partnership: \"we can strengthen those who can strengthen us.\" The situation in the world now is such that only coordinated and joint actions can guarantee real results and genuine security.",
+          "published_date": "2026-03-26 06:02:07",
+          "link": "https://www.reddit.com/r/ukraine/comments/1s3sl1i/zelenskyy_we_are_engaging_with_countries_in_the/",
+          "fetch_timestamp": "2026-03-26 14:36:18",
+          "tactic_label": "Unverified Claims",
+          "tactic_confidence": 0.9656,
+          "x": 9.797865,
+          "y": -1.9398268
+        }
+      ],
+      "narrative_delta": {
+        "dominant_tactic": "Unverified Claims",
+        "agreement_score": 1.0,
+        "delta_score": 0.0,
+        "severity_score": 0.3,
+        "unique_tactics": [
+          "Unverified Claims"
+        ],
+        "framing_map": {
+          "Ukraine (Regional)": [
+            "Unverified Claims"
+          ]
+        }
+      },
+      "timestamp": "2026-03-26T14:44:41.800556"
+    },
+    {
+      "event_id": "standalone_80",
+      "is_event_cluster": false,
+      "headline_count": 1,
+      "representative_title": "Another productive day by Ukrainian forces",
+      "sources": [
+        "Reddit: r/ukraine"
+      ],
+      "perspectives": [
+        "Ukraine (Regional)"
+      ],
+      "headlines": [
+        {
+          "source": "Reddit: r/ukraine",
+          "perspective": "Ukraine (Regional)",
+          "original_language": "en",
+          "raw_title": "Another productive day by Ukrainian forces",
+          "title": "Another productive day by Ukrainian forces",
+          "published_date": "2026-03-26 12:14:46",
+          "link": "https://www.reddit.com/r/ukraine/comments/1s403tn/another_productive_day_by_ukrainian_forces/",
+          "fetch_timestamp": "2026-03-26 14:36:18",
+          "tactic_label": "Nationalism / Pride",
+          "tactic_confidence": 0.9272,
+          "x": 12.433119,
+          "y": -3.8847237
+        }
+      ],
+      "narrative_delta": {
+        "dominant_tactic": "Nationalism / Pride",
+        "agreement_score": 1.0,
+        "delta_score": 0.0,
+        "severity_score": 0.55,
+        "unique_tactics": [
+          "Nationalism / Pride"
+        ],
+        "framing_map": {
+          "Ukraine (Regional)": [
+            "Nationalism / Pride"
+          ]
+        }
+      },
+      "timestamp": "2026-03-26T14:44:41.800860"
+    },
+    {
+      "event_id": "standalone_81",
+      "is_event_cluster": false,
+      "headline_count": 1,
+      "representative_title": "Beaten, hung, and drowned: Oleksandr describes torture in Russian captivity were he spent over 3 years",
+      "sources": [
+        "Reddit: r/ukraine"
+      ],
+      "perspectives": [
+        "Ukraine (Regional)"
+      ],
+      "headlines": [
+        {
+          "source": "Reddit: r/ukraine",
+          "perspective": "Ukraine (Regional)",
+          "original_language": "en",
+          "raw_title": "Beaten, hung, and drowned: Oleksandr describes torture in Russian captivity were he spent over 3 years",
+          "title": "Beaten, hung, and drowned: Oleksandr describes torture in Russian captivity were he spent over 3 years",
+          "published_date": "2026-03-26 07:27:31",
+          "link": "https://www.reddit.com/r/ukraine/comments/1s3uixs/beaten_hung_and_drowned_oleksandr_describes/",
+          "fetch_timestamp": "2026-03-26 14:36:18",
+          "tactic_label": "Alarmism",
+          "tactic_confidence": 0.9425,
+          "x": 12.058698,
+          "y": -1.9910481
+        }
+      ],
+      "narrative_delta": {
+        "dominant_tactic": "Alarmism",
+        "agreement_score": 1.0,
+        "delta_score": 0.0,
+        "severity_score": 0.75,
+        "unique_tactics": [
+          "Alarmism"
+        ],
+        "framing_map": {
+          "Ukraine (Regional)": [
+            "Alarmism"
+          ]
+        }
+      },
+      "timestamp": "2026-03-26T14:44:41.801113"
+    },
+    {
+      "event_id": "standalone_82",
+      "is_event_cluster": false,
+      "headline_count": 1,
+      "representative_title": "Ukraine Crushes Russia’s Spring Offensive, Wiping Out a Week of Recruits in 3 Days",
+      "sources": [
+        "Reddit: r/ukraine"
+      ],
+      "perspectives": [
+        "Ukraine (Regional)"
+      ],
+      "headlines": [
+        {
+          "source": "Reddit: r/ukraine",
+          "perspective": "Ukraine (Regional)",
+          "original_language": "en",
+          "raw_title": "Ukraine Crushes Russia’s Spring Offensive, Wiping Out a Week of Recruits in 3 Days",
+          "title": "Ukraine Crushes Russia’s Spring Offensive, Wiping Out a Week of Recruits in 3 Days",
+          "published_date": "2026-03-25 22:57:33",
+          "link": "https://www.reddit.com/r/ukraine/comments/1s3h9i0/ukraine_crushes_russias_spring_offensive_wiping/",
+          "fetch_timestamp": "2026-03-26 14:36:18",
+          "tactic_label": "Nationalism / Pride",
+          "tactic_confidence": 0.9706,
+          "x": 12.799191,
+          "y": -3.6251023
+        }
+      ],
+      "narrative_delta": {
+        "dominant_tactic": "Nationalism / Pride",
+        "agreement_score": 1.0,
+        "delta_score": 0.0,
+        "severity_score": 0.55,
+        "unique_tactics": [
+          "Nationalism / Pride"
+        ],
+        "framing_map": {
+          "Ukraine (Regional)": [
+            "Nationalism / Pride"
+          ]
+        }
+      },
+      "timestamp": "2026-03-26T14:44:41.801349"
+    },
+    {
+      "event_id": "standalone_83",
+      "is_event_cluster": false,
+      "headline_count": 1,
+      "representative_title": "Russia blackmailed US with threat to share intel with Iran, Zelenskyy says",
+      "sources": [
+        "Reddit: r/ukraine"
+      ],
+      "perspectives": [
+        "Ukraine (Regional)"
+      ],
+      "headlines": [
+        {
+          "source": "Reddit: r/ukraine",
+          "perspective": "Ukraine (Regional)",
+          "original_language": "en",
+          "raw_title": "Russia blackmailed US with threat to share intel with Iran, Zelenskyy says",
+          "title": "Russia blackmailed US with threat to share intel with Iran, Zelenskyy says",
+          "published_date": "2026-03-26 11:55:40",
+          "link": "https://www.reddit.com/r/ukraine/comments/1s3zska/russia_blackmailed_us_with_threat_to_share_intel/",
+          "fetch_timestamp": "2026-03-26 14:36:18",
+          "tactic_label": "Unverified Claims",
+          "tactic_confidence": 0.9976,
+          "x": 10.294613,
+          "y": -2.126587
+        }
+      ],
+      "narrative_delta": {
+        "dominant_tactic": "Unverified Claims",
+        "agreement_score": 1.0,
+        "delta_score": 0.0,
+        "severity_score": 0.3,
+        "unique_tactics": [
+          "Unverified Claims"
+        ],
+        "framing_map": {
+          "Ukraine (Regional)": [
+            "Unverified Claims"
+          ]
+        }
+      },
+      "timestamp": "2026-03-26T14:44:41.801626"
+    },
+    {
+      "event_id": "standalone_84",
+      "is_event_cluster": false,
+      "headline_count": 1,
+      "representative_title": "Ust-Luga Port in the Leningrad region following the morning attack by Ukrainian kamikaze drones.",
+      "sources": [
+        "Reddit: r/ukraine"
+      ],
+      "perspectives": [
+        "Ukraine (Regional)"
+      ],
+      "headlines": [
+        {
+          "source": "Reddit: r/ukraine",
+          "perspective": "Ukraine (Regional)",
+          "original_language": "en",
+          "raw_title": "Ust-Luga Port in the Leningrad region following the morning attack by Ukrainian kamikaze drones.",
+          "title": "Ust-Luga Port in the Leningrad region following the morning attack by Ukrainian kamikaze drones.",
+          "published_date": "2026-03-25 22:07:42",
+          "link": "https://www.reddit.com/r/ukraine/comments/1s3fuxe/ustluga_port_in_the_leningrad_region_following/",
+          "fetch_timestamp": "2026-03-26 14:36:18",
+          "tactic_label": "Alarmism",
+          "tactic_confidence": 0.9924,
+          "x": 11.236943,
+          "y": -4.3953733
+        }
+      ],
+      "narrative_delta": {
+        "dominant_tactic": "Alarmism",
+        "agreement_score": 1.0,
+        "delta_score": 0.0,
+        "severity_score": 0.75,
+        "unique_tactics": [
+          "Alarmism"
+        ],
+        "framing_map": {
+          "Ukraine (Regional)": [
+            "Alarmism"
+          ]
+        }
+      },
+      "timestamp": "2026-03-26T14:44:41.801861"
+    },
+    {
+      "event_id": "standalone_85",
+      "is_event_cluster": false,
+      "headline_count": 1,
+      "representative_title": "Iran war anime series",
+      "sources": [
+        "Reddit: r/AskMiddleEast"
+      ],
+      "perspectives": [
+        "Middle East (Crowd)"
+      ],
+      "headlines": [
+        {
+          "source": "Reddit: r/AskMiddleEast",
+          "perspective": "Middle East (Crowd)",
+          "original_language": "en",
+          "raw_title": "Iran war anime series",
+          "title": "Iran war anime series",
+          "published_date": "2026-03-25 21:57:33",
+          "link": "https://www.reddit.com/r/AskMiddleEast/comments/1s3fkwa/iran_war_anime_series/",
+          "fetch_timestamp": "2026-03-26 14:36:19",
+          "tactic_label": "Alarmism",
+          "tactic_confidence": 0.9949,
+          "x": 7.7282033,
+          "y": -2.5806043
+        }
+      ],
+      "narrative_delta": {
+        "dominant_tactic": "Alarmism",
+        "agreement_score": 1.0,
+        "delta_score": 0.0,
+        "severity_score": 0.75,
+        "unique_tactics": [
+          "Alarmism"
+        ],
+        "framing_map": {
+          "Middle East (Crowd)": [
+            "Alarmism"
+          ]
+        }
+      },
+      "timestamp": "2026-03-26T14:44:41.802086"
+    },
+    {
+      "event_id": "standalone_86",
+      "is_event_cluster": false,
+      "headline_count": 1,
+      "representative_title": "BREAKING: Iran’s air defense is active and struck an F/A-18E (Super Hornet) — the fate of the jet is currently unknown",
+      "sources": [
+        "Reddit: r/AskMiddleEast"
+      ],
+      "perspectives": [
+        "Middle East (Crowd)"
+      ],
+      "headlines": [
+        {
+          "source": "Reddit: r/AskMiddleEast",
+          "perspective": "Middle East (Crowd)",
+          "original_language": "en",
+          "raw_title": "BREAKING: Iran’s air defense is active and struck an F/A-18E (Super Hornet) — the fate of the jet is currently unknown",
+          "title": "BREAKING: Iran’s air defense is active and struck an F/A-18E (Super Hornet) — the fate of the jet is currently unknown",
+          "published_date": "2026-03-25 23:27:20",
+          "link": "https://www.reddit.com/r/AskMiddleEast/comments/1s3i3uq/breaking_irans_air_defense_is_active_and_struck/",
+          "fetch_timestamp": "2026-03-26 14:36:19",
+          "tactic_label": "Alarmism",
+          "tactic_confidence": 0.9966,
+          "x": 8.915124,
+          "y": -3.1622334
+        }
+      ],
+      "narrative_delta": {
+        "dominant_tactic": "Alarmism",
+        "agreement_score": 1.0,
+        "delta_score": 0.0,
+        "severity_score": 0.75,
+        "unique_tactics": [
+          "Alarmism"
+        ],
+        "framing_map": {
+          "Middle East (Crowd)": [
+            "Alarmism"
+          ]
+        }
+      },
+      "timestamp": "2026-03-26T14:44:41.802322"
+    },
+    {
+      "event_id": "standalone_87",
+      "is_event_cluster": false,
+      "headline_count": 1,
+      "representative_title": "Iranian diaspora supports US war against IRCG",
+      "sources": [
+        "Reddit: r/AskMiddleEast"
+      ],
+      "perspectives": [
+        "Middle East (Crowd)"
+      ],
+      "headlines": [
+        {
+          "source": "Reddit: r/AskMiddleEast",
+          "perspective": "Middle East (Crowd)",
+          "original_language": "en",
+          "raw_title": "Iranian diaspora supports US war against IRCG",
+          "title": "Iranian diaspora supports US war against IRCG",
+          "published_date": "2026-03-26 12:44:56",
+          "link": "https://www.reddit.com/r/AskMiddleEast/comments/1s40lq9/iranian_diaspora_supports_us_war_against_ircg/",
+          "fetch_timestamp": "2026-03-26 14:36:19",
+          "tactic_label": "Moral / Religious Framing",
+          "tactic_confidence": 0.9879,
+          "x": 7.2175565,
+          "y": -2.5841806
+        }
+      ],
+      "narrative_delta": {
+        "dominant_tactic": "Moral / Religious Framing",
+        "agreement_score": 1.0,
+        "delta_score": 0.0,
+        "severity_score": 0.5,
+        "unique_tactics": [
+          "Moral / Religious Framing"
+        ],
+        "framing_map": {
+          "Middle East (Crowd)": [
+            "Moral / Religious Framing"
+          ]
+        }
+      },
+      "timestamp": "2026-03-26T14:44:41.802549"
+    },
+    {
+      "event_id": "standalone_88",
+      "is_event_cluster": false,
+      "headline_count": 1,
+      "representative_title": "A new OnlyFans CEO has been chosen",
+      "sources": [
+        "Reddit: r/AskMiddleEast"
+      ],
+      "perspectives": [
+        "Middle East (Crowd)"
+      ],
+      "headlines": [
+        {
+          "source": "Reddit: r/AskMiddleEast",
+          "perspective": "Middle East (Crowd)",
+          "original_language": "en",
+          "raw_title": "A new OnlyFans CEO has been chosen",
+          "title": "A new OnlyFans CEO has been chosen",
+          "published_date": "2026-03-25 13:23:59",
+          "link": "https://www.reddit.com/r/AskMiddleEast/comments/1s34gww/a_new_onlyfans_ceo_has_been_chosen/",
+          "fetch_timestamp": "2026-03-26 14:36:19",
+          "tactic_label": "Moral / Religious Framing",
+          "tactic_confidence": 0.9719,
+          "x": 7.916402,
+          "y": 0.28288645
+        }
+      ],
+      "narrative_delta": {
+        "dominant_tactic": "Moral / Religious Framing",
+        "agreement_score": 1.0,
+        "delta_score": 0.0,
+        "severity_score": 0.5,
+        "unique_tactics": [
+          "Moral / Religious Framing"
+        ],
+        "framing_map": {
+          "Middle East (Crowd)": [
+            "Moral / Religious Framing"
+          ]
+        }
+      },
+      "timestamp": "2026-03-26T14:44:41.802823"
+    },
+    {
+      "event_id": "standalone_89",
+      "is_event_cluster": false,
+      "headline_count": 1,
+      "representative_title": "Iranian hypersonic missile with a speed of Mach 15 or 3.2 miles per second completely obliterated a facility in Negev southern Isreal with this video leaking despite heavy censorship and laws preventing publishing hits",
+      "sources": [
+        "Reddit: r/AskMiddleEast"
+      ],
+      "perspectives": [
+        "Middle East (Crowd)"
+      ],
+      "headlines": [
+        {
+          "source": "Reddit: r/AskMiddleEast",
+          "perspective": "Middle East (Crowd)",
+          "original_language": "en",
+          "raw_title": "Iranian hypersonic missile with a speed of Mach 15 or 3.2 miles per second completely obliterated a facility in Negev southern Isreal with this video leaking despite heavy censorship and laws preventing publishing hits",
+          "title": "Iranian hypersonic missile with a speed of Mach 15 or 3.2 miles per second completely obliterated a facility in Negev southern Isreal with this video leaking despite heavy censorship and laws preventing publishing hits",
+          "published_date": "2026-03-25 19:42:09",
+          "link": "https://www.reddit.com/r/AskMiddleEast/comments/1s3bw2g/iranian_hypersonic_missile_with_a_speed_of_mach/",
+          "fetch_timestamp": "2026-03-26 14:36:19",
+          "tactic_label": "Unverified Claims",
+          "tactic_confidence": 0.9838,
+          "x": 9.45695,
+          "y": -2.7813349
+        }
+      ],
+      "narrative_delta": {
+        "dominant_tactic": "Unverified Claims",
+        "agreement_score": 1.0,
+        "delta_score": 0.0,
+        "severity_score": 0.3,
+        "unique_tactics": [
+          "Unverified Claims"
+        ],
+        "framing_map": {
+          "Middle East (Crowd)": [
+            "Unverified Claims"
+          ]
+        }
+      },
+      "timestamp": "2026-03-26T14:44:41.803063"
+    },
+    {
+      "event_id": "standalone_90",
+      "is_event_cluster": false,
+      "headline_count": 1,
+      "representative_title": "\"Israeli\" official suggests \"purchasing\" Greek islands as “haven for Jewish people”, like how they \"purchased\" Palestine",
+      "sources": [
+        "Reddit: r/AskMiddleEast"
+      ],
+      "perspectives": [
+        "Middle East (Crowd)"
+      ],
+      "headlines": [
+        {
+          "source": "Reddit: r/AskMiddleEast",
+          "perspective": "Middle East (Crowd)",
+          "original_language": "en",
+          "raw_title": "\"Israeli\" official suggests \"purchasing\" Greek islands as “haven for Jewish people”, like how they \"purchased\" Palestine",
+          "title": "\"Israeli\" official suggests \"purchasing\" Greek islands as “haven for Jewish people”, like how they \"purchased\" Palestine",
+          "published_date": "2026-03-25 21:51:33",
+          "link": "https://www.reddit.com/r/AskMiddleEast/comments/1s3fext/israeli_official_suggests_purchasing_greek/",
+          "fetch_timestamp": "2026-03-26 14:36:19",
+          "tactic_label": "Unverified Claims",
+          "tactic_confidence": 0.999,
+          "x": 8.870949,
+          "y": -0.26669332
+        }
+      ],
+      "narrative_delta": {
+        "dominant_tactic": "Unverified Claims",
+        "agreement_score": 1.0,
+        "delta_score": 0.0,
+        "severity_score": 0.3,
+        "unique_tactics": [
+          "Unverified Claims"
+        ],
+        "framing_map": {
+          "Middle East (Crowd)": [
+            "Unverified Claims"
+          ]
+        }
+      },
+      "timestamp": "2026-03-26T14:44:41.803337"
+    },
+    {
+      "event_id": "standalone_91",
+      "is_event_cluster": false,
+      "headline_count": 1,
+      "representative_title": "Israeli teen’s honest reaction to missing school during wartime",
+      "sources": [
+        "Reddit: r/AskMiddleEast"
+      ],
+      "perspectives": [
+        "Middle East (Crowd)"
+      ],
+      "headlines": [
+        {
+          "source": "Reddit: r/AskMiddleEast",
+          "perspective": "Middle East (Crowd)",
+          "original_language": "en",
+          "raw_title": "Israeli teen’s honest reaction to missing school during wartime",
+          "title": "Israeli teen’s honest reaction to missing school during wartime",
+          "published_date": "2026-03-25 18:47:42",
+          "link": "https://www.reddit.com/r/AskMiddleEast/comments/1s3ahex/israeli_teens_honest_reaction_to_missing_school/",
+          "fetch_timestamp": "2026-03-26 14:36:19",
+          "tactic_label": "Unverified Claims",
+          "tactic_confidence": 0.7597,
+          "x": 8.995572,
+          "y": -1.058283
+        }
+      ],
+      "narrative_delta": {
+        "dominant_tactic": "Unverified Claims",
+        "agreement_score": 1.0,
+        "delta_score": 0.0,
+        "severity_score": 0.3,
+        "unique_tactics": [
+          "Unverified Claims"
+        ],
+        "framing_map": {
+          "Middle East (Crowd)": [
+            "Unverified Claims"
+          ]
+        }
+      },
+      "timestamp": "2026-03-26T14:44:41.803632"
+    },
+    {
+      "event_id": "standalone_92",
+      "is_event_cluster": false,
+      "headline_count": 1,
+      "representative_title": "Does social media changes people?",
+      "sources": [
+        "Reddit: r/AskMiddleEast"
+      ],
+      "perspectives": [
+        "Middle East (Crowd)"
+      ],
+      "headlines": [
+        {
+          "source": "Reddit: r/AskMiddleEast",
+          "perspective": "Middle East (Crowd)",
+          "original_language": "en",
+          "raw_title": "Does social media changes people?",
+          "title": "Does social media changes people?",
+          "published_date": "2026-03-26 09:31:30",
+          "link": "https://www.reddit.com/r/AskMiddleEast/comments/1s3x6b1/does_social_media_changes_people/",
+          "fetch_timestamp": "2026-03-26 14:36:19",
+          "tactic_label": "Unverified Claims",
+          "tactic_confidence": 0.8928,
+          "x": 11.876927,
+          "y": -0.66852224
+        }
+      ],
+      "narrative_delta": {
+        "dominant_tactic": "Unverified Claims",
+        "agreement_score": 1.0,
+        "delta_score": 0.0,
+        "severity_score": 0.3,
+        "unique_tactics": [
+          "Unverified Claims"
+        ],
+        "framing_map": {
+          "Middle East (Crowd)": [
+            "Unverified Claims"
+          ]
+        }
+      },
+      "timestamp": "2026-03-26T14:44:41.803806"
+    },
+    {
+      "event_id": "evt_0",
+      "is_event_cluster": true,
+      "headline_count": 2,
+      "representative_title": "In U-turn, UK police say Palestine Action protesters will be arrested again",
+      "sources": [
+        "Al Jazeera (EN)",
+        "Al Jazeera (AR)"
+      ],
+      "perspectives": [
+        "Middle East (English)",
+        "Middle East (Arabic)"
+      ],
+      "headlines": [
+        {
+          "source": "Al Jazeera (EN)",
+          "perspective": "Middle East (English)",
+          "original_language": "en",
+          "raw_title": "In U-turn, UK police say Palestine Action protesters will be arrested again",
+          "title": "In U-turn, UK police say Palestine Action protesters will be arrested again",
+          "published_date": "Thu, 26 Mar 2026 06:47:41 +0000",
+          "link": "https://www.aljazeera.com/news/2026/3/26/in-u-turn-uk-police-say-palestine-action-protesters-will-be-arrested-again?traffic_source=rss",
+          "fetch_timestamp": "2026-03-26 14:35:14",
+          "tactic_label": "Unverified Claims",
+          "tactic_confidence": 0.9842,
+          "x": 9.550777,
+          "y": -0.13762791
+        },
+        {
+          "source": "Al Jazeera (AR)",
+          "perspective": "Middle East (Arabic)",
+          "original_language": "ar",
+          "raw_title": "شرطة لندن تستأنف اعتقال مؤيدي منظمة \"فلسطين أكشن\"",
+          "title": "London Police resume arrests of Palestine Action supporters",
+          "published_date": "Thu, 26 Mar 2026 07:27:56 +0300",
+          "link": "https://www.aljazeera.net/news/2026/3/26/%d8%b4%d8%b1%d8%b7%d8%a9-%d9%84%d9%86%d8%af%d9%86-%d8%aa%d8%b3%d8%aa%d8%a3%d9%86%d9%81-%d8%a7%d8%b9%d8%aa%d9%82%d8%a7%d9%84-%d9%85%d8%a4%d9%8a%d8%af%d9%8a-%d9%85%d9%86%d8%b8%d9%85%d8%a9?traffic_source=rss",
+          "fetch_timestamp": "2026-03-26 14:35:25",
+          "tactic_label": "Unverified Claims",
+          "tactic_confidence": 0.9674,
+          "x": 9.290077,
+          "y": -0.10348011
+        }
+      ],
+      "narrative_delta": {
+        "dominant_tactic": "Unverified Claims",
+        "agreement_score": 1.0,
+        "delta_score": 0.0,
+        "severity_score": 0.3,
+        "unique_tactics": [
+          "Unverified Claims"
+        ],
+        "framing_map": {
+          "Middle East (English)": [
+            "Unverified Claims"
+          ],
+          "Middle East (Arabic)": [
+            "Unverified Claims"
+          ]
+        }
+      },
+      "timestamp": "2026-03-26T14:44:41.808484"
+    },
+    {
+      "event_id": "evt_1",
+      "is_event_cluster": true,
+      "headline_count": 2,
+      "representative_title": "A Russian planned a drone attack with grenades on a military airfield",
+      "sources": [
+        "Lenta (RU)"
+      ],
+      "perspectives": [
+        "Russia"
+      ],
+      "headlines": [
+        {
+          "source": "Lenta (RU)",
+          "perspective": "Russia",
+          "original_language": "ru",
+          "raw_title": "Атаку дронами с гранатами по военному аэродрому планировал россиянин",
+          "title": "A Russian planned a drone attack with grenades on a military airfield",
+          "published_date": "Thu, 26 Mar 2026 11:59:00 +0300",
+          "link": "https://lenta.ru/news/2026/03/26/ataku-dronami-s-granatami-po-voennomu-aerodromu-planiroval-rossiyanin/",
+          "fetch_timestamp": "2026-03-26 14:35:41",
+          "tactic_label": "Unverified Claims",
+          "tactic_confidence": 0.9931,
+          "x": 10.550737,
+          "y": -3.633066
+        },
+        {
+          "source": "Lenta (RU)",
+          "perspective": "Russia",
+          "original_language": "ru",
+          "raw_title": "Сорвана атака дронами с гранатами по военному аэродрому в российском регионе",
+          "title": "An attack by drones with grenades on a military airfield in the Russian region was thwarted",
+          "published_date": "Thu, 26 Mar 2026 11:49:00 +0300",
+          "link": "https://lenta.ru/news/2026/03/26/sorvana-ataka-dronami-s-granatami-po-voennomu-aerodromu-v-rossiyskom-regione/",
+          "fetch_timestamp": "2026-03-26 14:35:52",
+          "tactic_label": "Unverified Claims",
+          "tactic_confidence": 0.9576,
+          "x": 10.772383,
+          "y": -3.3284237
+        }
+      ],
+      "narrative_delta": {
+        "dominant_tactic": "Unverified Claims",
+        "agreement_score": 1.0,
+        "delta_score": 0.0,
+        "severity_score": 0.3,
+        "unique_tactics": [
+          "Unverified Claims"
+        ],
+        "framing_map": {
+          "Russia": [
+            "Unverified Claims"
+          ]
+        }
+      },
+      "timestamp": "2026-03-26T14:44:41.809994"
+    }
+  ]
+}
