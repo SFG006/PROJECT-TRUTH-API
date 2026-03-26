@@ -1,7 +1,8 @@
+# tactic_engine.py
 import pandas as pd
 from transformers import pipeline
 from sentence_transformers import SentenceTransformer
-from sklearn.decomposition import PCA
+from umap import UMAP
 import os
 import glob
 from datetime import datetime
@@ -18,6 +19,10 @@ print(f"Found {len(raw_files)} raw data files. Combining them...")
 df_list = [pd.read_csv(file) for file in raw_files]
 df = pd.concat(df_list, ignore_index=True)
 df = df.drop_duplicates(subset=['title', 'source'])
+
+# ── Drop any git conflict rows that snuck into the CSV ──
+df = df[~df['title'].astype(str).str.contains('<<<<<<|>>>>>>|=======', regex=True)]
+df = df.reset_index(drop=True)
 print(f"Total unique headlines to analyze: {len(df)}")
 
 # ─────────────────────────────────────────────
@@ -28,26 +33,26 @@ classifier = pipeline("zero-shot-classification", model="facebook/bart-large-mnl
 
 TACTIC_DESCRIPTIONS = {
     # --- Emotional Manipulation ---
-    "exaggerates threats to create panic and fear":          "Fear-Mongering",
-    "uses emotional stories to bypass rational thinking":    "Emotional Manipulation",
-    "creates a sense of urgency or impending doom":          "Alarmism",
+    "exaggerates threats to create panic and fear":           "Fear-Mongering",
+    "uses emotional stories to bypass rational thinking":     "Emotional Manipulation",
+    "creates a sense of urgency or impending doom":           "Alarmism",
 
     # --- Identity & Group Dynamics ---
     "appeals to a sense of national superiority and loyalty": "Nationalism / Pride",
-    "portrays one group as an enemy of society":             "Othering / Scapegoating",
-    "promotes distrust of institutions or authorities":      "Anti-Establishment",
-    "uses religious or moral framing to justify a position": "Moral / Religious Framing",
+    "portrays one group as an enemy of society":              "Othering / Scapegoating",
+    "promotes distrust of institutions or authorities":       "Anti-Establishment",
+    "uses religious or moral framing to justify a position":  "Moral / Religious Framing",
 
     # --- Narrative Distortion ---
-    "blames the victims of harm instead of the perpetrators":       "Victim-Blaming",
-    "frames aggressive or violent acts as necessary and righteous": "Justification of Violence",
-    "presents a false or misleading version of events":             "Disinformation / Fabrication",
-    "uses selective facts to push a one-sided narrative":           "Selective Framing / Bias",
-    "uses mockery and ridicule to dismiss opposing views":          "Ridicule / Delegitimization",
+    "blames the victims of harm instead of the perpetrators":        "Victim-Blaming",
+    "frames aggressive or violent acts as necessary and righteous":  "Justification of Violence",
+    "presents a false or misleading version of events":              "Disinformation / Fabrication",
+    "uses selective facts to push a one-sided narrative":            "Selective Framing / Bias",
+    "uses mockery and ridicule to dismiss opposing views":           "Ridicule / Delegitimization",
 
     # --- Authority & Credibility ---
-    "cites authority figures or experts to lend false credibility": "False Authority",
-    "uses vague or unverifiable claims to support a position":      "Unverified Claims",
+    "cites authority figures or experts to lend false credibility":  "False Authority",
+    "uses vague or unverifiable claims to support a position":       "Unverified Claims",
 
     # --- Neutral ---
     "is objective, fact-based reporting without emotional manipulation": "Neutral Reporting",
@@ -83,16 +88,25 @@ df[['tactic_label', 'tactic_confidence']] = df['title'].apply(
 )
 
 # ─────────────────────────────────────────────
-# STEP 3 — Semantic Map Coordinates (PCA)
+# STEP 3 — Semantic Map Coordinates (UMAP)
 # ─────────────────────────────────────────────
-print("\nCalculating semantic topography (PCA)...")
+print("\nCalculating semantic topography (UMAP)...")
 embedding_model = SentenceTransformer('all-MiniLM-L6-v2')
-embeddings = embedding_model.encode(df['title'].tolist())
+embeddings = embedding_model.encode(df['title'].tolist(), show_progress_bar=True)
 
-pca = PCA(n_components=2)
-reduced_embeddings = pca.fit_transform(embeddings)
+# UMAP spreads clusters into actual 2D space — no more diagonal line
+reducer = UMAP(
+    n_components=2,
+    n_neighbors=10,    # lower = tighter local clusters
+    min_dist=0.3,      # higher = more visual spread between points
+    random_state=42    # fixed seed = same layout every run
+)
+reduced_embeddings = reducer.fit_transform(embeddings)
 df['x'] = reduced_embeddings[:, 0]
 df['y'] = reduced_embeddings[:, 1]
+
+print(f"UMAP done. X range: {df['x'].min():.2f} → {df['x'].max():.2f}")
+print(f"           Y range: {df['y'].min():.2f} → {df['y'].max():.2f}")
 
 # ─────────────────────────────────────────────
 # STEP 4 — Save Master File
