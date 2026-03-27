@@ -155,7 +155,7 @@ embeddings = embedding_model.encode(
 )
 
 reducer = UMAP(
-    n_components=2,
+    n_components=3,
     n_neighbors=10,    # lower = tighter local clusters
     min_dist=0.3,      # higher = more visual spread
     random_state=42    # fixed seed = same layout every run
@@ -163,9 +163,11 @@ reducer = UMAP(
 reduced_embeddings = reducer.fit_transform(embeddings)
 df['x'] = reduced_embeddings[:, 0]
 df['y'] = reduced_embeddings[:, 1]
+df['z'] = reduced_embeddings[:, 2]
 
 print(f"UMAP done. X range: {df['x'].min():.2f} → {df['x'].max():.2f}")
 print(f"           Y range: {df['y'].min():.2f} → {df['y'].max():.2f}")
+print(f"           Z range: {df['z'].min():.2f} → {df['z'].max():.2f}")
 
 # ─────────────────────────────────────────────
 # STEP 4 — Save Master File
