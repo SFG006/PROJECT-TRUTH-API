@@ -107,10 +107,11 @@ def get_tactic(text):
         # Use full_text — cap at 512 tokens (model limit)
         # Take first 512 chars — intro sentences carry the most framing signal
         result = classifier(
-            str(text)[:512],
+            str(text),
             candidate_labels=candidate_labels,
             hypothesis_template="This text {}.",
-            multi_label=True
+            multi_label=True,
+            truncation=True
         )
         top_description = result['labels'][0]
         confidence      = round(result['scores'][0], 4)
