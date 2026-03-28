@@ -188,4 +188,6 @@ print(df[['source', 'title', 'tactic_label', 'tactic_confidence']].head(10).to_s
 # ─────────────────────────────────────────────
 print("\nHanding off to Semantic Engine...")
 from semantic_engine import run_semantic_engine
-run_semantic_engine()
+
+# Pass your existing dataframe and the embeddings you made for UMAP directly!
+run_semantic_engine(preloaded_df=df, precomputed_embeddings=embeddings)
