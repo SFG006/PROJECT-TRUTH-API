@@ -48,57 +48,41 @@ classifier = pipeline("zero-shot-classification", model="facebook/bart-large-mnl
 # ── Rewritten descriptions — specific language patterns, not abstract concepts ──
 # These match actual sentence patterns found in news bodies, not just headlines
 TACTIC_DESCRIPTIONS = {
-    # --- Emotional Manipulation ---
-    "uses words like catastrophe, crisis, or disaster to provoke fear":
-        "Fear-Mongering",
+    # --- Emotional Manipulation (Expanded Triggers) ---
+    "provokes panic by warning of an imminent catastrophe or irreversible damage": "Fear-Mongering / Alarmism",
+    "exaggerates a threat to make the reader feel terrified or anxious": "Fear-Mongering / Alarmism",
 
-    "tells a personal tragedy story to make the reader feel guilt or pity":
-        "Emotional Manipulation",
-
-    "warns of imminent collapse, invasion, or irreversible damage":
-        "Alarmism",
+    "tells a tragic personal story to manipulate the reader's sympathy or guilt": "Emotional Manipulation",
+    "uses highly charged emotional language to bypass logical reasoning": "Emotional Manipulation",
 
     # --- Identity & Group Dynamics ---
-    "celebrates a nation, army, or people as heroic, superior, or victorious":
-        "Nationalism / Pride",
+    "glorifies a specific nation, military, or group as morally superior and heroic": "Nationalism / Pride",
 
-    "portrays a religion, ethnicity, or political group as dangerous or criminal":
-        "Othering / Scapegoating",
+    "dehumanizes a specific religion, ethnicity, or group by framing them as dangerous": "Othering / Scapegoating",
+    "blames a minority or opposing group for a complex systemic problem": "Othering / Scapegoating",
 
-    "attacks governments, media, or institutions as corrupt or untrustworthy":
-        "Anti-Establishment",
+    "frames established institutions, media, or governments as inherently corrupt": "Anti-Establishment",
 
-    "uses God, religion, scripture, or moral duty to justify a political action":
-        "Moral / Religious Framing",
+    "claims a political or military action is mandated by God or moral righteousness": "Moral / Religious Framing",
 
     # --- Narrative Distortion ---
-    "describes civilians or protesters killed as responsible for their own deaths":
-        "Victim-Blaming",
+    "claims that victims of violence or oppression are responsible for their own suffering": "Victim-Blaming",
 
-    "describes a military strike, killing, or war as justified, necessary, or heroic":
-        "Justification of Violence",
+    "frames a military strike, assassination, or act of war as a necessary and heroic act": "Justification of Violence",
 
-    "contradicts known facts or presents events that did not happen as real":
-        "Disinformation / Fabrication",
+    "presents a completely fabricated event or directly contradicts proven historical facts": "Disinformation",
 
-    "highlights only facts that support one side while ignoring contradictory evidence":
-        "Selective Framing / Bias",
+    "presents a heavily biased, one-sided narrative while deliberately omitting opposing facts": "Selective Framing / Bias",
 
-    "mocks, ridicules, or dismisses a leader, country, or group as stupid or weak":
-        "Ridicule / Delegitimization",
+    "uses sarcasm and insults to portray a political leader or nation as weak and incompetent": "Ridicule / Delegitimization",
 
     # --- Authority & Credibility ---
-    "quotes an unnamed official, anonymous source, or unnamed expert as proof":
-        "False Authority",
-
-    "reports unconfirmed battlefield claims, casualty numbers, or territorial gains":
-        "Unverified Claims",
+    "relies on anonymous sources or unnamed officials to make a severe allegation": "False Authority / Unverified Claims",
+    "reports unconfirmed casualty numbers or battlefield victories as absolute facts": "False Authority / Unverified Claims",
 
     # --- Neutral ---
-    "reports a confirmed fact, official statement, or verified event without bias":
-        "Neutral Reporting",
+    "reports verified events, data, and official statements using objective, balanced language": "Neutral Reporting",
 }
-
 candidate_labels = list(TACTIC_DESCRIPTIONS.keys())
 
 
