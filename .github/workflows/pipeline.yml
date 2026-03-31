@@ -1,64 +1,46 @@
-name: Truth-Tide Autonomous Pipeline
+name: Truth-Tide OSINT Pipeline
 
-# 1. THE TRIGGER: When should this run?
+# This tells GitHub WHEN to run the script
 on:
-  schedule:
-    # Run at minute 0 past every 12th hour.
-    - cron: '0 */12 * * *'
-  workflow_dispatch:
-    # Manual "Run Workflow" button on GitHub
+  push:
+    paths:
+      - 'data/raw/**' # Runs automatically if you upload a new raw CSV
+  workflow_dispatch: # Adds a "Run Workflow" button in the GitHub UI so you can trigger it manually
 
-# 2. THE WORK: What exactly are we doing?
 jobs:
-  siphon-and-analyze:
-    runs-on: ubuntu-latest # GitHub gives us a free Linux server
+  run-intelligence-engine:
+    runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout Repository
-      uses: actions/checkout@v3
-      with:
-        fetch-depth: 0 # THE FIX: Tells GitHub to download the full history so Hugging Face accepts the push
+      - name:  Checkout Repository
+        uses: actions/checkout@v4
 
-    - name: Set up Python
-      uses: actions/setup-python@v4
-      with:
-        python-version: '3.11'
+      - name:  Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
 
-    - name: Install Dependencies
-      run: |
-        python -m pip install --upgrade pip
-        pip install -r requirements.txt
+      - name:  Install Dependencies
+        # Notice we included umap-learn here since we added 3D coordinates!
+        run: |
+          python -m pip install --upgrade pip
+          pip install pandas groq tqdm sentence-transformers scikit-learn chromadb umap-learn
 
-    - name: Run Global News Siphon
-      run: python data_siphon.py
+      - name:  Run Truth-Tide Pipeline
+        env:
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+        # Since tactic_engine.py automatically triggers semantic_engine.py, we only need to run this one script
+        run: python tactic_engine.py
 
-    - name: Run OSINT Reddit Siphon
-      env:
-        REDDIT_CLIENT_ID: ${{ secrets.REDDIT_CLIENT_ID }}
-        REDDIT_SECRET: ${{ secrets.REDDIT_SECRET }}
-        REDDIT_USER_AGENT: ${{ secrets.REDDIT_USER_AGENT }}
-      run: python reddit_siphon.py
-
-    # --- THE FIX: Run the Tactic Engine (which auto-triggers Semantic Engine) ---
-    - name: Run AI Tactic & Semantic Engines
-      run: python tactic_engine.py
-    # ----------------------------------------------------------------------------
-
-    - name: Commit and Push New Intelligence
-      run: |
-        git config --local user.email "action@github.com"
-        git config --local user.name "Truth-Tide Bot"
-        
-        git add data/
-        
-        git diff --quiet && git diff --staged --quiet || git commit -m "Auto-Update: Siphoned new headlines and mapped semantics"
-        git push origin LEON
-
-    - name: Deploy Fresh Intelligence to Hugging Face
-      env:
-        HF_TOKEN: ${{ secrets.HF_TOKEN }}
-      run: |
-        git remote add huggingface https://SFG006:${HF_TOKEN}@huggingface.co/spaces/SFG006/Truth-Tide-API
-        
-        # Fixed the indentation on this line!
-        git push huggingface HEAD:main --force
+      - name:  Commit and Push Processed Data
+        run: |
+          git config --global user.name "Truth-Tide Bot"
+          git config --global user.email "actions@github.com"
+          
+          # Force add the processed files (in case they were previously ignored)
+          git add -f data/processed/master_tactics_latest.csv
+          git add -f data/processed/narrative_report.json
+          
+          # Only commit if the AI actually changed the data
+          git diff --quiet && git diff --staged --quiet || git commit -m "Auto-update OSINT dashboard data"
+          git push
