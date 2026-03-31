@@ -4,7 +4,7 @@ import numpy as np
 import pandas as pd
 from datetime import datetime
 from collections import defaultdict
-
+from umap import UMAP
 # Embeddings & Clustering
 from sentence_transformers import SentenceTransformer
 from sklearn.cluster import DBSCAN
@@ -27,53 +27,47 @@ DBSCAN_EPS = 0.40
 DBSCAN_MIN_SAMPLES = 2
 
 TACTIC_SEVERITY = {
-    "Disinformation / Fabrication": 1.0,
+    "Disinformation": 1.0,
     "Justification of Violence": 0.95,
-    "Fear-Mongering": 0.90,
+    "Fear-Mongering / Alarmism": 0.90,
     "Othering / Scapegoating": 0.88,
     "Victim-Blaming": 0.85,
-    "Alarmism": 0.75,
     "Emotional Manipulation": 0.72,
     "Ridicule / Delegitimization": 0.68,
     "Selective Framing / Bias": 0.60,
     "Nationalism / Pride": 0.55,
     "Moral / Religious Framing": 0.50,
     "Anti-Establishment": 0.45,
-    "False Authority": 0.40,
-    "Unverified Claims": 0.30,
+    "False Authority / Unverified Claims": 0.40,
     "Neutral Reporting": 0.05,
     "ERROR": 0.0,
 }
 
 
 # ─────────────────────────────────────────────
-# STEP 1 — LOAD DATA
+# STEP 1 — LOAD DATA (Fallback if not passed in RAM)
 # ─────────────────────────────────────────────
 def load_data(filepath: str) -> pd.DataFrame:
     print(f"[1/5] Loading master data from: {filepath}")
+    if not os.path.exists(filepath):
+        raise FileNotFoundError(f"Cannot find {filepath}. Run tactic_engine.py first.")
     df = pd.read_csv(filepath)
     df = df.dropna(subset=["title", "tactic_label"])
     df = df.reset_index(drop=True)
-    print(f"      Loaded {len(df)} headlines from {df['source'].nunique()} sources.")
+    print(f"      Loaded {len(df)} headlines.")
     return df
 
 
 # ─────────────────────────────────────────────
 # STEP 2 — EMBED + CLUSTER INTO EVENTS
 # ─────────────────────────────────────────────
-def embed_and_cluster(df: pd.DataFrame, precomputed_embeddings=None) -> tuple[np.ndarray, np.ndarray]:
-    if precomputed_embeddings is not None:
-        print(f"\n[2/5] Using precomputed embeddings from memory ({len(df)} headlines)...")
-        embeddings = precomputed_embeddings
-    else:
-        print(f"\n[2/5] Embedding {len(df)} headlines with '{EMBEDDING_MODEL}'...")
-        model = SentenceTransformer(EMBEDDING_MODEL)
-        text_to_embed = df["full_text"].fillna(df["title"]).tolist()
-        embeddings = model.encode(text_to_embed, show_progress_bar=True)
+def embed_and_cluster(df: pd.DataFrame) -> tuple[np.ndarray, np.ndarray]:
+    print(f"\n[2/5] Embedding {len(df)} headlines with '{EMBEDDING_MODEL}' for 3D Mapping...")
+    model = SentenceTransformer(EMBEDDING_MODEL)
+    text_to_embed = df["full_text"].fillna(df["title"]).tolist()
+    embeddings = model.encode(text_to_embed, show_progress_bar=True)
 
     print(f"      Running DBSCAN clustering (eps={DBSCAN_EPS}, min_samples={DBSCAN_MIN_SAMPLES})...")
-
-    # Convert cosine similarity → distance matrix for DBSCAN
     cosine_dist_matrix = 1 - cosine_similarity(embeddings)
     cosine_dist_matrix = np.clip(cosine_dist_matrix, 0, 2)
 
@@ -85,6 +79,27 @@ def embed_and_cluster(df: pd.DataFrame, precomputed_embeddings=None) -> tuple[np
 
     print(f"      Found {n_events} event clusters | {n_noise} standalone headlines.")
     return embeddings, labels
+
+
+def generate_3d_coordinates(df: pd.DataFrame, embeddings: np.ndarray):
+    print(f"\n[2.5/5] Generating 3D Semantic Map Coordinates (UMAP)...")
+    reducer = UMAP(
+        n_components=3,
+        n_neighbors=10,
+        min_dist=0.3,
+        random_state=42
+    )
+
+    # Calculate the 3D positions based on the semantic embeddings
+    coords = reducer.fit_transform(embeddings)
+
+    # Attach them to the dataframe so they end up in the JSON
+    df['x'] = coords[:, 0]
+    df['y'] = coords[:, 1]
+    df['z'] = coords[:, 2]
+
+    print("      UMAP done. Appended X, Y, Z coordinates to data.")
+    return df
 
 
 # ─────────────────────────────────────────────
@@ -145,15 +160,20 @@ def build_event_clusters(df: pd.DataFrame, labels: np.ndarray) -> list[dict]:
                 events.append(event)
             continue
 
+        # Ensure the coordinates are explicitly kept in the dictionary
         headlines = cluster_df.to_dict(orient="records")
+
+        # Clean up any NaN values that might break the JSON parser
+        for h in headlines:
+             if pd.isna(h.get('x')): h['x'] = 0.0
+             if pd.isna(h.get('y')): h['y'] = 0.0
+             if pd.isna(h.get('z')): h['z'] = 0.0
         perspectives = cluster_df["perspective"].tolist()
         tactics = cluster_df["tactic_label"].tolist()
         sources = cluster_df["source"].tolist()
 
-        if "tactic_confidence" in cluster_df.columns:
-            representative = cluster_df.loc[cluster_df["tactic_confidence"].idxmax(), "title"]
-        else:
-            representative = headlines[0]["title"]
+        # Grab the first headline as representative
+        representative = headlines[0]["title"]
 
         narrative = compute_narrative_delta(perspectives, tactics)
         event = {
@@ -193,12 +213,7 @@ def persist_to_chromadb(df: pd.DataFrame, embeddings: np.ndarray):
         return raw.replace(" ", "_").replace("/", "-")[:100]
 
     ids = [make_id(row) for _, row in df.iterrows()]
-
-    # Handle both PyTorch tensors (from memory) and Numpy arrays (from standalone run)
-    if hasattr(embeddings, 'cpu'):
-        embeddings_list = embeddings.cpu().numpy().tolist()
-    else:
-        embeddings_list = embeddings.tolist()
+    embeddings_list = embeddings.tolist()
 
     metadatas = [
         {
@@ -266,13 +281,22 @@ def export_report(events: list[dict], summary: dict, output_path: str):
 # ─────────────────────────────────────────────
 # MAIN
 # ─────────────────────────────────────────────
-def run_semantic_engine(preloaded_df=None, precomputed_embeddings=None):
+# Notice how this now accepts preloaded_df directly from tactic_engine.py
+def run_semantic_engine(preloaded_df=None):
     print("=" * 56)
-    print("  TRUTH-TIDE · Semantic Engine v2")
+    print("  TRUTH-TIDE · Semantic Engine v2 (Groq Pipeline)")
     print("=" * 56)
 
+    # If tactic_engine passed the data in RAM, use it. Otherwise, load from CSV.
     df = preloaded_df if preloaded_df is not None else load_data(INPUT_FILE)
-    embeddings, labels = embed_and_cluster(df, precomputed_embeddings)
+
+    embeddings, labels = embed_and_cluster(df)
+    df = generate_3d_coordinates(df, embeddings)
+
+    # Save the dataframe back to the CSV so the API can read the X, Y, Z columns
+    df.to_csv(INPUT_FILE, index=False)
+    # ---------------------
+
     events = build_event_clusters(df, labels)
 
     persist_to_chromadb(df, embeddings)
@@ -293,7 +317,7 @@ def run_semantic_engine(preloaded_df=None, precomputed_embeddings=None):
         print(f"  [{nd.get('delta_score', '?'):.2f} Δ] {e['representative_title'][:65]}...")
         print(f"        Tactics seen: {', '.join(nd.get('unique_tactics', []))}")
     print("─" * 56)
-    print("  Done. Run the dashboard to visualise.\n")
+    print("  Done. JSON Report is ready for the dashboard!\n")
 
 
 if __name__ == "__main__":
