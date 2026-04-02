@@ -40,7 +40,7 @@
       "Reddit: r/iranian": 10,
       "Reddit: r/Sino": 10
     },
-    "run_timestamp": "2026-03-31T17:22:45.028631"
+    "run_timestamp": "2026-04-02T04:38:32.999373"
   },
   "events": [
     {
@@ -49,18 +49,18 @@
       "headline_count": 14,
       "representative_title": "Russian attack on World Heritage sites in Ukrainian city of Lviv causes uproar",
       "sources": [
-        "Reddit: r/ukraine",
         "Lenta (RU)",
         "France 24 (EN)",
-        "Deutsche Welle (EN)",
+        "Reddit: r/ukraine",
         "TASS (EN)",
+        "Deutsche Welle (EN)",
         "Reddit: r/UkraineRussiaReport"
       ],
       "perspectives": [
-        "Ukraine/Russia (Neutral Reports)",
         "Russia",
-        "Russia (Wire)",
         "Ukraine (Regional)",
+        "Ukraine/Russia (Neutral Reports)",
+        "Russia (Wire)",
         "Western Europe"
       ],
       "headlines": [
@@ -324,12 +324,12 @@
         "severity_score": 0.682,
         "unique_tactics": [
           "Justification of Violence",
-          "Selective Framing / Bias",
           "Ridicule / Delegitimization",
-          "Nationalism / Pride",
-          "Emotional Manipulation",
+          "Selective Framing / Bias",
+          "Othering / Scapegoating",
           "Fear-Mongering / Alarmism",
-          "Othering / Scapegoating"
+          "Emotional Manipulation",
+          "Nationalism / Pride"
         ],
         "framing_map": {
           "Western Europe": [
@@ -343,18 +343,18 @@
             "Selective Framing / Bias"
           ],
           "Ukraine (Regional)": [
-            "Ridicule / Delegitimization",
             "Nationalism / Pride",
-            "Emotional Manipulation"
+            "Emotional Manipulation",
+            "Ridicule / Delegitimization"
           ],
           "Ukraine/Russia (Neutral Reports)": [
+            "Othering / Scapegoating",
             "Justification of Violence",
-            "Selective Framing / Bias",
-            "Othering / Scapegoating"
+            "Selective Framing / Bias"
           ]
         }
       },
-      "timestamp": "2026-03-31T17:22:44.677762"
+      "timestamp": "2026-04-02T04:38:32.643465"
     },
     {
       "event_id": "evt_2",
@@ -362,15 +362,15 @@
       "headline_count": 10,
       "representative_title": "Nepal's ex-PM arrested over fatal protest crackdown",
       "sources": [
-        "BBC News",
         "The Hindu",
+        "BBC News",
         "Al Jazeera (EN)",
         "Deutsche Welle (EN)"
       ],
       "perspectives": [
-        "South Asia",
+        "Middle East (English)",
         "Western Europe",
-        "Middle East (English)"
+        "South Asia"
       ],
       "headlines": [
         {
@@ -384,9 +384,9 @@
           "link": "https://www.bbc.com/news/articles/cn89ry7y835o?at_medium=RSS&at_campaign=rss",
           "fetch_timestamp": "2026-03-28 11:26:33",
           "tactic_label": "Selective Framing / Bias",
-          "specific_technique": "Selective Prosecution Focus",
+          "specific_technique": "Selective Evidence Presentation",
           "tactic_confidence": 0.95,
-          "llm_reasoning": "The article selectively frames the arrests of Oli and Lekhak as a routine process, omitting potential opposing facts or perspectives that could challenge the narrative of their alleged involvement in the crackdown.",
+          "llm_reasoning": "The article presents a balanced view of the situation, including quotes from Oli and the police, and does not omit opposing facts to create a one-sided narrative.",
           "x": -14.0292387008667,
           "y": -2.274233102798462,
           "z": 2.340991735458374
@@ -440,7 +440,7 @@
           "tactic_label": "Anti-Establishment",
           "specific_technique": "Critiquing Old Order",
           "tactic_confidence": 0.95,
-          "llm_reasoning": "The article frames the recent election results in Nepal as a rejection of old leaders and established parties, implying that the current system is inherently corrupt and in need of transformation.",
+          "llm_reasoning": "The article frames the rejection of old leaders and established parties as a positive change, implying that the old order is inherently corrupt and in need of transformation.",
           "x": -13.896207809448242,
           "y": -2.827181100845337,
           "z": 2.8435490131378174
@@ -560,9 +560,9 @@
         "delta_score": 0.5,
         "severity_score": 0.553,
         "unique_tactics": [
+          "Othering / Scapegoating",
           "Anti-Establishment",
-          "Selective Framing / Bias",
-          "Othering / Scapegoating"
+          "Selective Framing / Bias"
         ],
         "framing_map": {
           "Western Europe": [
@@ -578,7 +578,7 @@
           ]
         }
       },
-      "timestamp": "2026-03-31T17:22:44.667876"
+      "timestamp": "2026-04-02T04:38:32.633731"
     },
     {
       "event_id": "evt_10",
@@ -590,8 +590,8 @@
         "Deutsche Welle (EN)"
       ],
       "perspectives": [
-        "South Asia",
-        "Western Europe"
+        "Western Europe",
+        "South Asia"
       ],
       "headlines": [
         {
@@ -649,7 +649,7 @@
           ]
         }
       },
-      "timestamp": "2026-03-31T17:22:44.679166"
+      "timestamp": "2026-04-02T04:38:32.644863"
     },
     {
       "event_id": "evt_11",
@@ -716,7 +716,7 @@
           ]
         }
       },
-      "timestamp": "2026-03-31T17:22:44.680525"
+      "timestamp": "2026-04-02T04:38:32.646209"
     },
     {
       "event_id": "evt_12",
@@ -728,8 +728,8 @@
         "Al Jazeera (EN)"
       ],
       "perspectives": [
-        "Middle East (Contested)",
-        "Middle East (English)"
+        "Middle East (English)",
+        "Middle East (Contested)"
       ],
       "headlines": [
         {
@@ -775,8 +775,8 @@
         "delta_score": 0.5,
         "severity_score": 0.74,
         "unique_tactics": [
-          "Selective Framing / Bias",
-          "Othering / Scapegoating"
+          "Othering / Scapegoating",
+          "Selective Framing / Bias"
         ],
         "framing_map": {
           "Middle East (English)": [
@@ -787,7 +787,7 @@
           ]
         }
       },
-      "timestamp": "2026-03-31T17:22:44.681863"
+      "timestamp": "2026-04-02T04:38:32.647632"
     },
     {
       "event_id": "evt_16",
@@ -814,7 +814,7 @@
           "tactic_label": "Selective Framing / Bias",
           "specific_technique": "Developing Country Neglect Exposed",
           "tactic_confidence": 0.95,
-          "llm_reasoning": "The article selectively presents a negative situation in Sierra Leone, omitting opposing facts or alternative perspectives, to create a one-sided narrative highlighting the neglect of table tennis in developing countries.",
+          "llm_reasoning": "The article selectively presents a negative narrative about the state of table tennis in Sierra Leone and other developing countries, while omitting any opposing facts or potential solutions.",
           "x": -13.592952728271484,
           "y": 0.3784489631652832,
           "z": 2.1907525062561035
@@ -854,7 +854,7 @@
           ]
         }
       },
-      "timestamp": "2026-03-31T17:22:44.687411"
+      "timestamp": "2026-04-02T04:38:32.653141"
     },
     {
       "event_id": "evt_0",
@@ -862,42 +862,42 @@
       "headline_count": 72,
       "representative_title": "Iran war splits older and younger conservatives - as pressure builds for Trump to find exit ramp",
       "sources": [
-        "Reddit: r/geopolitics",
-        "Reddit: r/GlobalNews",
-        "Al Jazeera (AR)",
-        "Reddit: r/worldnews",
-        "Reddit: r/ukraine",
         "RT (EN)",
-        "The Hindu",
-        "Reddit: r/israelpalestine",
         "Lenta (RU)",
-        "Reddit: r/AskMiddleEast",
-        "BBC News",
-        "Middle East Eye",
-        "Reddit: r/Sino",
         "France 24 (EN)",
-        "Deutsche Welle (EN)",
-        "TASS (EN)",
+        "Reddit: r/israelpalestine",
+        "Reddit: r/worldnews",
+        "Reddit: r/Sino",
+        "Middle East Eye",
+        "Reddit: r/geopolitics",
+        "Reddit: r/AskMiddleEast",
         "Reddit: r/iranian",
-        "Al Jazeera (EN)"
+        "Al Jazeera (AR)",
+        "TASS (EN)",
+        "Al Jazeera (EN)",
+        "Deutsche Welle (EN)",
+        "Reddit: r/ukraine",
+        "Reddit: r/GlobalNews",
+        "The Hindu",
+        "BBC News"
       ],
       "perspectives": [
-        "Middle East (Crowd)",
-        "Middle East (Arabic)",
-        "Russia (English)",
-        "Global (Crowd)",
-        "Middle East (Contested)",
         "Middle East (Independent)",
+        "Middle East (Crowd)",
+        "Global (Crowd)",
+        "Middle East (English)",
         "Russia",
-        "Russia (Wire)",
-        "South Asia",
-        "Global (Analytical)",
-        "Ukraine (Regional)",
-        "Iran (Diaspora)",
         "Global (Mainstream)",
+        "Ukraine (Regional)",
+        "Middle East (Contested)",
+        "Russia (English)",
+        "Middle East (Arabic)",
+        "Russia (Wire)",
+        "Iran (Diaspora)",
         "China (Crowd)",
+        "Global (Analytical)",
         "Western Europe",
-        "Middle East (English)"
+        "South Asia"
       ],
       "headlines": [
         {
@@ -1075,7 +1075,7 @@
           "tactic_label": "Selective Framing / Bias",
           "specific_technique": "Selective Conflict Reporting",
           "tactic_confidence": 0.95,
-          "llm_reasoning": "The article selectively frames the conflict by only mentioning the Houthi rebels' attack on Israel, omitting potential Israeli responses or other regional developments.",
+          "llm_reasoning": "The article selectively frames the conflict by only mentioning the Houthi rebels' attack on Israel, omitting potential Israeli military actions or other regional events.",
           "x": -15.514968872070312,
           "y": 2.162220001220703,
           "z": 4.661991119384766
@@ -1145,9 +1145,9 @@
           "link": "https://www.aljazeera.com/video/newsfeed/2026/3/28/trump-claims-iran-wants-to-make-a?traffic_source=rss",
           "fetch_timestamp": "2026-03-28 11:26:42",
           "tactic_label": "Nationalism / Pride",
-          "specific_technique": "Military Strength Praise",
+          "specific_technique": "US Military Strength Praise",
           "tactic_confidence": 0.95,
-          "llm_reasoning": "The article highlights Trump's praise for the US military's strength, which is a characteristic of nationalist framing.",
+          "llm_reasoning": "The article highlights Trump's praise for the US military strength, which is a characteristic of nationalism/ pride framing.",
           "x": -16.07510757446289,
           "y": 0.8511207699775696,
           "z": 1.1026290655136108
@@ -1183,7 +1183,7 @@
           "tactic_label": "Selective Framing / Bias",
           "specific_technique": "Optimistic War Projection",
           "tactic_confidence": 0.95,
-          "llm_reasoning": "The article selectively presents a positive, optimistic view of the war's conclusion, omitting potential opposing facts or complexities.",
+          "llm_reasoning": "The article selectively presents a positive, optimistic view of the war's outcome, omitting potential opposing facts or concerns.",
           "x": -14.62686538696289,
           "y": 0.979057788848877,
           "z": 0.6275242567062378
@@ -1273,7 +1273,7 @@
           "tactic_label": "Othering / Scapegoating",
           "specific_technique": "Israeli Aggression Blame",
           "tactic_confidence": 0.95,
-          "llm_reasoning": "The article frames the Israeli army's actions as a deliberate targeting of Syrian farmers, implying that the Israeli military is responsible for the harm, rather than acknowledging any potential complexities or context.",
+          "llm_reasoning": "The article frames the Israeli army's actions as a deliberate targeting of Syrian farmers, implying that the Israeli military is responsible for the harm inflicted on civilians, which is a form of scapegoating.",
           "x": -15.714944839477539,
           "y": 1.1423418521881104,
           "z": 3.6661081314086914
@@ -1361,9 +1361,9 @@
           "link": "https://lenta.ru/news/2026/03/28/tramp-opisal-otnosheniya-s-printsem-saudovskoy-aravii-slovami-budet-tselovat-zadnitsu/",
           "fetch_timestamp": "2026-03-28 11:27:30",
           "tactic_label": "Emotional Manipulation",
-          "specific_technique": "Public Insult Exaggeration",
+          "specific_technique": "Public Insult Escalation",
           "tactic_confidence": 0.95,
-          "llm_reasoning": "The article uses a provocative quote from Trump to elicit a strong emotional response, highlighting the personal insult as a key aspect of the story.",
+          "llm_reasoning": "The article uses a provocative quote from Trump to elicit a strong emotional response, highlighting the tension in his relationship with the Saudi prince.",
           "x": -16.105655670166016,
           "y": -0.16104960441589355,
           "z": 1.6433085203170776
@@ -1417,7 +1417,7 @@
           "tactic_label": "Justification of Violence",
           "specific_technique": "Military Strike Heroization",
           "tactic_confidence": 0.95,
-          "llm_reasoning": "The article frames the US military strikes as necessary and heroic, using phrases like 'decimated' and 'final blow' to create a sense of moral righteousness.",
+          "llm_reasoning": "The article frames the US military strikes as necessary and heroic, with President Trump claiming Iran has been 'decimated' and has no capacity to fight back.",
           "x": -15.341573715209961,
           "y": 1.7824896574020386,
           "z": 2.0773870944976807
@@ -1435,7 +1435,7 @@
           "tactic_label": "Selective Framing / Bias",
           "specific_technique": "Selective Military Casualty Reporting",
           "tactic_confidence": 0.95,
-          "llm_reasoning": "The article selectively reports on the airstrikes' impact, focusing on civilian casualties and residential damage, while omitting potential military or strategic justifications for the strikes.",
+          "llm_reasoning": "The article selectively reports on the airstrikes' impact, focusing on civilian casualties and downplaying the potential military context, creating a one-sided narrative.",
           "x": -15.440119743347168,
           "y": 2.391340732574463,
           "z": 3.0053787231445312
@@ -1471,7 +1471,7 @@
           "tactic_label": "Moral / Religious Framing",
           "specific_technique": "Divine Right to Conquest",
           "tactic_confidence": 0.95,
-          "llm_reasoning": "The article highlights how all parties involved in the Iran war are using religious reasoning to justify their actions, framing the conflict as an existential standoff between good and evil.",
+          "llm_reasoning": "The article highlights how all parties involved in the conflict are using religious reasoning to justify their actions, framing the war as an existential standoff between good and evil.",
           "x": -15.88125991821289,
           "y": 1.056702733039856,
           "z": 1.895676612854004
@@ -1687,7 +1687,7 @@
           "tactic_label": "Justification of Violence",
           "specific_technique": "Military Strikes Framed Heroically",
           "tactic_confidence": 0.95,
-          "llm_reasoning": "The article presents the US airstrikes on Iran as 'on or ahead of schedule' and 'expected to conclude at the appropriate time', implying a heroic and necessary military operation.",
+          "llm_reasoning": "The article frames US airstrikes as being 'on or ahead of schedule' and expected to conclude within weeks, implying a sense of urgency and heroic action.",
           "x": -14.805240631103516,
           "y": 1.7566494941711426,
           "z": 1.4732950925827026
@@ -1741,7 +1741,7 @@
           "tactic_label": "Selective Framing / Bias",
           "specific_technique": "Omitting Contextual Details",
           "tactic_confidence": 0.95,
-          "llm_reasoning": "The article presents a one-sided narrative by focusing solely on the number of US troops wounded without providing context on the overall impact of the strikes or potential Iranian casualties.",
+          "llm_reasoning": "The article selectively reports on the number of wounded US troops without providing context on the overall impact of the attacks or the number of casualties on the Iranian side.",
           "x": -14.370050430297852,
           "y": 2.716207981109619,
           "z": 2.4844372272491455
@@ -1793,9 +1793,9 @@
           "link": "https://www.middleeasteye.net/live-blog/live-blog-update/iran-military-says-targeted-us-vessel-near-oman-port",
           "fetch_timestamp": "2026-03-28 11:28:16",
           "tactic_label": "Selective Framing / Bias",
-          "specific_technique": "US Military Portrayal",
+          "specific_technique": "US Military Portrayal as Aggressive",
           "tactic_confidence": 0.95,
-          "llm_reasoning": "The article selectively frames the US military as 'aggressive' while omitting opposing facts or perspectives, creating a one-sided narrative.",
+          "llm_reasoning": "The article selectively frames the US military as 'aggressive' while omitting any opposing facts or context, creating a one-sided narrative.",
           "x": -14.388452529907227,
           "y": 2.149683713912964,
           "z": 2.338998317718506
@@ -1813,7 +1813,7 @@
           "tactic_label": "Selective Framing / Bias",
           "specific_technique": "Regional Conflict Amplification",
           "tactic_confidence": 0.95,
-          "llm_reasoning": "The article selectively presents a series of alarming events and quotes from various parties involved in the conflict, creating a one-sided narrative that amplifies tensions and escalates the situation.",
+          "llm_reasoning": "The article selectively presents a series of escalating events, emphasizing the widening regional conflict without providing a balanced view of the situation.",
           "x": -15.711092948913574,
           "y": 2.3013803958892822,
           "z": 1.9997384548187256
@@ -1831,7 +1831,7 @@
           "tactic_label": "Selective Framing / Bias",
           "specific_technique": "Selective Conflict Reporting",
           "tactic_confidence": 0.95,
-          "llm_reasoning": "The article presents a one-sided narrative by only reporting the claims of the Houthi group without providing any opposing views or context from the Israeli side.",
+          "llm_reasoning": "The article presents a one-sided narrative by only reporting the claims of the Houthi group without providing any opposing views or context from Israel or other parties involved in the conflict.",
           "x": -14.93576717376709,
           "y": 2.1044487953186035,
           "z": 4.323895454406738
@@ -1903,7 +1903,7 @@
           "tactic_label": "Justification of Violence",
           "specific_technique": "Threat of Retaliation",
           "tactic_confidence": 0.95,
-          "llm_reasoning": "The article frames Iran's foreign minister warning of a 'heavy price' for Israeli attacks as a legitimate response, implying that retaliation is a justified action.",
+          "llm_reasoning": "The article frames Iran's foreign minister warning of a 'heavy price' for Israeli attacks as a legitimate response, implying that retaliation is a justified and necessary action.",
           "x": -15.888120651245117,
           "y": 2.14255690574646,
           "z": 2.2981536388397217
@@ -1919,9 +1919,9 @@
           "link": "https://www.reddit.com/r/worldnews/comments/1s5p1dy/us_may_deploy_up_to_17000_troops_near_iran_as_war/",
           "fetch_timestamp": "2026-03-28 11:28:21",
           "tactic_label": "Justification of Violence",
-          "specific_technique": "War Escalation Normalization",
+          "specific_technique": "War Escalation Rhetoric",
           "tactic_confidence": 0.95,
-          "llm_reasoning": "The article presents a potential military escalation as a 'new phase' of the conflict, implying a necessary and heroic response to the situation.",
+          "llm_reasoning": "The article frames the deployment of troops as a 'major military escalation' and 'possible shift toward expanded ground operations', implying a heroic and necessary action.",
           "x": -15.314046859741211,
           "y": 1.5198779106140137,
           "z": 1.0114458799362183
@@ -1975,7 +1975,7 @@
           "tactic_label": "Fear-Mongering / Alarmism",
           "specific_technique": "Escalation Hypothesis",
           "tactic_confidence": 0.95,
-          "llm_reasoning": "The article frames the situation as a potential threat to global oil supplies, exaggerating the consequences of a hypothetical attack on ships in the Red Sea.",
+          "llm_reasoning": "The article frames the situation as a potential threat to global oil supplies, exaggerating the consequences of a hypothetical attack.",
           "x": -15.122719764709473,
           "y": 2.1016488075256348,
           "z": 4.390941619873047
@@ -2011,7 +2011,7 @@
           "tactic_label": "Selective Framing / Bias",
           "specific_technique": "Downplaying Military Failure",
           "tactic_confidence": 0.95,
-          "llm_reasoning": "The article selectively frames the destruction of Iran's missile arsenal as a partial success, downplaying the uncertainty and potential failure of the US military operation.",
+          "llm_reasoning": "The article selectively frames the destruction of Iran's missile arsenal, downplaying the failure to confirm the destruction of a significant portion of it, while highlighting the Trump administration's overestimation.",
           "x": -15.956803321838379,
           "y": 1.9237256050109863,
           "z": 1.9116497039794922
@@ -2137,7 +2137,7 @@
           "tactic_label": "Selective Framing / Bias",
           "specific_technique": "Selective US-Israel Narrative",
           "tactic_confidence": 0.95,
-          "llm_reasoning": "The article selectively presents examples of Israel's actions as intentionally undermining the US, while omitting potential alternative explanations or contexts that could suggest coordination or shared goals.",
+          "llm_reasoning": "The article selectively presents examples of Israel's actions as intentionally undermining the US, while omitting potential alternative explanations or contexts.",
           "x": -16.154577255249023,
           "y": 1.461326241493225,
           "z": 2.210090160369873
@@ -2204,40 +2204,40 @@
         "severity_score": 0.706,
         "unique_tactics": [
           "Justification of Violence",
-          "Selective Framing / Bias",
-          "Nationalism / Pride",
-          "Emotional Manipulation",
+          "Anti-Establishment",
           "Ridicule / Delegitimization",
           "Moral / Religious Framing",
+          "Selective Framing / Bias",
+          "Othering / Scapegoating",
           "Fear-Mongering / Alarmism",
-          "Anti-Establishment",
-          "Othering / Scapegoating"
+          "Emotional Manipulation",
+          "Nationalism / Pride"
         ],
         "framing_map": {
           "Western Europe": [
-            "Justification of Violence",
+            "Othering / Scapegoating",
             "Fear-Mongering / Alarmism",
-            "Selective Framing / Bias",
-            "Othering / Scapegoating"
+            "Justification of Violence",
+            "Selective Framing / Bias"
           ],
           "Middle East (English)": [
+            "Othering / Scapegoating",
             "Justification of Violence",
             "Nationalism / Pride",
-            "Selective Framing / Bias",
-            "Othering / Scapegoating"
+            "Selective Framing / Bias"
           ],
           "Middle East (Arabic)": [
+            "Othering / Scapegoating",
             "Fear-Mongering / Alarmism",
-            "Selective Framing / Bias",
-            "Othering / Scapegoating"
+            "Selective Framing / Bias"
           ],
           "Russia": [
             "Emotional Manipulation",
             "Selective Framing / Bias"
           ],
           "Russia (English)": [
-            "Moral / Religious Framing",
             "Justification of Violence",
+            "Moral / Religious Framing",
             "Selective Framing / Bias"
           ],
           "Russia (Wire)": [
@@ -2249,19 +2249,19 @@
             "Selective Framing / Bias"
           ],
           "Middle East (Independent)": [
+            "Othering / Scapegoating",
             "Justification of Violence",
-            "Selective Framing / Bias",
-            "Othering / Scapegoating"
+            "Selective Framing / Bias"
           ],
           "Global (Mainstream)": [
-            "Justification of Violence",
             "Fear-Mongering / Alarmism",
+            "Justification of Violence",
             "Anti-Establishment"
           ],
           "Global (Analytical)": [
+            "Othering / Scapegoating",
             "Anti-Establishment",
-            "Selective Framing / Bias",
-            "Othering / Scapegoating"
+            "Selective Framing / Bias"
           ],
           "Global (Crowd)": [
             "Selective Framing / Bias"
@@ -2276,15 +2276,15 @@
             "Selective Framing / Bias"
           ],
           "Iran (Diaspora)": [
-            "Selective Framing / Bias",
-            "Othering / Scapegoating"
+            "Othering / Scapegoating",
+            "Selective Framing / Bias"
           ],
           "China (Crowd)": [
             "Ridicule / Delegitimization"
           ]
         }
       },
-      "timestamp": "2026-03-31T17:22:44.664858"
+      "timestamp": "2026-04-02T04:38:32.630826"
     },
     {
       "event_id": "evt_13",
@@ -2292,8 +2292,8 @@
       "headline_count": 3,
       "representative_title": "Quartet meeting in Pakistan...Does it open the way for an Iranian-American understanding?",
       "sources": [
-        "The Hindu",
-        "Al Jazeera (AR)"
+        "Al Jazeera (AR)",
+        "The Hindu"
       ],
       "perspectives": [
         "South Asia",
@@ -2313,7 +2313,7 @@
           "tactic_label": "Selective Framing / Bias",
           "specific_technique": "Selective Regional Focus",
           "tactic_confidence": 0.95,
-          "llm_reasoning": "The article selectively focuses on regional diplomatic movements and Pakistan's role in mediation, while omitting opposing facts or perspectives from other countries or parties involved in the conflict.",
+          "llm_reasoning": "The article selectively focuses on regional diplomatic movements and Pakistan's role in mediation, while omitting opposing facts or perspectives from other parties involved in the conflict.",
           "x": -16.39917755126953,
           "y": 0.37080812454223633,
           "z": 1.3505176305770874
@@ -2361,20 +2361,20 @@
         "delta_score": 0.333,
         "severity_score": 0.233,
         "unique_tactics": [
-          "Selective Framing / Bias",
-          "Neutral Reporting"
+          "Neutral Reporting",
+          "Selective Framing / Bias"
         ],
         "framing_map": {
           "Middle East (Arabic)": [
-            "Selective Framing / Bias",
-            "Neutral Reporting"
+            "Neutral Reporting",
+            "Selective Framing / Bias"
           ],
           "South Asia": [
             "Neutral Reporting"
           ]
         }
       },
-      "timestamp": "2026-03-31T17:22:44.683281"
+      "timestamp": "2026-04-02T04:38:32.648991"
     },
     {
       "event_id": "evt_14",
@@ -2449,17 +2449,17 @@
         "delta_score": 0.333,
         "severity_score": 0.77,
         "unique_tactics": [
-          "Nationalism / Pride",
-          "Othering / Scapegoating"
+          "Othering / Scapegoating",
+          "Nationalism / Pride"
         ],
         "framing_map": {
           "Russia (Wire)": [
-            "Nationalism / Pride",
-            "Othering / Scapegoating"
+            "Othering / Scapegoating",
+            "Nationalism / Pride"
           ]
         }
       },
-      "timestamp": "2026-03-31T17:22:44.684655"
+      "timestamp": "2026-04-02T04:38:32.650357"
     },
     {
       "event_id": "evt_4",
@@ -2467,9 +2467,9 @@
       "headline_count": 4,
       "representative_title": "Iran-backed hackers breach FBI director Kash Patel's personal emails",
       "sources": [
+        "Reddit: r/worldnews",
         "BBC News",
-        "Reddit: r/GlobalNews",
-        "Reddit: r/worldnews"
+        "Reddit: r/GlobalNews"
       ],
       "perspectives": [
         "Global (Mainstream)",
@@ -2490,7 +2490,7 @@
           "tactic_label": "Selective Framing / Bias",
           "specific_technique": "Selective Document Disclosure",
           "tactic_confidence": 0.95,
-          "llm_reasoning": "The article selectively presents information about the breach, omitting details about the nature of the leaked documents and the potential implications, while also providing a statement from the FBI that downplays the severity of the breach.",
+          "llm_reasoning": "The article selectively presents information about the breach, omitting details about the nature of the leaked documents and only highlighting the personal photos of the FBI director, creating a one-sided narrative.",
           "x": -14.131185531616211,
           "y": -0.731925368309021,
           "z": 1.9654477834701538
@@ -2572,7 +2572,7 @@
           ]
         }
       },
-      "timestamp": "2026-03-31T17:22:44.670679"
+      "timestamp": "2026-04-02T04:38:32.636491"
     },
     {
       "event_id": "standalone_4",
@@ -2619,7 +2619,7 @@
           ]
         }
       },
-      "timestamp": "2026-03-31T17:22:44.646578"
+      "timestamp": "2026-04-02T04:38:32.613099"
     },
     {
       "event_id": "standalone_6",
@@ -2666,7 +2666,7 @@
           ]
         }
       },
-      "timestamp": "2026-03-31T17:22:44.646746"
+      "timestamp": "2026-04-02T04:38:32.613253"
     },
     {
       "event_id": "standalone_9",
@@ -2713,7 +2713,7 @@
           ]
         }
       },
-      "timestamp": "2026-03-31T17:22:44.646889"
+      "timestamp": "2026-04-02T04:38:32.613389"
     },
     {
       "event_id": "standalone_12",
@@ -2740,7 +2740,7 @@
           "tactic_label": "Neutral Reporting",
           "specific_technique": "Factual Accident Reporting",
           "tactic_confidence": 0.95,
-          "llm_reasoning": "The article presents a straightforward, fact-based account of the helicopter crash, without emotional appeals or sensational language.",
+          "llm_reasoning": "The article presents a straightforward, fact-based account of the helicopter crash without emotional appeals or biased language.",
           "x": -12.648433685302734,
           "y": -0.06622385233640671,
           "z": 1.0117188692092896
@@ -2760,7 +2760,7 @@
           ]
         }
       },
-      "timestamp": "2026-03-31T17:22:44.647026"
+      "timestamp": "2026-04-02T04:38:32.613559"
     },
     {
       "event_id": "standalone_16",
@@ -2807,7 +2807,7 @@
           ]
         }
       },
-      "timestamp": "2026-03-31T17:22:44.647187"
+      "timestamp": "2026-04-02T04:38:32.613692"
     },
     {
       "event_id": "standalone_19",
@@ -2854,7 +2854,7 @@
           ]
         }
       },
-      "timestamp": "2026-03-31T17:22:44.647326"
+      "timestamp": "2026-04-02T04:38:32.613824"
     },
     {
       "event_id": "standalone_20",
@@ -2901,7 +2901,7 @@
           ]
         }
       },
-      "timestamp": "2026-03-31T17:22:44.647458"
+      "timestamp": "2026-04-02T04:38:32.613962"
     },
     {
       "event_id": "standalone_23",
@@ -2928,7 +2928,7 @@
           "tactic_label": "Nationalism / Pride",
           "specific_technique": "US Military Superiority Narrative",
           "tactic_confidence": 0.95,
-          "llm_reasoning": "The article subtly frames the US military's actions as a response to a growing threat from China, implying the US is taking proactive measures to maintain its superiority in the region.",
+          "llm_reasoning": "The article subtly frames the US military's actions as a response to China's growing challenge, implying the US is taking proactive measures to maintain its superiority in the region.",
           "x": -12.675262451171875,
           "y": 1.1990931034088135,
           "z": 2.662480354309082
@@ -2948,7 +2948,7 @@
           ]
         }
       },
-      "timestamp": "2026-03-31T17:22:44.647586"
+      "timestamp": "2026-04-02T04:38:32.614087"
     },
     {
       "event_id": "standalone_25",
@@ -2995,7 +2995,7 @@
           ]
         }
       },
-      "timestamp": "2026-03-31T17:22:44.647713"
+      "timestamp": "2026-04-02T04:38:32.614213"
     },
     {
       "event_id": "standalone_27",
@@ -3022,7 +3022,7 @@
           "tactic_label": "Selective Framing / Bias",
           "specific_technique": "Comparative Crisis Amplification",
           "tactic_confidence": 0.95,
-          "llm_reasoning": "The article selectively frames the current crisis as worse than past ones, using quotes from Fatih Birol to create a sense of alarm, while omitting opposing views or facts that might mitigate the severity of the crisis.",
+          "llm_reasoning": "The article selectively frames the current crisis as worse than past ones, using quotes from Fatih Birol to create a sense of urgency and alarm, while omitting opposing views or facts that might mitigate the severity of the crisis.",
           "x": -15.582160949707031,
           "y": 2.3099398612976074,
           "z": 1.559112310409546
@@ -3042,7 +3042,7 @@
           ]
         }
       },
-      "timestamp": "2026-03-31T17:22:44.647840"
+      "timestamp": "2026-04-02T04:38:32.614337"
     },
     {
       "event_id": "standalone_29",
@@ -3089,7 +3089,7 @@
           ]
         }
       },
-      "timestamp": "2026-03-31T17:22:44.647965"
+      "timestamp": "2026-04-02T04:38:32.614485"
     },
     {
       "event_id": "standalone_34",
@@ -3136,7 +3136,7 @@
           ]
         }
       },
-      "timestamp": "2026-03-31T17:22:44.648092"
+      "timestamp": "2026-04-02T04:38:32.614615"
     },
     {
       "event_id": "standalone_38",
@@ -3183,7 +3183,7 @@
           ]
         }
       },
-      "timestamp": "2026-03-31T17:22:44.648246"
+      "timestamp": "2026-04-02T04:38:32.614739"
     },
     {
       "event_id": "standalone_40",
@@ -3230,7 +3230,7 @@
           ]
         }
       },
-      "timestamp": "2026-03-31T17:22:44.648374"
+      "timestamp": "2026-04-02T04:38:32.614860"
     },
     {
       "event_id": "standalone_44",
@@ -3277,7 +3277,7 @@
           ]
         }
       },
-      "timestamp": "2026-03-31T17:22:44.648499"
+      "timestamp": "2026-04-02T04:38:32.614983"
     },
     {
       "event_id": "standalone_48",
@@ -3324,7 +3324,7 @@
           ]
         }
       },
-      "timestamp": "2026-03-31T17:22:44.648622"
+      "timestamp": "2026-04-02T04:38:32.615106"
     },
     {
       "event_id": "standalone_53",
@@ -3371,7 +3371,7 @@
           ]
         }
       },
-      "timestamp": "2026-03-31T17:22:44.648747"
+      "timestamp": "2026-04-02T04:38:32.615227"
     },
     {
       "event_id": "standalone_54",
@@ -3418,7 +3418,7 @@
           ]
         }
       },
-      "timestamp": "2026-03-31T17:22:44.648870"
+      "timestamp": "2026-04-02T04:38:32.615348"
     },
     {
       "event_id": "standalone_55",
@@ -3465,7 +3465,7 @@
           ]
         }
       },
-      "timestamp": "2026-03-31T17:22:44.648997"
+      "timestamp": "2026-04-02T04:38:32.615495"
     },
     {
       "event_id": "standalone_57",
@@ -3492,7 +3492,7 @@
           "tactic_label": "Othering / Scapegoating",
           "specific_technique": "Opposition Group Vilification",
           "tactic_confidence": 0.95,
-          "llm_reasoning": "The article frames the Bahraini authorities as disputing the account, implying that the opposition group is responsible for the detainee's death, without providing evidence to support this claim.",
+          "llm_reasoning": "The article frames the Bahraini authorities as disputing the account, while activists are portrayed as making claims, which can be seen as vilifying the opposition group.",
           "x": -14.485812187194824,
           "y": 1.8634297847747803,
           "z": 2.8923137187957764
@@ -3512,7 +3512,7 @@
           ]
         }
       },
-      "timestamp": "2026-03-31T17:22:44.649125"
+      "timestamp": "2026-04-02T04:38:32.615623"
     },
     {
       "event_id": "standalone_60",
@@ -3539,7 +3539,7 @@
           "tactic_label": "Nationalism / Pride",
           "specific_technique": "National Heroism Narrative",
           "tactic_confidence": 0.95,
-          "llm_reasoning": "The article frames the Iraqi national team's World Cup bid as a heroic and historic opportunity, emphasizing their determination and readiness to 'snatch the qualification ticket' and 'make our fans happy'.",
+          "llm_reasoning": "The article frames the Iraqi national team's World Cup bid as a heroic, historically significant event, emphasizing their 40-year absence and the team's determination to 'snatch the qualification ticket' and 'make our fans happy'.",
           "x": -13.830567359924316,
           "y": 0.45866191387176514,
           "z": 1.8342666625976562
@@ -3559,7 +3559,7 @@
           ]
         }
       },
-      "timestamp": "2026-03-31T17:22:44.649308"
+      "timestamp": "2026-04-02T04:38:32.615745"
     },
     {
       "event_id": "standalone_63",
@@ -3606,7 +3606,7 @@
           ]
         }
       },
-      "timestamp": "2026-03-31T17:22:44.649443"
+      "timestamp": "2026-04-02T04:38:32.615867"
     },
     {
       "event_id": "standalone_66",
@@ -3653,7 +3653,7 @@
           ]
         }
       },
-      "timestamp": "2026-03-31T17:22:44.649571"
+      "timestamp": "2026-04-02T04:38:32.615990"
     },
     {
       "event_id": "standalone_69",
@@ -3700,7 +3700,7 @@
           ]
         }
       },
-      "timestamp": "2026-03-31T17:22:44.649696"
+      "timestamp": "2026-04-02T04:38:32.616111"
     },
     {
       "event_id": "standalone_70",
@@ -3747,7 +3747,7 @@
           ]
         }
       },
-      "timestamp": "2026-03-31T17:22:44.649820"
+      "timestamp": "2026-04-02T04:38:32.616230"
     },
     {
       "event_id": "standalone_73",
@@ -3772,9 +3772,9 @@
           "link": "https://lenta.ru/news/2026/03/28/narodnyy-deputat-ukrainy-pipa-nazvala-sovetskih-soldat-podonkami/",
           "fetch_timestamp": "2026-03-28 11:27:17",
           "tactic_label": "Othering / Scapegoating",
-          "specific_technique": "Anti-Soviet Propaganda",
+          "specific_technique": "Soviet Soldier Vilification",
           "tactic_confidence": 0.95,
-          "llm_reasoning": "The article frames Soviet soldiers as 'scum' to elicit negative reactions and create a sense of division, scapegoating them for historical events.",
+          "llm_reasoning": "The article frames Soviet soldiers as 'scum' to elicit negative reactions from users, thereby scapegoating them for historical events.",
           "x": -13.23714828491211,
           "y": -0.19145528972148895,
           "z": 0.09158118069171906
@@ -3794,7 +3794,7 @@
           ]
         }
       },
-      "timestamp": "2026-03-31T17:22:44.650001"
+      "timestamp": "2026-04-02T04:38:32.616351"
     },
     {
       "event_id": "standalone_75",
@@ -3841,7 +3841,7 @@
           ]
         }
       },
-      "timestamp": "2026-03-31T17:22:44.650200"
+      "timestamp": "2026-04-02T04:38:32.616518"
     },
     {
       "event_id": "standalone_76",
@@ -3888,7 +3888,7 @@
           ]
         }
       },
-      "timestamp": "2026-03-31T17:22:44.650353"
+      "timestamp": "2026-04-02T04:38:32.616656"
     },
     {
       "event_id": "standalone_77",
@@ -3935,7 +3935,7 @@
           ]
         }
       },
-      "timestamp": "2026-03-31T17:22:44.650482"
+      "timestamp": "2026-04-02T04:38:32.616785"
     },
     {
       "event_id": "standalone_78",
@@ -3962,7 +3962,7 @@
           "tactic_label": "Neutral Reporting",
           "specific_technique": "Accurate Injury Description",
           "tactic_confidence": 0.95,
-          "llm_reasoning": "The article presents a factual account of the incident, providing quotes from the parties involved and describing the injury in a straightforward manner without sensationalism or emotional manipulation.",
+          "llm_reasoning": "The article presents a factual account of the incident, providing quotes from the involved parties and describing the injury in a straightforward manner without sensationalism or emotional manipulation.",
           "x": -12.945344924926758,
           "y": -0.5658156871795654,
           "z": 0.5944175124168396
@@ -3982,7 +3982,7 @@
           ]
         }
       },
-      "timestamp": "2026-03-31T17:22:44.650607"
+      "timestamp": "2026-04-02T04:38:32.616907"
     },
     {
       "event_id": "standalone_81",
@@ -4029,7 +4029,7 @@
           ]
         }
       },
-      "timestamp": "2026-03-31T17:22:44.650731"
+      "timestamp": "2026-04-02T04:38:32.617029"
     },
     {
       "event_id": "standalone_82",
@@ -4054,9 +4054,9 @@
           "link": "https://lenta.ru/news/2026/03/28/minoborony-zayavilo-ob-unichtozhenii-avtonomnogo-podvodnogo-apparata-vsu/",
           "fetch_timestamp": "2026-03-28 11:27:36",
           "tactic_label": "Nationalism / Pride",
-          "specific_technique": "Russian Military Supremacy Claim",
+          "specific_technique": "Russian Military Supremacy Assertion",
           "tactic_confidence": 0.95,
-          "llm_reasoning": "The article presents the Russian Ministry of Defense's destruction of a Ukrainian underwater vehicle as a demonstration of Russia's control over the Black Sea, promoting a sense of national pride and superiority.",
+          "llm_reasoning": "The article presents a statement from a Russian official claiming control over the Black Sea waters as a fact, promoting a sense of Russian military superiority.",
           "x": -11.842248916625977,
           "y": 0.1880711317062378,
           "z": 0.2565246820449829
@@ -4076,7 +4076,7 @@
           ]
         }
       },
-      "timestamp": "2026-03-31T17:22:44.650853"
+      "timestamp": "2026-04-02T04:38:32.617151"
     },
     {
       "event_id": "standalone_84",
@@ -4103,7 +4103,7 @@
           "tactic_label": "Selective Framing / Bias",
           "specific_technique": "Selective Fact Omission",
           "tactic_confidence": 0.95,
-          "llm_reasoning": "The article selectively presents information by omitting the blogger's release from the mental hospital, instead focusing on the lawyer's statement that the blogger remains in treatment, creating a one-sided narrative.",
+          "llm_reasoning": "The article selectively presents information by omitting the blogger's release from the mental hospital, instead focusing on the lawyer's statement that the blogger continues treatment, creating a one-sided narrative.",
           "x": -13.609269142150879,
           "y": -0.547606348991394,
           "z": 0.42885634303092957
@@ -4123,7 +4123,7 @@
           ]
         }
       },
-      "timestamp": "2026-03-31T17:22:44.650977"
+      "timestamp": "2026-04-02T04:38:32.617272"
     },
     {
       "event_id": "standalone_85",
@@ -4150,7 +4150,7 @@
           "tactic_label": "Neutral Reporting",
           "specific_technique": "Dry Sports Reporting",
           "tactic_confidence": 0.95,
-          "llm_reasoning": "The article presents a straightforward, factual account of a sports event without emotional language or bias.",
+          "llm_reasoning": "The article presents factual information about a sports event without emotional language or bias, focusing on the details of the bet and the outcome.",
           "x": -13.692524909973145,
           "y": 0.07454763352870941,
           "z": 0.9883569478988647
@@ -4170,7 +4170,7 @@
           ]
         }
       },
-      "timestamp": "2026-03-31T17:22:44.651103"
+      "timestamp": "2026-04-02T04:38:32.617394"
     },
     {
       "event_id": "standalone_87",
@@ -4217,7 +4217,7 @@
           ]
         }
       },
-      "timestamp": "2026-03-31T17:22:44.651258"
+      "timestamp": "2026-04-02T04:38:32.617542"
     },
     {
       "event_id": "standalone_88",
@@ -4264,7 +4264,7 @@
           ]
         }
       },
-      "timestamp": "2026-03-31T17:22:44.651383"
+      "timestamp": "2026-04-02T04:38:32.617667"
     },
     {
       "event_id": "standalone_89",
@@ -4311,7 +4311,7 @@
           ]
         }
       },
-      "timestamp": "2026-03-31T17:22:44.651505"
+      "timestamp": "2026-04-02T04:38:32.617788"
     },
     {
       "event_id": "standalone_91",
@@ -4358,7 +4358,7 @@
           ]
         }
       },
-      "timestamp": "2026-03-31T17:22:44.651626"
+      "timestamp": "2026-04-02T04:38:32.617910"
     },
     {
       "event_id": "standalone_93",
@@ -4405,7 +4405,7 @@
           ]
         }
       },
-      "timestamp": "2026-03-31T17:22:44.651748"
+      "timestamp": "2026-04-02T04:38:32.618033"
     },
     {
       "event_id": "standalone_94",
@@ -4452,7 +4452,7 @@
           ]
         }
       },
-      "timestamp": "2026-03-31T17:22:44.651869"
+      "timestamp": "2026-04-02T04:38:32.618153"
     },
     {
       "event_id": "standalone_99",
@@ -4499,7 +4499,7 @@
           ]
         }
       },
-      "timestamp": "2026-03-31T17:22:44.651991"
+      "timestamp": "2026-04-02T04:38:32.618272"
     },
     {
       "event_id": "standalone_100",
@@ -4546,7 +4546,7 @@
           ]
         }
       },
-      "timestamp": "2026-03-31T17:22:44.652113"
+      "timestamp": "2026-04-02T04:38:32.618392"
     },
     {
       "event_id": "standalone_101",
@@ -4593,7 +4593,7 @@
           ]
         }
       },
-      "timestamp": "2026-03-31T17:22:44.652261"
+      "timestamp": "2026-04-02T04:38:32.618535"
     },
     {
       "event_id": "standalone_105",
@@ -4640,7 +4640,7 @@
           ]
         }
       },
-      "timestamp": "2026-03-31T17:22:44.652385"
+      "timestamp": "2026-04-02T04:38:32.618657"
     },
     {
       "event_id": "standalone_113",
@@ -4687,7 +4687,7 @@
           ]
         }
       },
-      "timestamp": "2026-03-31T17:22:44.652506"
+      "timestamp": "2026-04-02T04:38:32.618776"
     },
     {
       "event_id": "standalone_114",
@@ -4734,7 +4734,7 @@
           ]
         }
       },
-      "timestamp": "2026-03-31T17:22:44.652625"
+      "timestamp": "2026-04-02T04:38:32.618894"
     },
     {
       "event_id": "standalone_129",
@@ -4781,7 +4781,7 @@
           ]
         }
       },
-      "timestamp": "2026-03-31T17:22:44.652745"
+      "timestamp": "2026-04-02T04:38:32.619014"
     },
     {
       "event_id": "standalone_131",
@@ -4828,7 +4828,7 @@
           ]
         }
       },
-      "timestamp": "2026-03-31T17:22:44.652867"
+      "timestamp": "2026-04-02T04:38:32.619132"
     },
     {
       "event_id": "standalone_137",
@@ -4875,7 +4875,7 @@
           ]
         }
       },
-      "timestamp": "2026-03-31T17:22:44.652987"
+      "timestamp": "2026-04-02T04:38:32.619251"
     },
     {
       "event_id": "standalone_143",
@@ -4922,7 +4922,7 @@
           ]
         }
       },
-      "timestamp": "2026-03-31T17:22:44.653108"
+      "timestamp": "2026-04-02T04:38:32.619369"
     },
     {
       "event_id": "standalone_147",
@@ -4969,7 +4969,7 @@
           ]
         }
       },
-      "timestamp": "2026-03-31T17:22:44.653262"
+      "timestamp": "2026-04-02T04:38:32.619513"
     },
     {
       "event_id": "standalone_150",
@@ -5016,7 +5016,7 @@
           ]
         }
       },
-      "timestamp": "2026-03-31T17:22:44.653387"
+      "timestamp": "2026-04-02T04:38:32.619636"
     },
     {
       "event_id": "standalone_153",
@@ -5063,7 +5063,7 @@
           ]
         }
       },
-      "timestamp": "2026-03-31T17:22:44.653509"
+      "timestamp": "2026-04-02T04:38:32.619758"
     },
     {
       "event_id": "standalone_157",
@@ -5110,7 +5110,7 @@
           ]
         }
       },
-      "timestamp": "2026-03-31T17:22:44.653629"
+      "timestamp": "2026-04-02T04:38:32.619882"
     },
     {
       "event_id": "standalone_158",
@@ -5157,7 +5157,7 @@
           ]
         }
       },
-      "timestamp": "2026-03-31T17:22:44.653748"
+      "timestamp": "2026-04-02T04:38:32.620005"
     },
     {
       "event_id": "standalone_159",
@@ -5204,7 +5204,7 @@
           ]
         }
       },
-      "timestamp": "2026-03-31T17:22:44.653869"
+      "timestamp": "2026-04-02T04:38:32.620127"
     },
     {
       "event_id": "standalone_160",
@@ -5251,7 +5251,7 @@
           ]
         }
       },
-      "timestamp": "2026-03-31T17:22:44.653989"
+      "timestamp": "2026-04-02T04:38:32.620249"
     },
     {
       "event_id": "standalone_161",
@@ -5298,7 +5298,7 @@
           ]
         }
       },
-      "timestamp": "2026-03-31T17:22:44.654109"
+      "timestamp": "2026-04-02T04:38:32.620372"
     },
     {
       "event_id": "standalone_163",
@@ -5325,7 +5325,7 @@
           "tactic_label": "Selective Framing / Bias",
           "specific_technique": "Omitting Contextual Details",
           "tactic_confidence": 0.95,
-          "llm_reasoning": "The article selectively presents information about the blockade, omitting the fact that it was a long-standing policy and instead focuses on the recent events and the killing of the commander, creating a one-sided narrative.",
+          "llm_reasoning": "The article selectively presents information about the blockade, omitting the fact that it was a long-standing policy and instead focusing on the recent events and the death of a specific commander.",
           "x": -13.833677291870117,
           "y": 2.3151471614837646,
           "z": 1.9256740808486938
@@ -5345,7 +5345,7 @@
           ]
         }
       },
-      "timestamp": "2026-03-31T17:22:44.654255"
+      "timestamp": "2026-04-02T04:38:32.620548"
     },
     {
       "event_id": "standalone_165",
@@ -5392,7 +5392,7 @@
           ]
         }
       },
-      "timestamp": "2026-03-31T17:22:44.654377"
+      "timestamp": "2026-04-02T04:38:32.620679"
     },
     {
       "event_id": "standalone_166",
@@ -5439,7 +5439,7 @@
           ]
         }
       },
-      "timestamp": "2026-03-31T17:22:44.654500"
+      "timestamp": "2026-04-02T04:38:32.620803"
     },
     {
       "event_id": "standalone_167",
@@ -5466,7 +5466,7 @@
           "tactic_label": "Selective Framing / Bias",
           "specific_technique": "Selective NATO Framing",
           "tactic_confidence": 0.95,
-          "llm_reasoning": "The article selectively presents the US's defense demands as a recent development, omitting the fact that the US has been urging Europe to spend more on defense for decades.",
+          "llm_reasoning": "The article selectively presents facts to create a one-sided narrative, downplaying the US's defense demands and emphasizing European resistance, while omitting opposing views and the potential benefits of increased defense spending.",
           "x": -15.285346031188965,
           "y": 0.4589178264141083,
           "z": 0.26435697078704834
@@ -5486,7 +5486,7 @@
           ]
         }
       },
-      "timestamp": "2026-03-31T17:22:44.654621"
+      "timestamp": "2026-04-02T04:38:32.620930"
     },
     {
       "event_id": "standalone_169",
@@ -5511,9 +5511,9 @@
           "link": "https://www.reddit.com/r/GlobalNews/comments/1s5www5/this_burns_my_fingers_to_write_but_thank_you/",
           "fetch_timestamp": "2026-03-28 11:28:44",
           "tactic_label": "Emotional Manipulation",
-          "specific_technique": "Sarcastic Thank You",
+          "specific_technique": "Sarcastic Thank You Insult",
           "tactic_confidence": 0.95,
-          "llm_reasoning": "The article uses a sarcastic tone and a charged expression to elicit sympathy and guilt from the reader.",
+          "llm_reasoning": "The article uses a sarcastic tone and a personal attack on Donald Trump to elicit sympathy and guilt from the reader.",
           "x": -15.257452011108398,
           "y": -0.733914852142334,
           "z": 0.8267021179199219
@@ -5533,7 +5533,7 @@
           ]
         }
       },
-      "timestamp": "2026-03-31T17:22:44.654744"
+      "timestamp": "2026-04-02T04:38:32.621052"
     },
     {
       "event_id": "standalone_170",
@@ -5580,7 +5580,7 @@
           ]
         }
       },
-      "timestamp": "2026-03-31T17:22:44.654866"
+      "timestamp": "2026-04-02T04:38:32.621173"
     },
     {
       "event_id": "standalone_171",
@@ -5627,7 +5627,7 @@
           ]
         }
       },
-      "timestamp": "2026-03-31T17:22:44.654988"
+      "timestamp": "2026-04-02T04:38:32.621293"
     },
     {
       "event_id": "standalone_172",
@@ -5654,7 +5654,7 @@
           "tactic_label": "Ridicule / Delegitimization",
           "specific_technique": "Mocking Military Aggression",
           "tactic_confidence": 0.95,
-          "llm_reasoning": "The article uses a sarcastic tone and a meme to belittle the significance of the event and the military action, delegitimizing the seriousness of the situation.",
+          "llm_reasoning": "The article uses a sarcastic tone and a meme to belittle the significance of the event and the military action involved.",
           "x": -14.15887451171875,
           "y": 2.0816709995269775,
           "z": 1.7659968137741089
@@ -5674,7 +5674,7 @@
           ]
         }
       },
-      "timestamp": "2026-03-31T17:22:44.655109"
+      "timestamp": "2026-04-02T04:38:32.621412"
     },
     {
       "event_id": "standalone_173",
@@ -5701,7 +5701,7 @@
           "tactic_label": "Othering / Scapegoating",
           "specific_technique": "Disability Group Blame",
           "tactic_confidence": 0.95,
-          "llm_reasoning": "The article implies that people with disabilities are being rejected from bomb shelters, but does not provide context or information about systemic issues that might be causing this, instead framing it as a personal failing.",
+          "llm_reasoning": "The article implies that people with disabilities are being rejected from bomb shelters, but the tone and language used are dismissive and lack empathy, shifting the focus away from the systemic issues and onto the perceived shortcomings of the disabled individuals.",
           "x": -14.446060180664062,
           "y": 0.08885522931814194,
           "z": 3.2224388122558594
@@ -5721,7 +5721,7 @@
           ]
         }
       },
-      "timestamp": "2026-03-31T17:22:44.655256"
+      "timestamp": "2026-04-02T04:38:32.621561"
     },
     {
       "event_id": "standalone_175",
@@ -5768,7 +5768,7 @@
           ]
         }
       },
-      "timestamp": "2026-03-31T17:22:44.655569"
+      "timestamp": "2026-04-02T04:38:32.621845"
     },
     {
       "event_id": "standalone_176",
@@ -5815,7 +5815,7 @@
           ]
         }
       },
-      "timestamp": "2026-03-31T17:22:44.655699"
+      "timestamp": "2026-04-02T04:38:32.621971"
     },
     {
       "event_id": "standalone_178",
@@ -5862,7 +5862,7 @@
           ]
         }
       },
-      "timestamp": "2026-03-31T17:22:44.655823"
+      "timestamp": "2026-04-02T04:38:32.622092"
     },
     {
       "event_id": "standalone_180",
@@ -5889,7 +5889,7 @@
           "tactic_label": "Nationalism / Pride",
           "specific_technique": "Victory Narrative Amplification",
           "tactic_confidence": 0.95,
-          "llm_reasoning": "The article uses charged language and celebratory tone to emphasize the AFU's successes, framing them as a key factor in their 'travel towards victory'.",
+          "llm_reasoning": "The article uses charged language and celebratory tone to emphasize the AFU's successes and the Russian military's losses, promoting a sense of national pride and morale.",
           "x": -12.43292236328125,
           "y": 1.0911387205123901,
           "z": 0.546043336391449
@@ -5909,7 +5909,7 @@
           ]
         }
       },
-      "timestamp": "2026-03-31T17:22:44.655944"
+      "timestamp": "2026-04-02T04:38:32.622215"
     },
     {
       "event_id": "standalone_181",
@@ -5956,7 +5956,7 @@
           ]
         }
       },
-      "timestamp": "2026-03-31T17:22:44.656066"
+      "timestamp": "2026-04-02T04:38:32.622340"
     },
     {
       "event_id": "standalone_183",
@@ -6003,7 +6003,7 @@
           ]
         }
       },
-      "timestamp": "2026-03-31T17:22:44.656215"
+      "timestamp": "2026-04-02T04:38:32.622488"
     },
     {
       "event_id": "standalone_185",
@@ -6050,7 +6050,7 @@
           ]
         }
       },
-      "timestamp": "2026-03-31T17:22:44.656346"
+      "timestamp": "2026-04-02T04:38:32.622615"
     },
     {
       "event_id": "standalone_190",
@@ -6097,7 +6097,7 @@
           ]
         }
       },
-      "timestamp": "2026-03-31T17:22:44.656469"
+      "timestamp": "2026-04-02T04:38:32.622736"
     },
     {
       "event_id": "standalone_192",
@@ -6144,7 +6144,7 @@
           ]
         }
       },
-      "timestamp": "2026-03-31T17:22:44.656593"
+      "timestamp": "2026-04-02T04:38:32.622857"
     },
     {
       "event_id": "standalone_193",
@@ -6191,7 +6191,7 @@
           ]
         }
       },
-      "timestamp": "2026-03-31T17:22:44.656714"
+      "timestamp": "2026-04-02T04:38:32.622978"
     },
     {
       "event_id": "standalone_195",
@@ -6238,7 +6238,7 @@
           ]
         }
       },
-      "timestamp": "2026-03-31T17:22:44.656835"
+      "timestamp": "2026-04-02T04:38:32.623101"
     },
     {
       "event_id": "standalone_196",
@@ -6265,7 +6265,7 @@
           "tactic_label": "Selective Framing / Bias",
           "specific_technique": "Omitting Contextual Details",
           "tactic_confidence": 0.95,
-          "llm_reasoning": "The article selectively presents information, omitting the context and potential implications of the ongoing war, instead focusing on the repetitive nature of territorial captures.",
+          "llm_reasoning": "The article selectively presents information, omitting the context and long-term implications of the war, instead focusing on the back-and-forth nature of the conflict.",
           "x": -12.514375686645508,
           "y": 0.4213334918022156,
           "z": -0.02296902798116207
@@ -6285,7 +6285,7 @@
           ]
         }
       },
-      "timestamp": "2026-03-31T17:22:44.656957"
+      "timestamp": "2026-04-02T04:38:32.623222"
     },
     {
       "event_id": "standalone_198",
@@ -6332,7 +6332,7 @@
           ]
         }
       },
-      "timestamp": "2026-03-31T17:22:44.657077"
+      "timestamp": "2026-04-02T04:38:32.623341"
     },
     {
       "event_id": "standalone_202",
@@ -6379,7 +6379,7 @@
           ]
         }
       },
-      "timestamp": "2026-03-31T17:22:44.657224"
+      "timestamp": "2026-04-02T04:38:32.623483"
     },
     {
       "event_id": "standalone_203",
@@ -6426,7 +6426,7 @@
           ]
         }
       },
-      "timestamp": "2026-03-31T17:22:44.657350"
+      "timestamp": "2026-04-02T04:38:32.623608"
     },
     {
       "event_id": "standalone_204",
@@ -6473,7 +6473,7 @@
           ]
         }
       },
-      "timestamp": "2026-03-31T17:22:44.657471"
+      "timestamp": "2026-04-02T04:38:32.623740"
     },
     {
       "event_id": "standalone_205",
@@ -6520,7 +6520,7 @@
           ]
         }
       },
-      "timestamp": "2026-03-31T17:22:44.657591"
+      "timestamp": "2026-04-02T04:38:32.623859"
     },
     {
       "event_id": "standalone_206",
@@ -6567,7 +6567,7 @@
           ]
         }
       },
-      "timestamp": "2026-03-31T17:22:44.657710"
+      "timestamp": "2026-04-02T04:38:32.623978"
     },
     {
       "event_id": "standalone_207",
@@ -6614,7 +6614,7 @@
           ]
         }
       },
-      "timestamp": "2026-03-31T17:22:44.657828"
+      "timestamp": "2026-04-02T04:38:32.624098"
     },
     {
       "event_id": "standalone_210",
@@ -6661,7 +6661,7 @@
           ]
         }
       },
-      "timestamp": "2026-03-31T17:22:44.657948"
+      "timestamp": "2026-04-02T04:38:32.624218"
     },
     {
       "event_id": "standalone_212",
@@ -6708,7 +6708,7 @@
           ]
         }
       },
-      "timestamp": "2026-03-31T17:22:44.658069"
+      "timestamp": "2026-04-02T04:38:32.624337"
     },
     {
       "event_id": "standalone_213",
@@ -6755,7 +6755,7 @@
           ]
         }
       },
-      "timestamp": "2026-03-31T17:22:44.658215"
+      "timestamp": "2026-04-02T04:38:32.624479"
     },
     {
       "event_id": "standalone_216",
@@ -6802,7 +6802,7 @@
           ]
         }
       },
-      "timestamp": "2026-03-31T17:22:44.658340"
+      "timestamp": "2026-04-02T04:38:32.624604"
     },
     {
       "event_id": "standalone_217",
@@ -6849,7 +6849,7 @@
           ]
         }
       },
-      "timestamp": "2026-03-31T17:22:44.658463"
+      "timestamp": "2026-04-02T04:38:32.624723"
     },
     {
       "event_id": "standalone_218",
@@ -6876,7 +6876,7 @@
           "tactic_label": "Othering / Scapegoating",
           "specific_technique": "Palestinian Blame Shifting",
           "tactic_confidence": 0.95,
-          "llm_reasoning": "The article shifts blame from Israel's actions to the Palestinian resistance, portraying them as illegitimate and justifying Israeli actions as necessary self-defense.",
+          "llm_reasoning": "The author shifts blame from Israel's actions to the Palestinian people, implying they are responsible for their own suffering and that of others.",
           "x": -15.700239181518555,
           "y": 0.10021784156560898,
           "z": 3.5417869091033936
@@ -6896,7 +6896,7 @@
           ]
         }
       },
-      "timestamp": "2026-03-31T17:22:44.658585"
+      "timestamp": "2026-04-02T04:38:32.624843"
     },
     {
       "event_id": "standalone_219",
@@ -6943,7 +6943,7 @@
           ]
         }
       },
-      "timestamp": "2026-03-31T17:22:44.658706"
+      "timestamp": "2026-04-02T04:38:32.624960"
     },
     {
       "event_id": "standalone_220",
@@ -6990,7 +6990,7 @@
           ]
         }
       },
-      "timestamp": "2026-03-31T17:22:44.658829"
+      "timestamp": "2026-04-02T04:38:32.625082"
     },
     {
       "event_id": "standalone_221",
@@ -7017,7 +7017,7 @@
           "tactic_label": "Othering / Scapegoating",
           "specific_technique": "Blaming Terrorist Sympathizers",
           "tactic_confidence": 0.95,
-          "llm_reasoning": "The article implies that Team Melli players are associated with or sympathetic to the Minab School attack, framing them as responsible for the tragedy.",
+          "llm_reasoning": "The article frames Team Melli players as representing the victims of a terrorist attack, implying that the team or its fans are sympathetic to terrorism.",
           "x": -13.954516410827637,
           "y": 0.3291533589363098,
           "z": 2.2668402194976807
@@ -7037,7 +7037,7 @@
           ]
         }
       },
-      "timestamp": "2026-03-31T17:22:44.658952"
+      "timestamp": "2026-04-02T04:38:32.625199"
     },
     {
       "event_id": "standalone_223",
@@ -7084,7 +7084,7 @@
           ]
         }
       },
-      "timestamp": "2026-03-31T17:22:44.659073"
+      "timestamp": "2026-04-02T04:38:32.625318"
     },
     {
       "event_id": "standalone_224",
@@ -7131,7 +7131,7 @@
           ]
         }
       },
-      "timestamp": "2026-03-31T17:22:44.659221"
+      "timestamp": "2026-04-02T04:38:32.625440"
     },
     {
       "event_id": "standalone_225",
@@ -7178,7 +7178,7 @@
           ]
         }
       },
-      "timestamp": "2026-03-31T17:22:44.659345"
+      "timestamp": "2026-04-02T04:38:32.625592"
     },
     {
       "event_id": "standalone_226",
@@ -7225,7 +7225,7 @@
           ]
         }
       },
-      "timestamp": "2026-03-31T17:22:44.659466"
+      "timestamp": "2026-04-02T04:38:32.625722"
     },
     {
       "event_id": "standalone_228",
@@ -7252,7 +7252,7 @@
           "tactic_label": "Othering / Scapegoating",
           "specific_technique": "Blaming Western Aggressor",
           "tactic_confidence": 0.95,
-          "llm_reasoning": "The article frames the US as responsible for a deadly attack on an Iranian school, implying that the US is the aggressor and Iran is the victim, which is a classic example of othering/ scapegoating.",
+          "llm_reasoning": "The article frames the U.S. as responsible for a deadly attack on an Iranian school, implying that the U.S. is the aggressor and Iran is the victim.",
           "x": -14.111882209777832,
           "y": 0.6804149150848389,
           "z": 2.283869743347168
@@ -7272,7 +7272,7 @@
           ]
         }
       },
-      "timestamp": "2026-03-31T17:22:44.659587"
+      "timestamp": "2026-04-02T04:38:32.625844"
     },
     {
       "event_id": "standalone_229",
@@ -7319,7 +7319,7 @@
           ]
         }
       },
-      "timestamp": "2026-03-31T17:22:44.659708"
+      "timestamp": "2026-04-02T04:38:32.625965"
     },
     {
       "event_id": "standalone_231",
@@ -7366,7 +7366,7 @@
           ]
         }
       },
-      "timestamp": "2026-03-31T17:22:44.659829"
+      "timestamp": "2026-04-02T04:38:32.626084"
     },
     {
       "event_id": "standalone_232",
@@ -7413,7 +7413,7 @@
           ]
         }
       },
-      "timestamp": "2026-03-31T17:22:44.659950"
+      "timestamp": "2026-04-02T04:38:32.626202"
     },
     {
       "event_id": "standalone_233",
@@ -7460,7 +7460,7 @@
           ]
         }
       },
-      "timestamp": "2026-03-31T17:22:44.660072"
+      "timestamp": "2026-04-02T04:38:32.626321"
     },
     {
       "event_id": "standalone_234",
@@ -7487,7 +7487,7 @@
           "tactic_label": "Neutral Reporting",
           "specific_technique": "Objective Fact Presentation",
           "tactic_confidence": 0.95,
-          "llm_reasoning": "The article presents a factual report on the Global Financial Centres Index without emotional language or bias, focusing on the data and rankings.",
+          "llm_reasoning": "The article presents a factual ranking of global financial hubs without emotional language or bias, adhering to a neutral reporting style.",
           "x": -12.262666702270508,
           "y": 0.8135629892349243,
           "z": 2.9996767044067383
@@ -7507,7 +7507,7 @@
           ]
         }
       },
-      "timestamp": "2026-03-31T17:22:44.660225"
+      "timestamp": "2026-04-02T04:38:32.626458"
     },
     {
       "event_id": "standalone_235",
@@ -7554,7 +7554,7 @@
           ]
         }
       },
-      "timestamp": "2026-03-31T17:22:44.660350"
+      "timestamp": "2026-04-02T04:38:32.626587"
     },
     {
       "event_id": "standalone_236",
@@ -7601,7 +7601,7 @@
           ]
         }
       },
-      "timestamp": "2026-03-31T17:22:44.660470"
+      "timestamp": "2026-04-02T04:38:32.626707"
     },
     {
       "event_id": "standalone_237",
@@ -7628,7 +7628,7 @@
           "tactic_label": "Othering / Scapegoating",
           "specific_technique": "Cultural Appropriation Criticism",
           "tactic_confidence": 0.95,
-          "llm_reasoning": "The author criticizes a trend of people adopting Chinese culture superficially, implying that they are appropriating and disrespecting the true meaning of being Chinese.",
+          "llm_reasoning": "The author criticizes a trend of people adopting Chinese culture superficially, implying that they are appropriating it without understanding its true meaning or significance, which is a form of othering and scapegoating.",
           "x": -12.30538272857666,
           "y": 0.43434134125709534,
           "z": 3.2878410816192627
@@ -7648,7 +7648,7 @@
           ]
         }
       },
-      "timestamp": "2026-03-31T17:22:44.660592"
+      "timestamp": "2026-04-02T04:38:32.626827"
     },
     {
       "event_id": "standalone_238",
@@ -7695,7 +7695,7 @@
           ]
         }
       },
-      "timestamp": "2026-03-31T17:22:44.660713"
+      "timestamp": "2026-04-02T04:38:32.626947"
     },
     {
       "event_id": "standalone_239",
@@ -7742,7 +7742,7 @@
           ]
         }
       },
-      "timestamp": "2026-03-31T17:22:44.660835"
+      "timestamp": "2026-04-02T04:38:32.627066"
     },
     {
       "event_id": "standalone_240",
@@ -7789,7 +7789,7 @@
           ]
         }
       },
-      "timestamp": "2026-03-31T17:22:44.660958"
+      "timestamp": "2026-04-02T04:38:32.627185"
     },
     {
       "event_id": "standalone_241",
@@ -7836,7 +7836,7 @@
           ]
         }
       },
-      "timestamp": "2026-03-31T17:22:44.661077"
+      "timestamp": "2026-04-02T04:38:32.627304"
     },
     {
       "event_id": "standalone_242",
@@ -7863,7 +7863,7 @@
           "tactic_label": "Selective Framing / Bias",
           "specific_technique": " cherry-picked Criticism",
           "tactic_confidence": 0.95,
-          "llm_reasoning": "The article selectively presents a mix of criticisms and conspiracy theories about the US, while omitting opposing facts and presenting a one-sided narrative.",
+          "llm_reasoning": "The article selectively presents opposing views on the US's stability, while omitting or downplaying opposing facts to create a one-sided narrative.",
           "x": -16.44092559814453,
           "y": 1.7516984939575195,
           "z": 1.3235677480697632
@@ -7883,7 +7883,7 @@
           ]
         }
       },
-      "timestamp": "2026-03-31T17:22:44.661223"
+      "timestamp": "2026-04-02T04:38:32.627423"
     },
     {
       "event_id": "standalone_243",
@@ -7930,7 +7930,7 @@
           ]
         }
       },
-      "timestamp": "2026-03-31T17:22:44.661346"
+      "timestamp": "2026-04-02T04:38:32.627569"
     },
     {
       "event_id": "standalone_244",
@@ -7977,7 +7977,7 @@
           ]
         }
       },
-      "timestamp": "2026-03-31T17:22:44.661468"
+      "timestamp": "2026-04-02T04:38:32.627689"
     },
     {
       "event_id": "standalone_245",
@@ -8024,7 +8024,7 @@
           ]
         }
       },
-      "timestamp": "2026-03-31T17:22:44.661587"
+      "timestamp": "2026-04-02T04:38:32.627809"
     },
     {
       "event_id": "standalone_247",
@@ -8071,7 +8071,7 @@
           ]
         }
       },
-      "timestamp": "2026-03-31T17:22:44.661705"
+      "timestamp": "2026-04-02T04:38:32.627929"
     },
     {
       "event_id": "standalone_248",
@@ -8098,7 +8098,7 @@
           "tactic_label": "Selective Framing / Bias",
           "specific_technique": "War Cost Omission",
           "tactic_confidence": 0.95,
-          "llm_reasoning": "The article presents a counter that shows the real-time cost of every active war, but frames it as 'depressing' and implies that money isn't real, omitting opposing facts that might provide a more balanced view of war's impact.",
+          "llm_reasoning": "The article presents a counter that shows the real-time cost of every active war, but frames it as 'depressing' and implies that money isn't real, omitting opposing facts that might provide a more balanced view.",
           "x": -15.91114330291748,
           "y": 1.8958338499069214,
           "z": 1.2019085884094238
@@ -8118,7 +8118,7 @@
           ]
         }
       },
-      "timestamp": "2026-03-31T17:22:44.661825"
+      "timestamp": "2026-04-02T04:38:32.628047"
     },
     {
       "event_id": "standalone_249",
@@ -8165,7 +8165,7 @@
           ]
         }
       },
-      "timestamp": "2026-03-31T17:22:44.661945"
+      "timestamp": "2026-04-02T04:38:32.628165"
     },
     {
       "event_id": "standalone_251",
@@ -8212,7 +8212,7 @@
           ]
         }
       },
-      "timestamp": "2026-03-31T17:22:44.662066"
+      "timestamp": "2026-04-02T04:38:32.628283"
     },
     {
       "event_id": "evt_1",
@@ -8220,14 +8220,14 @@
       "headline_count": 3,
       "representative_title": "Tiger Woods charged with driving under influence after crash",
       "sources": [
+        "Al Jazeera (AR)",
         "BBC News",
-        "Al Jazeera (EN)",
-        "Al Jazeera (AR)"
+        "Al Jazeera (EN)"
       ],
       "perspectives": [
-        "Middle East (Arabic)",
+        "Middle East (English)",
         "Western Europe",
-        "Middle East (English)"
+        "Middle East (Arabic)"
       ],
       "headlines": [
         {
@@ -8305,7 +8305,7 @@
           ]
         }
       },
-      "timestamp": "2026-03-31T17:22:44.666364"
+      "timestamp": "2026-04-02T04:38:32.632241"
     },
     {
       "event_id": "evt_3",
@@ -8318,8 +8318,8 @@
         "Deutsche Welle (EN)"
       ],
       "perspectives": [
-        "Western Europe",
-        "Middle East (English)"
+        "Middle East (English)",
+        "Western Europe"
       ],
       "headlines": [
         {
@@ -8394,7 +8394,7 @@
           ]
         }
       },
-      "timestamp": "2026-03-31T17:22:44.669292"
+      "timestamp": "2026-04-02T04:38:32.635098"
     },
     {
       "event_id": "evt_5",
@@ -8402,9 +8402,9 @@
       "headline_count": 4,
       "representative_title": "Austria becomes latest to propose social media ban for children",
       "sources": [
+        "Reddit: r/worldnews",
         "BBC News",
-        "Deutsche Welle (EN)",
-        "Reddit: r/worldnews"
+        "Deutsche Welle (EN)"
       ],
       "perspectives": [
         "Global (Mainstream)",
@@ -8501,7 +8501,7 @@
           ]
         }
       },
-      "timestamp": "2026-03-31T17:22:44.672041"
+      "timestamp": "2026-04-02T04:38:32.637869"
     },
     {
       "event_id": "evt_6",
@@ -8509,12 +8509,12 @@
       "headline_count": 2,
       "representative_title": "Spanish woman who died through euthanasia failed by state, say critics",
       "sources": [
-        "BBC News",
-        "RT (EN)"
+        "RT (EN)",
+        "BBC News"
       ],
       "perspectives": [
-        "Russia (English)",
-        "Western Europe"
+        "Western Europe",
+        "Russia (English)"
       ],
       "headlines": [
         {
@@ -8571,7 +8571,7 @@
           ]
         }
       },
-      "timestamp": "2026-03-31T17:22:44.673456"
+      "timestamp": "2026-04-02T04:38:32.639221"
     },
     {
       "event_id": "evt_7",
@@ -8579,8 +8579,8 @@
       "headline_count": 2,
       "representative_title": "Man arrested over plot to firebomb pro-Palestinian activist's NY home",
       "sources": [
-        "BBC News",
-        "Reddit: r/GlobalNews"
+        "Reddit: r/GlobalNews",
+        "BBC News"
       ],
       "perspectives": [
         "Western Europe",
@@ -8641,7 +8641,7 @@
           ]
         }
       },
-      "timestamp": "2026-03-31T17:22:44.674809"
+      "timestamp": "2026-04-02T04:38:32.640592"
     },
     {
       "event_id": "evt_8",
@@ -8649,12 +8649,12 @@
       "headline_count": 2,
       "representative_title": "Belarus leader gifts rifle to North Korea's Kim as they sign friendship treaty",
       "sources": [
-        "BBC News",
-        "RT (EN)"
+        "RT (EN)",
+        "BBC News"
       ],
       "perspectives": [
-        "Russia (English)",
-        "Western Europe"
+        "Western Europe",
+        "Russia (English)"
       ],
       "headlines": [
         {
@@ -8711,7 +8711,7 @@
           ]
         }
       },
-      "timestamp": "2026-03-31T17:22:44.676188"
+      "timestamp": "2026-04-02T04:38:32.641963"
     },
     {
       "event_id": "evt_15",
@@ -8776,7 +8776,7 @@
           ]
         }
       },
-      "timestamp": "2026-03-31T17:22:44.686016"
+      "timestamp": "2026-04-02T04:38:32.651783"
     }
   ]
 }
