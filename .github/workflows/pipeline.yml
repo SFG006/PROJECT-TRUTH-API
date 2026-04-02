@@ -14,6 +14,9 @@ jobs:
     steps:
       - name:  Checkout Repository
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0    # This forces a FULL clone of the history
+          lfs: true         # This ensures Large File Storage pointers are resolved
 
       - name:  Set up Python
         uses: actions/setup-python@v4
