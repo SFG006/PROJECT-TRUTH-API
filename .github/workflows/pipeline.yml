@@ -71,4 +71,4 @@ jobs:
         run: |
           git remote add huggingface https://oauth2:$HF_TOKEN@huggingface.co/spaces/SFG006/Truth-Tide-API || git remote set-url huggingface https://oauth2:$HF_TOKEN@huggingface.co/spaces/SFG006/Truth-Tide-API
           
-          git push --force huggingface main
+          git push --force huggingface HEAD:main
