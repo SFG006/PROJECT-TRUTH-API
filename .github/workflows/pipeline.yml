@@ -68,10 +68,10 @@ jobs:
           git push origin HEAD:main
 
       # STEP 5: LOAD TO HUGGING FACE (Push the synced repo to your Space)
-      - name: Push to Hugging Face Spaces
-        env:
-          HF_TOKEN: ${{ secrets.HF_TOKEN }}
+      - name: Push updates to GitHub
         run: |
-          git remote add huggingface https://oauth2:$HF_TOKEN@huggingface.co/spaces/SFG006/Truth-Tide-API || git remote set-url huggingface https://oauth2:$HF_TOKEN@huggingface.co/spaces/SFG006/Truth-Tide-API
+          # Pull latest changes. If there's a conflict, automatically keep the runner's fresh data (-X theirs)
+          git pull --rebase -X theirs origin main
           
-          git push --force huggingface HEAD:main
+          # Push the flawlessly merged timeline back to your main branch
+          git push origin HEAD:main
