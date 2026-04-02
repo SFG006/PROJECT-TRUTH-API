@@ -44,3 +44,12 @@ jobs:
           # Only commit if the AI actually changed the data
           git diff --quiet && git diff --staged --quiet || git commit -m "Auto-update OSINT dashboard data"
           git push
+
+      - name: 🚀 Deploy to Hugging Face Space
+        env:
+          HF_TOKEN: ${{ secrets.HF_TOKEN }}
+        run: |
+          # Set up the secure Hugging Face URL
+          git remote add huggingface https://oauth2:$HF_TOKEN@huggingface.co/spaces/SFG006/Truth-Tide-API
+          # Push the updated code and data to Hugging Face
+          git push huggingface main --force
