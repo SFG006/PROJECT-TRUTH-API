@@ -61,7 +61,10 @@ jobs:
       # STEP 4: LOAD TO GITHUB (Push the new data back to your repo)
       - name: Push updates to GitHub
         run: |
-          # Pushes the newly created commit back to your main branch
+          # 1. Pull any new changes that happened on GitHub while the scripts were running
+          git pull --rebase origin main
+          
+          # 2. Push the beautifully merged timeline back to your main branch
           git push origin HEAD:main
 
       # STEP 5: LOAD TO HUGGING FACE (Push the synced repo to your Space)
