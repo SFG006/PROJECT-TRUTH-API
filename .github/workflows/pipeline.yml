@@ -61,11 +61,11 @@ jobs:
       # STEP 4: LOAD TO GITHUB (Push the new data back to your repo)
       - name: Push updates to GitHub
         run: |
-          # 1. Pull any new changes, automatically choosing the bot's fresh data if there is a conflict
-          git pull origin main --no-rebase --strategy-option=ours
+          # 1. Pull any new changes from the current active branch
+          git pull origin $GITHUB_REF_NAME --no-rebase --strategy-option=ours
           
-          # 2. Push the beautifully merged timeline back to your GitHub main branch
-          git push origin main
+          # 2. Push the beautifully merged timeline back to your exact GitHub branch (e.g., LEON)
+          git push origin HEAD:$GITHUB_REF_NAME
 
       # STEP 5: LOAD TO HUGGING FACE (Push the synced repo to your Space)
       - name: Deploy to Hugging Face
