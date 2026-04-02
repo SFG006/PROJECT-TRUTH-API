@@ -3,25 +3,24 @@ name: Truth-Tide Automated Pipeline
 on:
   push:
     branches: [main]
-  # Optional: Run this on a daily schedule automatically
-  # schedule:
-  #   - cron: '0 0 * * *'
-  workflow_dispatch:
+  workflow_dispatch: 
 
 jobs:
   sync-and-process:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write  # CRITICAL: Gives the bot permission to push back to GitHub
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0  # Required by Hugging Face to avoid shallow clone errors
-          lfs: true       # Required to process any large files
+          fetch-depth: 0
+          lfs: true
 
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: '3.11'
+          python-version: '3.11' 
 
       - name: Install dependencies
         run: |
@@ -34,38 +33,40 @@ jobs:
           python data_siphon.py
           python reddit_siphon.py
         env:
-          # Inject secrets if your Reddit script requires them
           REDDIT_CLIENT_ID: ${{ secrets.REDDIT_CLIENT_ID }}
           REDDIT_CLIENT_SECRET: ${{ secrets.REDDIT_CLIENT_SECRET }}
 
       # STEP 2: TRANSFORM (Process the new raw data)
       - name: Run Tactic Siphon
         run: |
-          python tactic_siphon.py
+          python tactic_engine.py
         env:
-          # Depending on how your zero-shot model is configured, you may need your HF token here
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
 
-      # STEP 3: COMMIT ALL CHANGES
+      # STEP 3: COMMIT ALL CHANGES (Locally on the runner)
       - name: Commit fresh raw and processed data
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           
-          # Stage both folders explicitly
+          # Stage both folders
           git add data/raw/
           git add data/processed/
           
-          # Commit only if there are actual changes to avoid pipeline crashes
+          # Commit only if there are actual changes
           git diff --quiet && git diff --staged --quiet || git commit -m "Pipeline: Auto-fetch raw data and update tactic classifications"
 
-      # STEP 4: LOAD (Push everything to Hugging Face)
+      # STEP 4: LOAD TO GITHUB (Push the new data back to your repo)
+      - name: Push updates to GitHub
+        run: |
+          # Pushes the newly created commit back to your main branch
+          git push origin HEAD:main
+
+      # STEP 5: LOAD TO HUGGING FACE (Push the synced repo to your Space)
       - name: Push to Hugging Face Spaces
         env:
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
         run: |
-          # Set the remote URL using your secret token for authentication
           git remote add huggingface https://oauth2:$HF_TOKEN@huggingface.co/spaces/SFG006/Truth-Tide-API || git remote set-url huggingface https://oauth2:$HF_TOKEN@huggingface.co/spaces/SFG006/Truth-Tide-API
           
-          # Push the updated main branch to Hugging Face
           git push --force huggingface main
