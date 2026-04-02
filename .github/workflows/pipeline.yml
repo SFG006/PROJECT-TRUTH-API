@@ -43,7 +43,7 @@ jobs:
         env:
 
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
-          HF_TOKEN: ${{ secrets.HF_TOKEN }}
+          HF_TOKEN: ${{ secrets.HF__TOKEN }}
 
       # STEP 3: COMMIT ALL CHANGES (Locally on the runner)
       - name: Commit fresh raw and processed data
@@ -70,7 +70,7 @@ jobs:
       # STEP 5: LOAD TO HUGGING FACE (Push the synced repo to your Space)
       - name: Deploy to Hugging Face
         env:
-          HF_TOKEN: ${{ secrets.HF_TOKEN }}
+          HF_TOKEN: ${{ secrets.HF__TOKEN }}
         run: |
           # 1. Set up the secure connection to your Hugging Face space
           git remote add huggingface https://oauth2:$HF_TOKEN@huggingface.co/spaces/SFG006/Truth-Tide-API
