@@ -6,6 +6,7 @@ on:
   # Optional: Run this on a daily schedule automatically
   # schedule:
   #   - cron: '0 0 * * *'
+  workflow_dispatch:
 
 jobs:
   sync-and-process:
