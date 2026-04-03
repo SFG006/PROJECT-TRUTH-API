@@ -3,7 +3,10 @@ name: Truth-Tide Automated Pipeline
 on:
   push:
     branches: [main]
-  workflow_dispatch: 
+  workflow_dispatch:
+  schedule:
+    # This standard cron syntax tells GitHub to run this at 00:00 (Midnight) UTC every single day.
+    - cron: '0 0 * * *'
 
 jobs:
   sync-and-process:
