@@ -1,4 +1,4 @@
-# 🌊 PROJECT TRUTH: Autonomous OSINT & Narrative Engine
+# PROJECT TRUTH: Autonomous OSINT & Narrative Engine
 
 [![Python 3.11](https://img.shields.io/badge/Python-3.11-blue.svg?style=for-the-badge&logo=python)](#)
 [![FastAPI](https://img.shields.io/badge/FastAPI-005571?style=for-the-badge&logo=fastapi)](#)
