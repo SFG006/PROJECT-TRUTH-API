@@ -5,7 +5,7 @@ import os
 import json
 
 app = FastAPI(
-    title="Truth-Tide OSINT API",
+    title="Project Truth OSINT API",
     description="Live geopolitical narrative and propaganda tactics tracking.",
     version="2.0.0"
 )
@@ -27,7 +27,7 @@ def load_latest_data():
 def read_root():
     return {
         "status": "online",
-        "message": "Welcome to the Truth-Tide API. Go to /docs for the interactive dashboard."
+        "message": "Welcome to the Project Truth API. Go to /docs for the interactive dashboard."
     }
 
 
