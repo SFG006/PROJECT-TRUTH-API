@@ -1,14 +1,3 @@
----
-title: Truth Tide API
-emoji: 🌊
-colorFrom: blue
-colorTo: green
-sdk: docker
-app_port: 7860
-pinned: false
----
-
-
 # 🌊 PROJECT TRUTH: Autonomous OSINT & Narrative Engine
 
 [![Python 3.11](https://img.shields.io/badge/Python-3.11-blue.svg?style=for-the-badge&logo=python)](#)
