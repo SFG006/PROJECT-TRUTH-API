@@ -70,6 +70,15 @@ NEWS_FEEDS = [
     {"source": "Middle East Eye",
      "url": "https://www.middleeasteye.net/rss",
      "perspective": "Middle East (Independent)", "lang": "en"},
+
+    # --- North American Perspective ---
+        {"source": "CNN (World)",
+         "url": "http://rss.cnn.com/rss/edition_world.rss",
+         "perspective": "North America (Mainstream)", "lang": "en"},
+
+        {"source": "Fox News (World)",
+         "url": "http://feeds.foxnews.com/foxnews/world",
+         "perspective": "North America (Conservative)", "lang": "en"},
 ]
 
 
@@ -156,7 +165,7 @@ def fetch_news_data(feeds):
             continue
 
         count = 0
-        for entry in parsed_feed.entries[:15]:  # Top 15 per source
+        for entry in parsed_feed.entries[:40]:  # Top 15 per source
             raw_title   = entry.get("title", "").strip()
             raw_summary = entry.get("summary", "").strip()
             link        = entry.get("link", "")
