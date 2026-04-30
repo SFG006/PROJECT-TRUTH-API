@@ -18,12 +18,11 @@ jobs:
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
-#          lfs: true
 
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: '3.11' 
+          python-version: '3.11'
 
       - name: Install dependencies
         run: |
@@ -31,22 +30,16 @@ jobs:
           pip install -r requirements.txt 
 
       # STEP 1: EXTRACT (Fetch fresh raw data)
-      - name: Run Raw Data Siphons
+      - name: Run Raw Data Siphon
         run: |
           python data_siphon.py
-          python reddit_siphon.py
-        env:
-          REDDIT_CLIENT_ID: ${{ secrets.REDDIT_CLIENT_ID }}
-          REDDIT_CLIENT_SECRET: ${{ secrets.REDDIT_CLIENT_SECRET }}
 
       # STEP 2: TRANSFORM (Process the new raw data)
       - name: Run Tactic Siphon
         run: |
           python tactic_engine.py
         env:
-
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
-          HF_TOKEN: ${{ secrets.HF__TOKEN }}
 
       # STEP 3: COMMIT ALL CHANGES (Locally on the runner)
       - name: Commit fresh raw and processed data
@@ -67,16 +60,16 @@ jobs:
           # 1. Pull any new changes from the current active branch
           git pull origin $GITHUB_REF_NAME --no-rebase --strategy-option=ours
           
-          # 2. Push the beautifully merged timeline back to your exact GitHub branch (e.g., LEON)
+          # 2. Push the beautifully merged timeline back to your exact GitHub branch
           git push origin HEAD:$GITHUB_REF_NAME
 
       # STEP 5: LOAD TO HUGGING FACE (Push the synced repo to your Space)
       - name: Deploy to Hugging Face
         env:
-          HF_TOKEN: ${{ secrets.HF_TOKEN }}
+          HF_TOKEN: ${{ secrets.HF__TOKEN }}
         run: |
           # 1. Set up the secure connection to your Hugging Face space
-          git remote add huggingface https://oauth2:$HF_TOKEN@huggingface.co/spaces/SFG006/Truth-Tide-API
+          git remote add huggingface https://oauth2:$HF_TOKEN@huggingface.co/spaces/SFG006/Project-Truth-API
           
           # 2. Force push the updated code and data to Hugging Face
           git push huggingface HEAD:main --force

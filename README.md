@@ -16,10 +16,10 @@ By continuously scraping institutional global news feeds, the engine utilizes a 
 The platform is automatically deployed and updated daily. Access both the API and UI below:
 
 ###  Backend API  
-[![Backend API](https://img.shields.io/badge/Project_Truth_API-Open-1f6feb?style=for-the-badge&logo=fastapi)](https://sfg006-truth-tide-api.hf.space)
+[![Backend API](https://img.shields.io/badge/Project_Truth_API-Open-1f6feb?style=for-the-badge&logo=fastapi)](https://sfg006-project-truth-api.hf.space)
 
 ###  Frontend Dashboard  
-[![Frontend Dashboard](https://img.shields.io/badge/Project_Truth_Dashboard-Launch-005571?style=for-the-badge&logo=vercel)](https://sfg006-truth-tide.hf.space)
+[![Frontend Dashboard](https://img.shields.io/badge/Project_Truth_Dashboard-Launch-005571?style=for-the-badge&logo=vercel)](https://sfg006-project-truth.hf.space)
 
 ## Pipeline Overview
 
@@ -68,7 +68,7 @@ The FastAPI server exposes the following data streams:
 
 ### 1. Clone the Repository
 ```bash
-git clone [https://github.com/SFG006/Truth-Tide.git](https://github.com/SFG006/Truth-Tide.git)
+git clone [https://github.com/SFG006/PROJECT-TRUTH-API.git](https://github.com/SFG006/PROJECT-TRUTH-API.git)
 cd Truth-Tide
 ```
 
@@ -114,8 +114,8 @@ Every day at Midnight (UTC), or upon a manual push to the `main` branch, the sys
 
 Truth-Tide is containerized for easy deployment to cloud platforms. The included `Dockerfile` uses a secure non-root user and explicitly configures Uvicorn to trust reverse proxies.
 ```bash
-docker build -t truth-tide-api .
-docker run -p 7860:7860 --env-file .env truth-tide-api
+docker build -t project-truth-api .
+docker run -p 7860:7860 --env-file .env project-truth-api
 ```
 
 ---
