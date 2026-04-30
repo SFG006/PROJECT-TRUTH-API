@@ -10,17 +10,13 @@ from sentence_transformers import SentenceTransformer
 from sklearn.cluster import DBSCAN
 from sklearn.metrics.pairwise import cosine_similarity
 
-# ChromaDB
-import chromadb
-from chromadb.config import Settings
+
 
 # ─────────────────────────────────────────────
 # CONFIG
 # ─────────────────────────────────────────────
 INPUT_FILE = "data/processed/master_tactics_latest.csv"
 OUTPUT_REPORT = "data/processed/narrative_report.json"
-CHROMA_DB_PATH = "data/chroma_store"
-COLLECTION_NAME = "truth_tide_events"
 EMBEDDING_MODEL = "all-MiniLM-L6-v2"
 
 DBSCAN_EPS = 0.40
@@ -194,55 +190,10 @@ def build_event_clusters(df: pd.DataFrame, labels: np.ndarray) -> list[dict]:
     return events
 
 
-# ─────────────────────────────────────────────
-# STEP 4 — PERSIST TO CHROMADB
-# ─────────────────────────────────────────────
-def persist_to_chromadb(df: pd.DataFrame, embeddings: np.ndarray):
-    print(f"\n[4/5] Persisting {len(df)} vectors to ChromaDB at '{CHROMA_DB_PATH}'...")
-    client = chromadb.PersistentClient(
-        path=CHROMA_DB_PATH,
-        settings=Settings(anonymized_telemetry=False)
-    )
-    collection = client.get_or_create_collection(
-        name=COLLECTION_NAME,
-        metadata={"hnsw:space": "cosine"}
-    )
-
-    def make_id(row):
-        raw = f"{row['source']}_{row.get('published_date', '?')}_{row['title'][:40]}"
-        return raw.replace(" ", "_").replace("/", "-")[:100]
-
-    ids = [make_id(row) for _, row in df.iterrows()]
-    embeddings_list = embeddings.tolist()
-
-    metadatas = [
-        {
-            "source": str(row.get("source", "")),
-            "perspective": str(row.get("perspective", "")),
-            "tactic_label": str(row.get("tactic_label", "")),
-            "tactic_confidence": float(row.get("tactic_confidence", 0.0)),
-            "published_date": str(row.get("published_date", "")),
-            "link": str(row.get("link", "")),
-            "full_text": str(row.get("full_text", ""))[:500],
-        }
-        for _, row in df.iterrows()
-    ]
-    documents = df["title"].tolist()
-
-    BATCH = 50
-    for i in range(0, len(ids), BATCH):
-        collection.upsert(
-            ids=ids[i:i + BATCH],
-            embeddings=embeddings_list[i:i + BATCH],
-            documents=documents[i:i + BATCH],
-            metadatas=metadatas[i:i + BATCH],
-        )
-    total = collection.count()
-    print(f"      ChromaDB now holds {total} total vectors in '{COLLECTION_NAME}'.")
 
 
 # ─────────────────────────────────────────────
-# STEP 5 — EXPORT NARRATIVE REPORT
+# STEP 4 — EXPORT NARRATIVE REPORT
 # ─────────────────────────────────────────────
 def build_summary_stats(df: pd.DataFrame, events: list[dict]) -> dict:
     tactic_dist = df["tactic_label"].value_counts().to_dict()
@@ -299,7 +250,6 @@ def run_semantic_engine(preloaded_df=None):
 
     events = build_event_clusters(df, labels)
 
-    persist_to_chromadb(df, embeddings)
     summary = build_summary_stats(df, events)
     export_report(events, summary, OUTPUT_REPORT)
 

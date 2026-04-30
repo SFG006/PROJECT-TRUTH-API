@@ -208,12 +208,3 @@ __marimo__/
 
 /.env
 
-# Ignore everything inside the chroma database folder...
-data/chroma_store/*
-
-# ...EXCEPT for the placeholder file so the folder gets uploaded!
-!data/chroma_store/.gitkeep
-
-# Global ignores for binary/DB files just in case
-*.bin
-*.sqlite3
