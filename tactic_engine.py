@@ -67,7 +67,7 @@ def get_tactic_llm(text):
     {{
         "tactic_label": "Exact Name of broad category from the list",
         "specific_technique": "The specific 2-to-4 word tactic you identified",
-        "confidence": 0.95,
+        "confidence": "Float between 0.0 and 1.0 representing your certainty",
         "reasoning": "A one-sentence explanation of why this tactic applies."
     }}
     """

@@ -47,7 +47,7 @@ def get_narratives():
 
 
 @app.get("/api/headlines")
-def get_all_headlines(limit: int = 50):
+def get_all_headlines(limit: int = 1000):
     """Returns the most recent siphoned headlines and their tactical analysis."""
     df = load_latest_data()
     if df is None:

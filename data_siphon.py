@@ -79,6 +79,27 @@ NEWS_FEEDS = [
         {"source": "Fox News (World)",
          "url": "http://feeds.foxnews.com/foxnews/world",
          "perspective": "North America (Conservative)", "lang": "en"},
+
+    # --- Indian / South Asian Perspective ---
+        {"source": "WION",
+         "url": "https://www.wionews.com/feeds/world-news.xml",
+         "perspective": "India (International/Geopolitical)", "lang": "en"},
+
+        {"source": "Times of India",
+         "url": "https://timesofindia.indiatimes.com/rssfeeds/296589292.cms",
+         "perspective": "India (Mainstream)", "lang": "en"},
+
+        {"source": "The Indian Express",
+         "url": "https://indianexpress.com/section/world/feed/",
+         "perspective": "India (Center-Left)", "lang": "en"},
+
+        {"source": "Hindustan Times",
+         "url": "https://www.hindustantimes.com/feeds/rss/world-news/rssfeed.xml",
+         "perspective": "India (Mainstream)", "lang": "en"},
+
+        {"source": "Firstpost",
+         "url": "https://www.firstpost.com/rss/world.xml",
+         "perspective": "India (Center-Right)", "lang": "en"},
 ]
 
 
