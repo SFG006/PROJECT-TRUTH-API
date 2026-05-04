@@ -1,4 +1,4 @@
-name: Truth-Tide Automated Pipeline
+name: Project Truth Automated Pipeline
 
 on:
   push:
@@ -12,7 +12,7 @@ jobs:
   sync-and-process:
     runs-on: ubuntu-latest
     permissions:
-      contents: write  # CRITICAL: Gives the bot permission to push back to GitHub
+      contents: write
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -39,7 +39,8 @@ jobs:
         run: |
           python tactic_engine.py
         env:
-          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          # CRITICAL UPDATE: Ensure this matches the key you are actually using!
+          GOOGLE_API_KEY: ${{ secrets.GROQ_API_KEY }}
 
       # STEP 3: COMMIT ALL CHANGES (Locally on the runner)
       - name: Commit fresh raw and processed data
@@ -57,19 +58,25 @@ jobs:
       # STEP 4: LOAD TO GITHUB (Push the new data back to your repo)
       - name: Push updates to GitHub
         run: |
-          # 1. Pull any new changes from the current active branch
           git pull origin $GITHUB_REF_NAME --no-rebase --strategy-option=ours
-          
-          # 2. Push the beautifully merged timeline back to your exact GitHub branch
           git push origin HEAD:$GITHUB_REF_NAME
 
-      # STEP 5: LOAD TO HUGGING FACE (Push the synced repo to your Space)
+      # STEP 5: THE README RESCUE & HUGGING FACE DEPLOY
       - name: Deploy to Hugging Face
         env:
           HF_TOKEN: ${{ secrets.HF__TOKEN }}
         run: |
-          # 1. Set up the secure connection to your Hugging Face space
           git remote add huggingface https://oauth2:$HF_TOKEN@huggingface.co/spaces/SFG006/Project-Truth-API
           
-          # 2. Force push the updated code and data to Hugging Face
+          # Download the current live state of Hugging Face
+          git fetch huggingface main
+          
+          # Overwrite the runner's local README with the Hugging Face version
+          git checkout huggingface/main -- README.md
+          
+          # Commit the rescued README
+          git add README.md
+          git commit -m "Pipeline: Preserve Hugging Face README" || echo "No changes to README"
+          
+          # Push the final package to Hugging Face
           git push huggingface HEAD:main --force
