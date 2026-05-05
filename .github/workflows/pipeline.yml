@@ -40,7 +40,7 @@ jobs:
           python tactic_engine.py
         env:
           # CRITICAL UPDATE: Ensure this matches the key you are actually using!
-          GOOGLE_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
 
       # STEP 3: COMMIT ALL CHANGES (Locally on the runner)
       - name: Commit fresh raw and processed data
