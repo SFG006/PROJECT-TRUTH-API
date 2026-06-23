@@ -9,7 +9,7 @@
 
 By continuously scraping institutional global news feeds, the engine utilizes a high-speed Groq LLM pipeline to classify psychological manipulation tactics, followed by semantic clustering to map conflicting global narratives in 3D space.
 
-<img width="960" height="437" alt="PROJECT TRUTH" src="https://github.com/user-attachments/assets/c7c2f34a-52b8-4750-aabf-afc9c5cfdaac" />
+<img width="955" height="429" alt="PROJECT TRUTH" src="https://github.com/user-attachments/assets/c6a97066-fd98-4aa0-867f-f94a0c63aeb2" />
 
 ---
 
