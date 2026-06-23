@@ -4,6 +4,8 @@ import numpy as np
 import pandas as pd
 from datetime import datetime
 from collections import defaultdict
+
+from polars import DataFrame
 from umap import UMAP
 # Embeddings & Clustering
 from sentence_transformers import SentenceTransformer
@@ -77,7 +79,7 @@ def embed_and_cluster(df: pd.DataFrame) -> tuple[np.ndarray, np.ndarray]:
     return embeddings, labels
 
 
-def generate_3d_coordinates(df: pd.DataFrame, embeddings: np.ndarray):
+def generate_3d_coordinates(df: pd.DataFrame, embeddings: np.ndarray) -> DataFrame:
     print(f"\n[2.5/5] Generating 3D Semantic Map Coordinates (UMAP)...")
     reducer = UMAP(
         n_components=3,
@@ -135,7 +137,9 @@ def build_event_clusters(df: pd.DataFrame, labels: np.ndarray) -> list[dict]:
     events = []
     unique_labels = sorted(set(labels))
 
+    
     for label in unique_labels:
+        # for each cluster we do
         mask = labels == label
         cluster_df = df[mask].copy()
 

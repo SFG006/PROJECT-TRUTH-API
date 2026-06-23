@@ -14,7 +14,7 @@ if not raw_files:
     exit()
 
 print(f"Found {len(raw_files)} raw data files. Combining...")
-df_list = [pd.read_csv(file) for file in raw_files]
+df_list  = [pd.read_csv(file) for file in raw_files]
 df = pd.concat(df_list, ignore_index=True).drop_duplicates(subset=['title', 'source'])
 df = df[~df['title'].astype(str).str.contains('<<<<<<|>>>>>>|=======', regex=True)].reset_index(drop=True)
 
