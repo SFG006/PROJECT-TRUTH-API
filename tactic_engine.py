@@ -74,7 +74,7 @@ def get_tactic_llm(text):
     try:
         chat_completion = client.chat.completions.create(
             messages=[{"role": "user", "content": prompt}],
-            model="meta-llama/llama-4-scout-17b-16e-instruct",
+            model="meta-llama/llama-prompt-guard-2-86m",
             temperature=0,
             response_format={"type": "json_object"}
         )
