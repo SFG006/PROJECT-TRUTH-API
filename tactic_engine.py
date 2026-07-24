@@ -77,7 +77,7 @@ def get_tactic_llm(text):
     try:
         chat_completion = client.chat.completions.create(
             messages=[{"role": "user", "content": prompt}],
-            model="meta-llama/llama-prompt-guard-2-22m",
+            model="openai/gpt-oss-20b",
             temperature=0,
             response_format={"type": "json_object"}
         )
