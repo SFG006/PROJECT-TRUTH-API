@@ -1,6 +1,5 @@
 import os
 import json
-import time
 import pandas as pd
 import glob
 from tqdm import tqdm
@@ -26,8 +25,6 @@ else:
     df.loc[df['full_text'] == '', 'full_text'] = df['title']
 
 print(f"Total unique articles: {len(df)}")
-
-df = df.head(400) #reducing articles to 400
 
 # ─────────────────────────────────────────────
 # STEP 2 — Groq LLM Tactic Classification
@@ -77,7 +74,7 @@ def get_tactic_llm(text):
     try:
         chat_completion = client.chat.completions.create(
             messages=[{"role": "user", "content": prompt}],
-            model="openai/gpt-oss-20b",
+            model="llama-3.1-8b-instant",
             temperature=0,
             response_format={"type": "json_object"}
         )
@@ -93,23 +90,12 @@ def get_tactic_llm(text):
         return "ERROR", "ERROR", 0.0, str(e)
 
 
-results = []
-for count, (index, row) in enumerate(tqdm(df.iterrows(), total=len(df), desc="Groq API Processing"), 1):
-    tactic, specific, conf, reasoning = get_tactic_llm(row['full_text'])
-    results.append({
-        'tactic_label': tactic,
-        'specific_technique': specific,
-        'tactic_confidence': conf,
-        'llm_reasoning': reasoning
-    })
-
-    if count % 20 == 0 and count != len(df):
-        print(f"\nProcessed {count} articles. Sleeping for 60 seconds to reset token limits...")
-        time.sleep(60)
-
-# Reattach the results to the original DataFrame
-results_df = pd.DataFrame(results)
-df = pd.concat([df.reset_index(drop=True), results_df.reset_index(drop=True)], axis=1)
+tqdm.pandas(desc="Groq API Processing")
+df[['tactic_label', 'specific_technique', 'tactic_confidence', 'llm_reasoning']] = df['full_text'].progress_apply(
+    lambda x: pd.Series(get_tactic_llm(x))
+)
+print("Saving updated master CSV...")
+df.to_csv("data/processed/master_tactics_latest.csv", index=False)
 # ─────────────────────────────────────────────
 # STEP 3 — Auto-trigger Semantic Engine (In-Memory Handoff)
 # ─────────────────────────────────────────────
