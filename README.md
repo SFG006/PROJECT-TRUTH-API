@@ -71,7 +71,7 @@ The FastAPI server exposes the following data streams:
 ### 1. Clone the Repository
 ```bash
 git clone [https://github.com/SFG006/PROJECT-TRUTH-API.git](https://github.com/SFG006/PROJECT-TRUTH-API.git)
-cd Truth-Tide
+cd PROJECT-TRUTH-API
 ```
 
 ### 2. Install Dependencies
@@ -104,7 +104,7 @@ uvicorn main:app --reload --port 7860
 
 ##  Automated Deployment (CI/CD)
 
-Truth-Tide utilizes a fully automated GitHub Actions pipeline (`pipeline.yml`). 
+PROJECT-TRUTH utilizes a fully automated GitHub Actions pipeline (`pipeline.yml`). 
 
 Every day at Midnight (UTC), or upon a manual push to the `main` branch, the system will:
 1. Spin up an Ubuntu runner.
@@ -114,7 +114,7 @@ Every day at Midnight (UTC), or upon a manual push to the `main` branch, the sys
 
 ## Docker Deployment
 
-Truth-Tide is containerized for easy deployment to cloud platforms. The included `Dockerfile` uses a secure non-root user and explicitly configures Uvicorn to trust reverse proxies.
+PROJECT-TRUTH is containerized for easy deployment to cloud platforms. The included `Dockerfile` uses a secure non-root user and explicitly configures Uvicorn to trust reverse proxies.
 ```bash
 docker build -t project-truth-api .
 docker run -p 7860:7860 --env-file .env project-truth-api
