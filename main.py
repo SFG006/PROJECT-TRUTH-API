@@ -2,8 +2,10 @@ from fastapi import FastAPI, HTTPException, Query
 from pydantic import BaseModel, Field, RootModel
 import pandas as pd
 import os
+import aiofiles
 import json
 from typing import List, Dict, Union
+from fastapi.concurrency import run_in_threadpool
 
 
 # ─────────────────────────────────────────────
@@ -21,7 +23,7 @@ class TacticDistribution(RootModel[Dict[str, int]]):
         }
     }
 
-class SourceDistribution(RootModel[Dict[str, int]]):
+class SourceDistribution(RootModel[Dict[str, Dict[str, int]]]):
     model_config = {
         "json_schema_extra": {
             "example": {
@@ -114,11 +116,12 @@ app = FastAPI(
 )
 
 
-def load_latest_data() -> Union[pd.DataFrame, None]:
+async def load_latest_data() -> Union[pd.DataFrame, None]:
     file_path = "data/processed/master_tactics_latest.csv"
     if not os.path.exists(file_path):
         return None
-    return pd.read_csv(file_path).fillna("N/A")
+    df = await run_in_threadpool(pd.read_csv, file_path)
+    return df.fillna("N/A")
 
 
 # ─────────────────────────────────────────────
@@ -141,7 +144,7 @@ def read_root():
     summary="Fetch complete clustered narratives and delta scores",
     response_description="A structured JSON object containing daily meta-analysis and detailed event profiles."
 )
-def get_narratives():
+async def get_narratives():
     """
     Renders fully integrated clusters computed by our unsupervised learning steps.
 
@@ -153,8 +156,9 @@ def get_narratives():
         raise HTTPException(status_code=404, detail="Processed narrative intelligence data package not found.")
 
     try:
-        with open(file_path, "r", encoding="utf-8") as f:
-            return json.load(f)
+        async with aiofiles.open(file_path, "r", encoding="utf-8") as f:
+            content = await f.read()
+            return json.loads(content)
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"Failed to decode system file index mapping: {str(e)}")
 
@@ -165,7 +169,7 @@ def get_narratives():
     summary="Get siphoned tracking records and custom coordinates",
     response_description="Returns count tracking along with direct array records."
 )
-def get_all_headlines(
+async def get_all_headlines(
         limit: int = Query(default=100, description="Slice window limit parameter to constrain response sizes.", ge=1,
                            le=1000)
 ):
@@ -174,7 +178,7 @@ def get_all_headlines(
     Useful for inspecting individual classifications or pulling raw geometry points (`x, y, z`)
     for direct custom front-end bindings.
     """
-    df = load_latest_data()
+    df = await load_latest_data()
     if df is None:
         raise HTTPException(status_code=404, detail="Intelligence framework database records not found.")
 
@@ -188,17 +192,17 @@ def get_all_headlines(
     tags=["Global System Analytics"],
     summary="Aggregated volume tracking for narrative manipulation categories"
 )
-def get_tactics_summary():
+async def get_tactics_summary():
     """
     Scans the live operational data structures to output clean, total calculation summaries
     of every observed trick label distribution today. Perfect for feeding standalone bar charts.
     """
-    df = load_latest_data()
+    df = await load_latest_data()
     if df is None:
         raise HTTPException(status_code=404, detail="Intelligence framework database records not found.")
 
     summary = df['tactic_label'].value_counts().to_dict()
-    return {"tactics_distribution": summary}
+    return summary
 
 
 @app.get(
@@ -207,15 +211,15 @@ def get_tactics_summary():
     tags=["Global System Analytics"],
     summary="Cross-tabulated framework matrix tracking behavior metrics per outlet"
 )
-def get_source_breakdown():
+async def get_source_breakdown():
     """
     Builds an analytical pivot tracking matrix evaluating structural behavioral profiles
     across all monitored publishers. Maps out exactly how frequently specific nodes lean into
     defined tracking tags.
     """
-    df = load_latest_data()
+    df = await load_latest_data()
     if df is None:
         raise HTTPException(status_code=404, detail="Intelligence framework database records not found.")
 
     grouped = df.groupby(['source', 'tactic_label']).size().unstack(fill_value=0).to_dict(orient="index")
-    return {"source_tactics": grouped}
+    return grouped
