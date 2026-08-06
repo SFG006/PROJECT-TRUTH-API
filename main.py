@@ -17,7 +17,7 @@ class TacticDistribution(RootModel[Dict[str, int]]):
         "json_schema_extra": {
             "example": {
                 "Neutral Reporting": 210,
-                "Fear-Mongering / Alarmism": 105,
+                "Fear Mongering / Alarmism": 105,
                 "Disinformation": 65
             }
         }
@@ -53,7 +53,7 @@ class MetaStats(BaseModel):
 
 class NarrativeDeltaSchema(BaseModel):
     dominant_tactic: str = Field(..., description="The most frequent tactic found in this cluster.",
-                                 examples=["Fear-Mongering"])
+                                 examples=["Fear Mongering"])
     agreement_score: float = Field(..., description="Ratio of consensus around the dominant tactic.", examples=[0.25])
     delta_score: float = Field(..., description="Narrative divergence index. Higher means heavier split/spin.",
                                examples=[0.75])
@@ -95,7 +95,7 @@ class EventClusterSchema(BaseModel):
 class NarrativeReportResponse(BaseModel):
     meta: MetaStats = Field(..., description="Global execution and dataset stats overview.")
     events: List[EventClusterSchema] = Field(...,
-                                             description="Chronological and delta-sorted narrative cluster objects.")
+                                             description="Chronological and delta sorted narrative cluster objects.")
 
 
 # ─────────────────────────────────────────────
@@ -105,7 +105,7 @@ class NarrativeReportResponse(BaseModel):
 app = FastAPI(
     title="Project Truth Intelligence Core API",
     description=(
-        "## Real-Time Geopolitical Narrative Tracking & Propaganda Metrics\n\n"
+        "## Real Time Geopolitical Narrative Tracking & Propaganda Metrics\n\n"
         "This API unifies downstream processing tasks including raw headline ingest, embedding vectors, "
         "DBSCAN clustering, and 3D coordinate synthesis. It provides systematic access to operational analytics "
         "tracking computational manipulation across global news vectors."
@@ -133,7 +133,7 @@ def read_root():
     """Validates api availability and basic connection state checks."""
     return {
         "status": "online",
-        "message": "Welcome to the Truth-Tide Intelligence API Core. Navigate to /docs for the comprehensive dashboard interface."
+        "message": "Welcome to the PROJECT TRUTH Intelligence API Core. Navigate to /docs for the comprehensive dashboard interface."
     }
 
 
@@ -142,12 +142,11 @@ def read_root():
     response_model=NarrativeReportResponse,
     tags=["Core Intelligence Engine"],
     summary="Fetch complete clustered narratives and delta scores",
-    response_description="A structured JSON object containing daily meta-analysis and detailed event profiles."
+    response_description="A structured JSON object containing daily meta analysis and detailed event profiles."
 )
 async def get_narratives():
     """
     Renders fully integrated clusters computed by our unsupervised learning steps.
-
     Returns a sorted array where the stories showing the **highest Narrative Delta Scores** (maximum spin and contrasting perspectives) are surfaced at the absolute top of the stack.
     """
     file_path = "data/processed/narrative_report.json"
@@ -187,7 +186,7 @@ async def get_all_headlines(
 
 
 @app.get(
-    "/api/tactics-summary",
+    "/api/tactics_summary",
     response_model=TacticDistribution,
     tags=["Global System Analytics"],
     summary="Aggregated volume tracking for narrative manipulation categories"
@@ -209,7 +208,7 @@ async def get_tactics_summary():
     "/api/sources",
     response_model=SourceDistribution,
     tags=["Global System Analytics"],
-    summary="Cross-tabulated framework matrix tracking behavior metrics per outlet"
+    summary="Cross tabulated framework matrix tracking behavior metrics per outlet"
 )
 async def get_source_breakdown():
     """
