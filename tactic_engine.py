@@ -215,6 +215,7 @@ df = pd.concat([df, res_df], axis=1)
 df = df.dropna(subset=['tactic_label']).reset_index(drop=True)
 
 print(f"\nSaving {len(df)} successfully processed articles to master CSV...")
+os.makedirs("data/processed", exist_ok=True)
 df.to_csv("data/processed/master_tactics_latest.csv", index=False)
 
 # ─────────────────────────────────────────────
