@@ -41,6 +41,7 @@ jobs:
         env:
           GROQ_API_KEY_1: ${{ secrets.GROQ_API_KEY_1 }}
           GROQ_API_KEY_2: ${{ secrets.GROQ_API_KEY_2 }}
+          HF__TOKEN: ${{ secrets.HF__TOKEN }}
           HF_HUB_ENABLE_HF_TRANSFER: 0
 
       # STEP 3: COMMIT ALL CHANGES (Locally on the runner)
