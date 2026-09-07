@@ -33,7 +33,7 @@ The engine pulls high-volume text from diverse geopolitical perspectives, automa
 * **Paywall/Bot-Blocker Resilience:** Automatically falls back to translated RSS summaries if the main article body is unreachable.
 
 ### 2. Tactical Analysis Engine (`tactic_engine.py`)
-Utilizes **Groq's `llama-3.1-8b-instant`** for high-speed, zero-shot inference.
+Utilizes **Groq's `openai/gpt-oss-20b`** for high-speed, zero-shot inference.
 * Analyzes institutional article framing to assign broad propaganda labels (e.g., *Fear-Mongering, Disinformation, Victim-Blaming*).
 * Inventively generates specific 2-to-4 word micro-tactics for granular tracking (e.g., "Nuclear Threat Exaggeration", "Historical Revisionism").
 
