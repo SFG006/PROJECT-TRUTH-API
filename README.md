@@ -2,7 +2,7 @@
 
 [![Python 3.11](https://img.shields.io/badge/Python-3.11-blue.svg?style=for-the-badge&logo=python)](#)
 [![FastAPI](https://img.shields.io/badge/FastAPI-005571?style=for-the-badge&logo=fastapi)](#)
-[![Groq](https://img.shields.io/badge/Groq-Llama_3.1-F9AB00?style=for-the-badge)](#)
+[![Groq](https://img.shields.io/badge/gpt-oss-20b-F9AB00?style=for-the-badge)](#)
 [![License: MIT](https://img.shields.io/badge/License-MIT-darkred.svg?style=for-the-badge)](#)
 
 **Project Truth** is an automated Open Source Intelligence (OSINT) API and data pipeline designed for live geopolitical narrative and propaganda tactics tracking. 
