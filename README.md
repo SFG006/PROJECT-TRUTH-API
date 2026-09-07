@@ -1,7 +1,7 @@
 # PROJECT TRUTH: Autonomous OSINT & Narrative Engine
 
-[![Python 3.11](https://img.shields.io/badge/Python-3.11-blue.svg?style=for-the-badge&logo=python)](#)
-[![FastAPI](https://img.shields.io/badge/FastAPI-005571?style=for-the-badge&logo=fastapi)](#)
+[![Python 3.11](https://img.shields.io/badge/Python-3.11-blue.svg?style=for-the-badge&logo=python)](https://docs.python.org/3.11/)
+[![FastAPI](https://img.shields.io/badge/FastAPI-005571?style=for-the-badge&logo=fastapi)](https://fastapi.tiangolo.com/)
 [![GPT-OSS-20B](https://img.shields.io/badge/gpt--oss--20b-F9AB00?style=for-the-badge)](https://huggingface.co/openai/gpt-oss-20b)
 [![License: MIT](https://img.shields.io/badge/License-MIT-darkred.svg?style=for-the-badge)](#)
 
